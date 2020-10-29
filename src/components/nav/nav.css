@@ -1,0 +1,21 @@
+.navbar{
+	background-color: #2e3094;
+}
+
+.nav-item a{
+	color: white;
+	font-size: 15px;
+}
+
+.nav-item{
+	margin: 0 10px;
+}
+
+.navbar-toggler{
+	border: 2px solid #c5c5c5;
+}
+
+#navbarSupportedContent {
+    margin: 0;
+    padding: 0;
+}
