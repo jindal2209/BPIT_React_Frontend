@@ -1,32 +1,70 @@
 import Navbar from '../nav/nav'
-import React from 'react'
+import React, {useState,useEffect} from 'react'
+import axios from "axios";
+import Configuration from '../../configuration'
 
-function Contact(){
+function Tb(props){
+	const download_icon = 	<svg width="1em" height="1em" viewBox="0 0 16 16" className="bi bi-download" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path fillRule="evenodd" d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+								<path fillRule="evenodd" d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+							</svg>
+	return(
+		<tr>
+			<td>{props.disclosure_title}</td>
+			<td>{props.date}</td>
+			<td><a href={props.disclosures} target='blank'>{download_icon}</a></td>
+		</tr>
+	)
+}
+
+function Disclosures(){
+	const url = Configuration() + "disclosures/" 
+	const [data,setData] = useState(null);
+	var res = 	<div className="d-flex justify-content-center">
+					<div className="spinner-border" role="status">
+					<span className="sr-only">Loading...</span>
+					</div>
+				</div>
+
+	useEffect(() => {
+		axios.get(url)
+			.then(response => {
+				setData(response.data)				
+			})
+			.catch(error => {
+				console.log(error)
+			})
+	},[url])
+
+	if (data){
+		res = <table className="table table-bordered">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Date</th>
+					<th>Download</th>
+				</tr>
+			</thead>
+			<tbody>
+				{data.map((s,index)=>(
+					<Tb 
+						key = {index}
+						disclosure_title = {s.disclosure_title}
+						date = {s.date}
+						disclosures = {s.disclosures}
+					/>
+				))}
+			</tbody>
+		</table>
+	}
+
 	return(
 		<React.Fragment>
 			<Navbar />
-			<div class="contact-wrap container">
-				<h2 id="clr">
-					<i class="fa fa-phone-square" aria-hidden="true"></i>
-					Contact Us
-				</h2>
-				<hr></hr>
-				<div class="contact-details">
-					<h1>BHAGWAN PARSHURAM INSTITUTE OF TECHNOLOGY</h1>
-					<p>PSP- 4, Dr. K.N. Katju Marg , Sector 17 Rohini</p>
-					<p>New Delhi -110089</p>
-					<p>Tel: 011 - 27572900 , 27571080 </p>
-					<p> 011 - 27574635 , 27574637 (10 lines)</p>
-					<p>Fax: 011-27574642</p>
-					<p>Email:<a href="mail:bpitindia@yahoo.com"> bpitindia@yahoo.com</a></p>
-				</div>
-			</div>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111956.91355414972!2d77.07691246887508!3d28.729898056958948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0130445fa42d%3A0x154521d473fe3d5f!2sBhagwan+Parshuram+Institute+of+Technology!5e0!3m2!1sen!2sin!4v1526965817114" width="100%" height="400px" frameborder="0" allowfullscreen></iframe>
-
+			{res}
 		</React.Fragment>
 	)
 }
 
 
-
-export default Contact;
+export default Disclosures;

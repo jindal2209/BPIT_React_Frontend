@@ -53,14 +53,14 @@ function About(props) {
 	return (
 		<React.Fragment>
 			<Navbar />
-			<Link to='/about/library' onClick={handleLibrary}> Library</Link>
-			<Link to='/about/hostel' onClick={handleHostel}> Hostel</Link>
-			<Link to='/about/medical' onClick={handleMedical}> Medical</Link>
-			<Link to='/about/bookbank' onClick={handleBookbank}>Book Bank</Link>
-			<Link to='/about/seminar' onClick={handleSeminar}> Seminar</Link>
-			<Link to='/about/edusat' onClick={handleEdusat}> EDUSAT</Link>
-			<Link to='/about/sports' onClick={handleSports}> Sports</Link>
-			<Link to='/about/canteen' onClick={handleCanteen}> Canteen</Link>
+			<Link to='/facilities/library' onClick={handleLibrary}> Library</Link>
+			<Link to='/facilities/hostel' onClick={handleHostel}> Hostel</Link>
+			<Link to='/facilities/medical' onClick={handleMedical}> Medical</Link>
+			<Link to='/facilities/bookbank' onClick={handleBookbank}>Book Bank</Link>
+			<Link to='/facilities/seminar' onClick={handleSeminar}> Seminar</Link>
+			<Link to='/facilities/edusat' onClick={handleEdusat}> EDUSAT</Link>
+			<Link to='/facilities/sports' onClick={handleSports}> Sports</Link>
+			<Link to='/facilities/canteen' onClick={handleCanteen}> Canteen</Link>
 			{element}
 		</React.Fragment>
 	);
