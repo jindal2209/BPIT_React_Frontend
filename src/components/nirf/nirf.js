@@ -1,4 +1,3 @@
-import Navbar from '../nav/nav'
 import React, {useState,useEffect} from 'react'
 import axios from "axios";
 import Configuration from '../../configuration'
@@ -60,7 +59,6 @@ function Nirf(){
 
 	return(
 		<React.Fragment>
-			<Navbar />
 			{res}
 		</React.Fragment>
 	)

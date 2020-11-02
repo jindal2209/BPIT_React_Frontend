@@ -1,3 +1,4 @@
+import {Fragment} from 'react';
 import {
 	BrowserRouter as Router,
 	Switch,
@@ -8,6 +9,9 @@ import Contact from './components/contact/contact';
 import Nirf from './components/nirf/nirf';
 import Disclosures from './components/disclosures/disclosures';
 import Gallery from './components/gallery/gallery';
+import Navbar from './components/nav/nav';
+import Footer from './components/footer/footer';
+import DevTeam from './components/devteam/devteam';
 
 // About
 import About from './components/about/about';
@@ -30,50 +34,66 @@ import Medical from './components/facilities/children/medical/medical';
 import Seminar from './components/facilities/children/seminar/seminar';
 import Sports from './components/facilities/children/sports/sports';
 
+// Studentlife
+import Studentlife from './components/studentlife/studentlife';
+import Achievements from './components/studentlife/children/achievements/achievements';
+import Events from './components/studentlife/children/events/events';
+import Examination from './components/studentlife/children/examination/examination';
+import Projects from './components/studentlife/children/projects/projects';
+import Publications from './components/studentlife/children/publications/publications';
+import Societies from './components/studentlife/children/societies/societies';
+
+//placement
+
 function Routers(){
 	return (
-		<Router>
-			<Switch>
-				{/* About */}
-				<Route exact path='/about'><About page={null} /></Route>
-				<Route exact path='/about/cprofile'><About page={<Cprofile/>} /></Route>
-				<Route exact path='/about/trust'><About page={<Trust/>} /></Route>
-				<Route exact path='/about/cmessage'><About page={<Cmessage/>} /></Route>
-				<Route exact path='/about/pmessage'><About page={<Pmessage/>} /></Route>
-				<Route exact path='/about/vision_mission'><About page={<Vision/>} /></Route>
-				<Route exact path='/about/pillars'><About page={<Pillars/>} /></Route>
-				<Route exact path='/about/Certifications'><About page={<Certifications/>} /></Route>
+		<Fragment>
+			<Router>
+			<Navbar />
+				<Switch>
+					{/* About */}
+					<Route exact path='/about'><About page={null} /></Route>
+					<Route exact path='/about/cprofile'><About page={<Cprofile/>} /></Route>
+					<Route exact path='/about/trust'><About page={<Trust/>} /></Route>
+					<Route exact path='/about/cmessage'><About page={<Cmessage/>} /></Route>
+					<Route exact path='/about/pmessage'><About page={<Pmessage/>} /></Route>
+					<Route exact path='/about/vision_mission'><About page={<Vision/>} /></Route>
+					<Route exact path='/about/pillars'><About page={<Pillars/>} /></Route>
+					<Route exact path='/about/Certifications'><About page={<Certifications/>} /></Route>
 
-				{/* Facilities */}
-				<Route exact path='/facilities'><Facilities page={null} /></Route>
-				<Route exact path='/facilities/library'><Facilities page={<Library/>} /></Route>
-				<Route exact path='/facilities/hostel'><Facilities page={<Hostel/>} /></Route>
-				<Route exact path='/facilities/medical'><Facilities page={<Medical/>} /></Route>
-				<Route exact path='/facilities/bookbank'><Facilities page={<Bookbank/>} /></Route>
-				<Route exact path='/facilities/seminar'><Facilities page={<Seminar/>} /></Route>
-				<Route exact path='/facilities/edusat'><Facilities page={<Edusat/>} /></Route>
-				<Route exact path='/facilities/sports'><Facilities page={<Sports/>} /></Route>
-				<Route exact path='/facilities/canteen'><Facilities page={<Canteen/>} /></Route>
-				
-				
-				{/* Student Life */}
-				<Route exact path='/about'><About page={null} /></Route>
-				<Route exact path='/about/cprofile'><About page={<Cprofile/>} /></Route>
-				<Route exact path='/about/trust'><About page={<Trust/>} /></Route>
-				<Route exact path='/about/cmessage'><About page={<Cmessage/>} /></Route>
-				<Route exact path='/about/pmessage'><About page={<Pmessage/>} /></Route>
-				<Route exact path='/about/vision_mission'><About page={<Vision/>} /></Route>
-				<Route exact path='/about/pillars'><About page={<Pillars/>} /></Route>
-				<Route exact path='/about/Certifications'><About page={<Certifications/>} /></Route>
+					{/* Facilities */}
+					<Route exact path='/facilities'><Facilities page={null} /></Route>
+					<Route exact path='/facilities/library'><Facilities page={<Library/>} /></Route>
+					<Route exact path='/facilities/hostel'><Facilities page={<Hostel/>} /></Route>
+					<Route exact path='/facilities/medical'><Facilities page={<Medical/>} /></Route>
+					<Route exact path='/facilities/bookbank'><Facilities page={<Bookbank/>} /></Route>
+					<Route exact path='/facilities/seminar'><Facilities page={<Seminar/>} /></Route>
+					<Route exact path='/facilities/edusat'><Facilities page={<Edusat/>} /></Route>
+					<Route exact path='/facilities/sports'><Facilities page={<Sports/>} /></Route>
+					<Route exact path='/facilities/canteen'><Facilities page={<Canteen/>} /></Route>
+					
+					
+					{/* Studentlife */}
+					<Route exact path='/studentlife'><Studentlife page={null} /></Route>
+					<Route exact path='/studentlife/achievements'><Studentlife page={<Achievements/>} /></Route>
+					<Route exact path='/studentlife/events'><Studentlife page={<Events/>} /></Route>
+					<Route exact path='/studentlife/examination'><Studentlife page={<Examination/>} /></Route>
+					<Route exact path='/studentlife/projects'><Studentlife page={<Projects/>} /></Route>
+					<Route exact path='/studentlife/publications'><Studentlife page={<Publications/>} /></Route>
+					<Route exact path='/studentlife/societies'><Studentlife page={<Societies/>} /></Route>
 
 
-				<Route exact path='/'><Home /></Route>
-				<Route exact path='/contactus'><Contact /></Route>
-				<Route exact path='/nirf'><Nirf /></Route>
-				<Route exact path='/disclosures'><Disclosures /></Route>
-				<Route exact path='/gallery'><Gallery /></Route>
-			</Switch>
-		</Router>
+					<Route exact path='/'><Home /></Route>
+					<Route exact path='/contactus'><Contact /></Route>
+					<Route exact path='/nirf'><Nirf /></Route>
+					<Route exact path='/disclosures'><Disclosures /></Route>
+					<Route exact path='/gallery'><Gallery /></Route>
+					<Route exact path='/devteam'><DevTeam /></Route>
+
+				</Switch>
+			<Footer />
+			</Router>
+		</Fragment>
 	);
 }
 

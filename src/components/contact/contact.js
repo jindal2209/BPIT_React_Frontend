@@ -1,10 +1,8 @@
-import Navbar from '../nav/nav'
 import React from 'react'
 
 function Contact(){
 	return(
 		<React.Fragment>
-			<Navbar />
 			<div className="contact-wrap container">
 				<h2 id="clr">
 					<i className="fa fa-phone-square" aria-hidden="true"></i>

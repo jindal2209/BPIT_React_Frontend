@@ -3,7 +3,6 @@ import {
 } from 'react-router-dom';
 
 import React, { useState } from 'react';
-import Navbar from '../nav/nav';
 import Cmessage from './children/cmessage/cmessage';
 import Pmessage from './children/pmessage/pmessage';
 import Trust from './children/trust/trust';
@@ -47,7 +46,6 @@ function About(props) {
 
 	return (
 		<React.Fragment>
-			<Navbar />
 			<Link to='/about/cprofile' onClick={handleCprofile}>Cprofile</Link>
 			<Link to='/about/trust' onClick={handleTrust}> trust</Link>
 			<Link to='/about/cmessage' onClick={handleCmessage}> cmessage</Link>

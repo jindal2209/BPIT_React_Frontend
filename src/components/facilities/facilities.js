@@ -3,7 +3,6 @@ import {
 } from 'react-router-dom';
 
 import React, { useState } from 'react';
-import Navbar from '../nav/nav';
 import Bookbank from './children/bookbank/bookbank';
 import Canteen from './children/canteen/canteen';
 import Edusat from './children/edusat/edusat';
@@ -52,7 +51,6 @@ function About(props) {
 
 	return (
 		<React.Fragment>
-			<Navbar />
 			<Link to='/facilities/library' onClick={handleLibrary}> Library</Link>
 			<Link to='/facilities/hostel' onClick={handleHostel}> Hostel</Link>
 			<Link to='/facilities/medical' onClick={handleMedical}> Medical</Link>

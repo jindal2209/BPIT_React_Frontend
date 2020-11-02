@@ -1,10 +1,13 @@
 import React from 'react';
-import Navbar from '../nav/nav';
+import Marquee from './children/marquee/marquee';
+import Video from './children/video/video';
+
 
 function Home(){
 	return(
 		<React.Fragment>
-			<Navbar />
+			<Marquee />
+			<Video />
 		</React.Fragment>
 	);
 }

@@ -1,4 +1,3 @@
-import Navbar from '../nav/nav'
 import React, {useState,useEffect} from 'react'
 import Configuration from '../../configuration'
 import axios from "axios";
@@ -19,7 +18,6 @@ function Disclosures(){
 
 	return(
 		<React.Fragment>
-			<Navbar />
 		</React.Fragment>
 	)
 }
