@@ -1,15 +1,12 @@
-function Medical(){
+function Listofstudentsplaced(){
 	return (
 		<div>
 			<div id="add-animation">
-				<header className="heading"><span className="heading__text">Medical Room</span></header>
-				<img src="/assets/images/medicalRoom.jpg" className="people-image center-h" alt="" />
-				<p id="text-content">
-					The college has in house medical assistance facility for the stakeholders i.e. BPIT staff, faculty members and students. A doctor visits the college on a regular basis. The medical room is well equipped with basic health facilities and the stakeholders are being given primary health care. It is well stocked with the basic medicines, a Blood Pressure Monitor, Thermometer, ASD equipments and has a bed for patient. In case of emergency, patient transferred to the Brahma Shakti Hospital in Budha Vihar or Dr. Bhim Rao Ambedkar Hospital near Rithala Metro Station. A wheelchair and a vehicle (for ambulance) are also available for the medical emergencies.
-				</p>
+				<header className="heading"><span className="heading__text">Listofstudentsplaced</span></header>
+				<p id="text-content">API HIT</p>
 			</div>
 		</div>
 	)
 }
 
-export default Medical ;
+export default Listofstudentsplaced ;

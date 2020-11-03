@@ -1,67 +1,65 @@
 import {
-	Link
+	NavLink
 } from 'react-router-dom';
 
 import React, { useState } from 'react';
-import Bookbank from './children/bookbank/bookbank';
-import Canteen from './children/canteen/canteen';
-import Edusat from './children/edusat/edusat';
-import Hostel from './children/hostel/hostel';
-import Library from './children/library/library';
-import Medical from './children/medical/medical';
-import Seminar from './children/seminar/seminar';
-import Sports from './children/sports/sports';
+import Placementteam from './children/team/team';
+import Placementtraining from './children/training/training';
+import Recruiters from './children/recruiters/recruiters';
+import Listofstudentsplaced from './children/list_of_student_placed/list_of_student_placed';
+import Industrialtoursandworkshops from './children/industrial_tours_and_workshops/industrial_tours_and_workshops';
+import Exptalksandseminars from './children/exp_talks_and_seminars/exp_talks_and_seminars';
 
 
 
-function About(props) {
+
+function Placement(props) {
 	let [element,setElement] = useState(props.page);
 
-	function handleBookbank() {
-		setElement(<Bookbank />);
+	function handleTeam() {
+		setElement(<Placementteam />);
 	}
 
-	function handleCanteen() {
-		setElement(<Canteen />);
+	function handleTraining() {
+		setElement(<Placementtraining />);
 	}
 
-	function handleEdusat() {
-		setElement(<Edusat />);
+	function handleRecruiters() {
+		setElement(<Recruiters />);
 	}
 
-	function handleHostel() {
-		setElement(<Hostel />);
+	function handleList(){
+		setElement(<Listofstudentsplaced />);
 	}
 
-	function handleLibrary(){
-		setElement(<Library />);
+	function handleIndus(){
+		setElement(<Industrialtoursandworkshops />);
 	}
 
-	function handleMedical(){
-		setElement(<Medical />);
-	}
-
-	function handleSeminar(){
-		setElement(<Seminar />);
-	}
-
-	function handleSports(){
-		setElement(<Sports />);
+	function handleExp(){
+		setElement(<Exptalksandseminars />);
 	}
 
 	return (
 		<React.Fragment>
-			<Link to='/facilities/library' onClick={handleLibrary}> Library</Link>
-			<Link to='/facilities/hostel' onClick={handleHostel}> Hostel</Link>
-			<Link to='/facilities/medical' onClick={handleMedical}> Medical</Link>
-			<Link to='/facilities/bookbank' onClick={handleBookbank}>Book Bank</Link>
-			<Link to='/facilities/seminar' onClick={handleSeminar}> Seminar</Link>
-			<Link to='/facilities/edusat' onClick={handleEdusat}> EDUSAT</Link>
-			<Link to='/facilities/sports' onClick={handleSports}> Sports</Link>
-			<Link to='/facilities/canteen' onClick={handleCanteen}> Canteen</Link>
-			{element}
+			<div className='row mx-2 px-1'>
+				<div className='col-lg-3 sidebar'>
+					<div className='bg-light p-2'>
+						<h4 className="font-weight-bold">Menu</h4>
+						<NavLink className="menu-item" activeClassName="active" to='/placement/team' onClick={handleTeam}> Team</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to='/placement/training' onClick={handleTraining}> Training</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to='/placement/recruiters' onClick={handleRecruiters}>Our Recruiters</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to='/placement/exp_talks_and_seminars' onClick={handleExp}> Expert Talks and seminar</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to='/placement/industrial_tours_and_workshops' onClick={handleIndus}> Industrial tours and workshops</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to='/placement/list_of_student_placed' onClick={handleList}> List of student placed</NavLink>
+					</div>
+				</div>
+				<div className="col-lg-9">
+					{element}
+				</div>
+			</div>
 		</React.Fragment>
 	);
 }
 
-export default About;
+export default Placement;

@@ -12,34 +12,124 @@ function Navbar() {
 						<div className="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul className="navbar-nav">
 								<li className="nav-item">
-									<Link to='/' className="nav-link"> Home </Link>
+									<Link to='/' className="nav-link font-weight-bold"> Home </Link>
 								</li>
-								<li className="nav-item"> <a className="nav-link dropdown-toggle" href="#">
-												About
-											</a> </li>
-								<li className="nav-item"> <a className="nav-link dropdown-toggle" href="#">
-												Academics
-											</a> </li>
-								<li className="nav-item"> <a className="nav-link dropdown-toggle" href="#">
-												Facilities
-											</a> </li>
-								<li className="nav-item"> <a className="nav-link dropdown-toggle" href="#">
-												Placements
-											</a> </li>
-								<li className="nav-item"> <a className="nav-link dropdown-toggle" href="#">
-												Student Life
-											</a> </li>
-								<li className="nav-item">
-									<Link to='gallery' className="nav-link"> Gallery </Link>
+								<li className="nav-item dropdown"> 
+									<a className="nav-link dropdown-toggle font-weight-bold" href="#">
+										About
+										<ul className="dropdown-menu">
+											<li><a href="/about/cprofile">College Profile</a></li>
+											<li><a href="/about/trust">Trust</a></li>
+											<li><a href="/about/cmessage">Chairman's Message</a></li>
+											<li><a href="/about/pmessage">Principal's Message</a></li>
+											<li><a href="/about/vision_mission">Vision/Mission</a></li>
+											<li><a href="/about/pillars">Pillars of Bpit</a></li>
+											<li><a href="/about/Certifications">Certifications and Accredations</a></li>
+										</ul>
+									</a> 
+								</li>
+								<li className="nav-item dropdown"> 
+									<a className="nav-link dropdown-toggle font-weight-bold" href="#">
+										Academics
+									</a> 
+									<ul className="dropdown-menu">
+										<li className="dropdown-submenu">
+											<a href="#" className="dropdown-toggle" data-toggle="dropdown">Programme</a>
+											<ul className="dropdown-submenu dropdown-menu-right">
+												<li><a target="_blank" rel="noreferrer" href="http://www.ipu.ac.in/pubinfo/admission2018/adm2018main/ADMBRO2018A_190218.pdf">MBA</a></li>
+												<li><a target="_blank" rel="noreferrer" href="#">B.Tech</a></li>
+												<li><a target="_blank" rel="noreferrer"	href="#">BBA</a></li>
+											</ul>
+										</li>
+										<li className="dropdown-submenu">
+											<a href="#" className="dropdown-toggle" data-toggle="dropdown">Departments</a>
+											<ul className="dropdown-submenu dropdown-menu-right">
+												<li className="dropdown-submenu">
+													<a className="dropdown-toggle" data-toggle="dropdown" href="#">Applied Science</a>
+													<ul className="dropdown-submenu dropdown-menu-right">
+														<li><a href="/departments/ac">Applied Chemistry</a></li>
+														<li><a href="/departments/ap">Applied Physics</a></li>
+														<li><a href="/departments/am">Applied Maths</a></li>
+														<li><a href="/departments/em">Engineering Mechanics</a></li>
+														<li><a href="/departments/hu">Humanities</a></li>
+													</ul>
+												</li>
+												<li><a href="/departments/cse">Computer Science and Engineering</a></li>
+												<li><a href="/departments/ece">Electronics and Communication Engineering</a></li>
+												<li><a href="/departments/it">Information Technology</a></li>
+												<li><a href="/departments/eee">Electronics and Electrical Engineering</a></li>
+												<li className="dropdown-submenu">
+													<a className="dropdown-toggle" data-toggle="dropdown" href="#">School of Business Administration</a>
+													<ul className="dropdown-submenu dropdown-menu-right">
+														<li><a href="/departments/mba">MBA</a></li>
+														<li><a href="/departments/bba">BBA</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li className="nav-item dropdown"> 
+									<a className="nav-link dropdown-toggle font-weight-bold" href="#">
+										Facilities
+									</a> 
+									<ul className="dropdown-menu">
+										<li><a href="/facilities/library">Library</a></li>
+										<li><a href="/facilities/hostel">Hostel</a></li>
+										<li><a href="/facilities/medical">Medical room</a></li>
+										<li><a href="/facilities/bookbank">Book Bank</a></li>
+										<li><a href="/facilities/seminar">Seminar hall</a></li>
+										<li><a href="/facilities/edusat">EDUSAT</a></li>
+										<li><a href="/facilities/sports">Sports room</a></li>
+										<li><a href="/facilities/canteen">Canteen</a></li>
+									</ul>
+								</li>
+								<li className="nav-item dropdown"> 
+									<a className="nav-link dropdown-toggle font-weight-bold" href="#">
+										Placements
+									</a> 
+									<ul className="dropdown-menu">
+										<li><a href="/placement/team">Team</a></li>
+										<li><a href="/placement/training">Trainings</a></li>
+										<li><a href="/placement/recruiters">Our Recruiters</a></li>
+										<li><a href="/placement/exp_talks_and_seminars">Expert Talks and Seminars</a></li>
+										<li><a href="/placement/industrial_tours_and_workshops">Industrial tours and workshops</a></li>
+										<li><a href="/placement/list_of_student_placed">List of students placed</a></li>
+									</ul>
+								</li>
+								<li className="nav-item dropdown"> 
+									<a className="nav-link dropdown-toggle font-weight-bold" href="#">
+										Student Life
+									</a> 
+									<ul className="dropdown-menu">
+										<li className="dropdown-submenu">
+											<a href="#" className="dropdown-toggle" data-toggle="dropdown">Departments</a>
+											<ul className="dropdown-submenu dropdown-menu-right">
+												<li><a target="_blank" rel="noreferrer" href="http://www.ipu.ac.in/exam_notices.php">Notices</a></li>
+												<li><a target="_blank" rel="noreferrer" href="http://www.ipu.ac.in/exam_datesheet.php">Datesheet</a>
+												</li>
+												<li><a target="_blank" rel="noreferrer"
+														href="http://ggsipu.ac.in/ExamResults/ExamResultsmain.htm">Results</a></li>
+											</ul>
+										</li>
+										<li><a href="/studentlife/events">Events</a></li>
+										<li><a href="/studentlife/publications">Publications</a></li>
+										<li><a href="/studentlife/projects">Projects</a></li>
+										<li><a href="/studentlife/achievements">Achievements</a></li>
+										<li><a href="/studentlife/societies">Societies</a></li>
+									</ul>
 								</li>
 								<li className="nav-item">
-									<Link to='/disclosures' className="nav-link"> Disclosures </Link>
+									<Link to='gallery' className="nav-link font-weight-bold"> Gallery </Link>
 								</li>
 								<li className="nav-item">
-									<Link to='/nirf' className="nav-link"> NIRF </Link>
+									<Link to='/disclosures' className="nav-link font-weight-bold"> Disclosures </Link>
 								</li>
 								<li className="nav-item">
-									<Link to='/contactus' className="nav-link"> Contact </Link>
+									<Link to='/nirf' className="nav-link font-weight-bold"> NIRF </Link>
+								</li>
+								<li className="nav-item">
+									<Link to='/contactus' className="nav-link font-weight-bold"> Contact </Link>
 								</li>
 							</ul>
 						</div>

@@ -1,14 +1,61 @@
-function Bookbank(){
-	return (
+import React, {useState,useEffect} from 'react'
+import Configuration from '../../../../configuration'
+import axios from "axios";
+
+function ShowTeam(props){
+	return(
 		<div>
-			<div id="add-animation">
-				<header className="heading"><span className="heading__text">Book Bank</span></header>
-				<img src="/assets/images/lib3.jpg" className="people-image center-h" alt="" />
-				<p id="text-content">BPIT has a Book bank facility from the year 2012.
-					The books are issued to the students for the whole semester.</p>
-			</div>
+			Name : {props.firstname + " " + props.lastname}
+			<img src={props.profile_pic} alt="" />
+			Designation : {props.designation}
+			Email : {props.email}
+			Phone_Number : {props.Phone_Number}
 		</div>
 	)
 }
 
-export default Bookbank ;
+function Placementteam(){
+	const url = Configuration() + "placement/teams" 
+	const [data,setData] = useState(null);
+	var res = 	<div className="d-flex justify-content-center">
+					<div className="spinner-border" role="status">
+					<span className="sr-only">Loading...</span>
+					</div>
+				</div>
+
+	useEffect(() => {
+		axios.get(url)
+			.then(response => {
+				setData(response.data)				
+			})
+			.catch(error => {
+				console.log(error)
+			})
+	},[url])
+
+	if(data){
+		res = 	<div>	
+					{data.map((s,index)=>(
+						<ShowTeam
+							key = {index}
+							firstname = {s.firstname}
+							lastname = {s.lastname}
+							email = {s.email}
+							profile_pic = {s.profile_pic}
+							designation = {s.designation}
+							Phone_Number = {s.Phone_Number}
+						/>
+					))}
+				</div>
+	}
+
+	return(
+		<React.Fragment>
+			<h2>Placement Team</h2>
+			{res}
+		</React.Fragment>
+	)
+}
+
+
+export default Placementteam;

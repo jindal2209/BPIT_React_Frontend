@@ -4,7 +4,7 @@ function Library(){
 			<div id="add-animation">
 				<header className="heading"><span className="heading__text">Library</span></header>
 			</div>
-			<section id="blog-detail" className="blog-detail-section padding" id="add-animation">
+			<section id="blog-detail add-animation" className="blog-detail-section padding">
 				<div className="container">
 					<div className="row section-content">
 						<div className="col-lg-8">
@@ -13,7 +13,7 @@ function Library(){
 								<h3 className="heading__text">A library is not a luxury but one of the necessities of life &nbsp;<i> -H.W. Beecher </i></h3>
 								<p id="text-content">BPIT library is centrally air conditioned and spacious. The salient features of the library are:</p>
 								<div className="blog-detail-pic pb30"> 
-									<img src="/assets/images/lib.jpg" className="people-image center-h" /> </div>
+									<img src="/assets/images/lib.jpg" className="people-image center-h" alt="" /> </div>
 								<ul className="categories-list-item">
 									<li id="text-content">1. 42279 books and 6095 titles, including good quality books on Applied Mathematics, Applied Physics, Applied Chemistry, Communication skills, Engineering Mechanics and a wide range standard quality books on Computer Science Engineering, Electronics and Communication Engineering, Information Technology, and Electrical Engineering and graduate and post graduate level books on Management Studies.</li>
 									<li id="text-content">2. Book Bank facility for all the students.</li>

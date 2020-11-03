@@ -36,7 +36,7 @@ function Disclosures(){
 	},[url])
 
 	if (data){
-		res = <table className="table table-bordered">
+		res = <table className="table table-bordered table-hover">
 			<thead>
 				<tr>
 					<th>Name</th>
@@ -59,7 +59,7 @@ function Disclosures(){
 
 	return(
 		<React.Fragment>
-			{res}
+		{res}
 		</React.Fragment>
 	)
 }

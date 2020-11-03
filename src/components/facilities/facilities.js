@@ -1,5 +1,5 @@
 import {
-	Link
+	NavLink
 } from 'react-router-dom';
 
 import React, { useState } from 'react';
@@ -51,15 +51,24 @@ function About(props) {
 
 	return (
 		<React.Fragment>
-			<Link to='/facilities/library' onClick={handleLibrary}> Library</Link>
-			<Link to='/facilities/hostel' onClick={handleHostel}> Hostel</Link>
-			<Link to='/facilities/medical' onClick={handleMedical}> Medical</Link>
-			<Link to='/facilities/bookbank' onClick={handleBookbank}>Book Bank</Link>
-			<Link to='/facilities/seminar' onClick={handleSeminar}> Seminar</Link>
-			<Link to='/facilities/edusat' onClick={handleEdusat}> EDUSAT</Link>
-			<Link to='/facilities/sports' onClick={handleSports}> Sports</Link>
-			<Link to='/facilities/canteen' onClick={handleCanteen}> Canteen</Link>
-			{element}
+			<div className='row mx-2 px-1'>
+				<div className='col-lg-3 sidebar'>
+					<div className='bg-light p-2'>
+						<h4 className="font-weight-bold">Menu</h4>
+						<NavLink className="menu-item" to='/facilities/library' activeClassName="active" onClick={handleLibrary}> Library</NavLink>
+						<NavLink className="menu-item" to='/facilities/hostel' activeClassName="active" onClick={handleHostel}> Hostel</NavLink>
+						<NavLink className="menu-item" to='/facilities/medical' activeClassName="active" onClick={handleMedical}> Medical</NavLink>
+						<NavLink className="menu-item" to='/facilities/bookbank' activeClassName="active" onClick={handleBookbank}>Book Bank</NavLink>
+						<NavLink className="menu-item" to='/facilities/seminar' activeClassName="active" onClick={handleSeminar}> Seminar</NavLink>
+						<NavLink className="menu-item" to='/facilities/edusat' activeClassName="active" onClick={handleEdusat}> EDUSAT</NavLink>
+						<NavLink className="menu-item" to='/facilities/sports' activeClassName="active" onClick={handleSports}> Sports</NavLink>
+						<NavLink className="menu-item" to='/facilities/canteen' activeClassName="active" onClick={handleCanteen}> Canteen</NavLink>
+					</div>
+				</div>
+				<div className='col-lg-9'>
+					{element}
+				</div>
+			</div>
 		</React.Fragment>
 	);
 }

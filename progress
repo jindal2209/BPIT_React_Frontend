@@ -6,6 +6,7 @@ nirf
 disclosures
 dev team
 facilities
+placement
 
 home
 	marquee
@@ -14,3 +15,5 @@ home
 
 navbar(on collapse change button css so that it is visible)(on hover dropdown must be visible)
 footer(link for development team to be added)
+
+

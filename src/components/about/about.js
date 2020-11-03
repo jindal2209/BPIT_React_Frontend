@@ -1,5 +1,5 @@
 import {
-	Link
+	NavLink
 } from 'react-router-dom';
 
 import React, { useState } from 'react';
@@ -10,7 +10,7 @@ import Cprofile from './children/profile/profile';
 import Vision from './children/vision/vision';
 import Pillars from './children/pillars/pillars';
 import Certifications from './children/certifications/certifications';
-
+import "./about.css" ;
 
 
 function About(props) {
@@ -45,16 +45,23 @@ function About(props) {
 	}
 
 	return (
-		<React.Fragment>
-			<Link to='/about/cprofile' onClick={handleCprofile}>Cprofile</Link>
-			<Link to='/about/trust' onClick={handleTrust}> trust</Link>
-			<Link to='/about/cmessage' onClick={handleCmessage}> cmessage</Link>
-			<Link to='/about/Pmessage' onClick={handlePmessage}> Pmessage</Link>
-			<Link to='/about/vision_mission' onClick={handleVision}> Vision</Link>
-			<Link to='/about/pillars' onClick={handlePillars}> Pillars</Link>
-			<Link to='/about/certifications' onClick={handleCertifications}> Certifications</Link>
-			{element}
-		</React.Fragment>
+		<div className='row mx-2 px-1'>
+			<div className='col-lg-3 sidebar'>
+				<div className='bg-light p-2'>
+					<h4 className="font-weight-bold">Menu</h4>
+					<NavLink className="menu-item" activeClassName="active" to='/about/cprofile' onClick={handleCprofile}>College Profile</NavLink>
+					<NavLink className="menu-item" activeClassName="active" to='/about/trust' onClick={handleTrust}>Trust</NavLink>
+					<NavLink className="menu-item" activeClassName="active" to='/about/cmessage' onClick={handleCmessage}>Chairman's Message</NavLink>
+					<NavLink className="menu-item" activeClassName="active" to='/about/Pmessage' onClick={handlePmessage}>Principal's Message</NavLink>
+					<NavLink className="menu-item" activeClassName="active" to='/about/vision_mission' onClick={handleVision}>Vision/Mission</NavLink>
+					<NavLink className="menu-item" activeClassName="active" to='/about/pillars' onClick={handlePillars}>Pillars of Bpit</NavLink>
+					<NavLink className="menu-item" activeClassName="active" to='/about/certifications' onClick={handleCertifications}>Certifications & Accreditions</NavLink>
+				</div>
+			</div>
+			<div className="col-lg-9">
+				{element}
+			</div>
+		</div>
 	);
 }
 

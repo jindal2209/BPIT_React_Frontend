@@ -1,5 +1,5 @@
 .navbar{
-	background-color: #2e3094;
+	background-color: #3436a1;
 }
 
 .nav-item a{
@@ -13,9 +13,36 @@
 
 .navbar-toggler{
 	border: 2px solid white;
+	margin: 0%;
+	overflow: hidden;
 }
 
 #navbarSupportedContent {
     margin: 0;
     padding: 0;
+}
+
+.dropdown-menu{
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 250px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu{
+	display: block;
+}
+
+.dropdown-menu li:hover{
+	background-color: rgb(216, 206, 206);
+}
+
+.dropdown-menu-right{
+	display: none;
+}
+
+.dropdown-submenu:hover .dropdown-menu-right{
+	display: block;
 }

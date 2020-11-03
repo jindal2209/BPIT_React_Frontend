@@ -44,6 +44,23 @@ import Publications from './components/studentlife/children/publications/publica
 import Societies from './components/studentlife/children/societies/societies';
 
 //placement
+import Placement from './components/placement/placement';
+import Exptalksandseminars from './components/placement/children/exp_talks_and_seminars/exp_talks_and_seminars';
+import Industrialtoursandworkshops from './components/placement/children/industrial_tours_and_workshops/industrial_tours_and_workshops';
+import Listofstudentsplaced from './components/placement/children/list_of_student_placed/list_of_student_placed';
+import Recruiters from './components/placement/children/recruiters/recruiters';
+import Placementteam from './components/placement/children/team/team';
+import Placementtraining from './components/placement/children/training/training';
+
+// Academics
+import Chemistry from './components/academics/departments/children/applied/ac/ac';
+import Maths from './components/academics/departments/children/applied/am/am';
+import Physics from './components/academics/departments/children/applied/ap/ap';
+import Mechanics from './components/academics/departments/children/applied/em/em';
+import Humanities from './components/academics/departments/children/applied/hu/hu';
+import Departments from './components/academics/departments/departments';
+
+
 
 function Routers(){
 	return (
@@ -51,6 +68,7 @@ function Routers(){
 			<Router>
 			<Navbar />
 				<Switch>
+
 					{/* About */}
 					<Route exact path='/about'><About page={null} /></Route>
 					<Route exact path='/about/cprofile'><About page={<Cprofile/>} /></Route>
@@ -60,6 +78,7 @@ function Routers(){
 					<Route exact path='/about/vision_mission'><About page={<Vision/>} /></Route>
 					<Route exact path='/about/pillars'><About page={<Pillars/>} /></Route>
 					<Route exact path='/about/Certifications'><About page={<Certifications/>} /></Route>
+
 
 					{/* Facilities */}
 					<Route exact path='/facilities'><Facilities page={null} /></Route>
@@ -81,6 +100,25 @@ function Routers(){
 					<Route exact path='/studentlife/projects'><Studentlife page={<Projects/>} /></Route>
 					<Route exact path='/studentlife/publications'><Studentlife page={<Publications/>} /></Route>
 					<Route exact path='/studentlife/societies'><Studentlife page={<Societies/>} /></Route>
+
+
+					{/* placement */}
+					<Route exact path='/placement'><Placement page={null} /></Route>
+					<Route exact path='/placement/exp_talks_and_seminars'><Placement page={<Exptalksandseminars />} /></Route>
+					<Route exact path='/placement/industrial_tours_and_workshops'><Placement page={<Industrialtoursandworkshops/>} /></Route>
+					<Route exact path='/placement/list_of_student_placed'><Placement page={<Listofstudentsplaced/>} /></Route>
+					<Route exact path='/placement/recruiters'><Placement page={<Recruiters/>} /></Route>
+					<Route exact path='/placement/team'><Placement page={<Placementteam/>} /></Route>
+					<Route exact path='/placement/training'><Placement page={<Placementtraining/>} /></Route>
+
+
+					{/* Academics */}
+					<Route exact path='/departments'><Departments page={null} /></Route>
+					<Route exact path='/departments/ac'><Departments page={<Chemistry/>} /></Route>
+					<Route exact path='/departments/ap'><Departments page={<Physics />} /></Route>
+					<Route exact path='/departments/am'><Departments page={<Maths/>} /></Route>
+					<Route exact path='/departments/em'><Departments page={<Mechanics/>} /></Route>
+					<Route exact path='/departments/hu'><Departments page={<Humanities/>} /></Route>
 
 
 					<Route exact path='/'><Home /></Route>

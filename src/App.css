@@ -19,5 +19,35 @@
 	}
 }
 
+.menu-item{
+	display: block;
+	font-size: 15px;
+	padding: 5px 15px;
+	transition: $trans;
+	color: inherit;
+	text-decoration: none;
+}
 
+.menu-item:hover {
+	background: #4446b6;
+	padding-left: 20px;
+	border-left: 3px solid #3436a1;
+	text-decoration: none;
+	color: White;
+}
+
+.menu-item:active,.active{
+	background: #fff;
+	padding-left: 18px;
+	border-left: 3px solid #3436a1;
+	color: #3436a1;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 20px;
+}
   
+.page-header{
+	color: #3436a1;
+	font-weight: bold;
+}
+
