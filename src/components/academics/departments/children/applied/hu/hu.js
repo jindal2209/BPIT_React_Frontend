@@ -3,54 +3,24 @@ import {
 	NavLink
 } from 'react-router-dom';
 
-function Humanities(){
-	let [element,setElement] = useState(null);
+function Humanities(props){
+	let [element,setElement] = useState(props.page);
 
 	function handleAbout(){
 		setElement()
-
-	}
-	function handleAchievements(){
-		setElement()
-
-	}
-	function handleLab(){
-		setElement()
-
-	}
-	function handleCalender(){
-		setElement()
-
-	}
-	function handleDatesheet(){
-		setElement()
-
 	}
 	function handleFaculty(){
 		setElement()
-
-	}
-	function handleNotice(){
-		setElement()
-
 	}
 	function handlePublications(){
 		setElement()
 	}
-	function handleResult(){
-		setElement()
-	}
+
 	function handleSyllabus(){
 		setElement()
-
-	}
-	function handleTimetable(){
-		setElement()
-
 	}
 	function handleLessonplan(){
 		setElement()
-
 	}
 
 	return (
@@ -61,17 +31,10 @@ function Humanities(){
 						<h4 className="font-weight-bold">Menu</h4>
 						<NavLink className="menu-item" activeClassName="active" to="/departments/hu/about" onClick={handleAbout}> About</NavLink>
 						<NavLink className="menu-item" activeClassName="active" to="/departments/hu/faculty" onClick={handleFaculty}> Faculty</NavLink>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/hu/labresources" onClick={handleLab}>Lab Resources</NavLink>
 						<NavLink className="menu-item" activeClassName="active" to="/departments/hu/facultypublications" onClick={handlePublications}> Faculty Publications</NavLink>
 						<h4 className="font-weight-bold">Resources</h4>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/hu/notice" onClick={handleNotice}> Notice</NavLink>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/hu/achievements" onClick={handleAchievements}> Achievements</NavLink>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/hu/timetable" onClick={handleTimetable}> Time Table</NavLink>
 						<NavLink className="menu-item" activeClassName="active" to="/departments/hu/lessonplan" onClick={handleLessonplan}> Lesson Plan</NavLink>
 						<NavLink className="menu-item" activeClassName="active" to="/departments/hu/syllabus" onClick={handleSyllabus}> Syllabus</NavLink>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/hu/calender" onClick={handleCalender}> Academic Calender</NavLink>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/hu/datesheet" onClick={handleDatesheet}> Datesheet</NavLink>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/hu/result" onClick={handleResult}> Result</NavLink>
 					</div>
 				</div>
 				<div className="col-lg-9">

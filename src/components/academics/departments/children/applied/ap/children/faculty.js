@@ -3,7 +3,7 @@ import GetFaculty from '../../../../getfaculty';
 function Faculty(){
 	return(
 		<GetFaculty 
-			url = 'departments/ap/faculty';
+			url = 'departments/ap/faculty'
 		/>
 	);
 }

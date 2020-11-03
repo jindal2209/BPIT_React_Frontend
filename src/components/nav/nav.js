@@ -15,18 +15,18 @@ function Navbar() {
 									<Link to='/' className="nav-link font-weight-bold"> Home </Link>
 								</li>
 								<li className="nav-item dropdown"> 
-									<a className="nav-link dropdown-toggle font-weight-bold">
+									<Link className="nav-link dropdown-toggle font-weight-bold">
 										About
-										<ul className="dropdown-menu">
-											<li><a href="/about/cprofile">College Profile</a></li>
-											<li><a href="/about/trust">Trust</a></li>
-											<li><a href="/about/cmessage">Chairman's Message</a></li>
-											<li><a href="/about/pmessage">Principal's Message</a></li>
-											<li><a href="/about/vision_mission">Vision/Mission</a></li>
-											<li><a href="/about/pillars">Pillars of Bpit</a></li>
-											<li><a href="/about/Certifications">Certifications and Accredations</a></li>
-										</ul>
-									</a> 
+									</Link> 
+									<ul className="dropdown-menu">
+										<li><a href="/about/cprofile">College Profile</a></li>
+										<li><a href="/about/trust">Trust</a></li>
+										<li><a href="/about/cmessage">Chairman's Message</a></li>
+										<li><a href="/about/pmessage">Principal's Message</a></li>
+										<li><a href="/about/vision_mission">Vision/Mission</a></li>
+										<li><a href="/about/pillars">Pillars of Bpit</a></li>
+										<li><a href="/about/Certifications">Certifications and Accredations</a></li>
+									</ul>
 								</li>
 								<li className="nav-item dropdown"> 
 									<Link className="nav-link dropdown-toggle font-weight-bold">
@@ -47,22 +47,22 @@ function Navbar() {
 												<li className="dropdown-submenu">
 													<Link className="dropdown-toggle" data-toggle="dropdown">Applied Science</Link>
 													<ul className="dropdown-submenu dropdown-menu-right">
-														<li><a href="/departments/ac">Applied Chemistry</a></li>
-														<li><a href="/departments/ap">Applied Physics</a></li>
-														<li><a href="/departments/am">Applied Maths</a></li>
-														<li><a href="/departments/em">Engineering Mechanics</a></li>
-														<li><a href="/departments/hu">Humanities</a></li>
+														<li><a href="/departments/ac/about">Applied Chemistry</a></li>
+														<li><a href="/departments/ap/about">Applied Physics</a></li>
+														<li><a href="/departments/am/about">Applied Maths</a></li>
+														<li><a href="/departments/em/about">Engineering Mechanics</a></li>
+														<li><a href="/departments/hu/about">Humanities</a></li>
 													</ul>
 												</li>
-												<li><a href="/departments/cse">Computer Science and Engineering</a></li>
-												<li><a href="/departments/ece">Electronics and Communication Engineering</a></li>
-												<li><a href="/departments/it">Information Technology</a></li>
-												<li><a href="/departments/eee">Electronics and Electrical Engineering</a></li>
+												<li><a href="/departments/cse/about">Computer Science and Engineering</a></li>
+												<li><a href="/departments/ece/about">Electronics and Communication Engineering</a></li>
+												<li><a href="/departments/it/about">Information Technology</a></li>
+												<li><a href="/departments/eee/about">Electronics and Electrical Engineering</a></li>
 												<li className="dropdown-submenu">
 													<Link className="dropdown-toggle" data-toggle="dropdown">School of Business Administration</Link>
 													<ul className="dropdown-submenu dropdown-menu-right">
-														<li><a href="/departments/mba">MBA</a></li>
-														<li><a href="/departments/bba">BBA</a></li>
+														<li><a href="/departments/mba/about">MBA</a></li>
+														<li><a href="/departments/bba/about">BBA</a></li>
 													</ul>
 												</li>
 											</ul>

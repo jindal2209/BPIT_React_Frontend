@@ -1,9 +1,9 @@
-import GetFaculty from '../../../../getfaculty';
+import GetFaculty from '../../../getfaculty';
 
 function Faculty(){
 	return(
 		<GetFaculty 
-			url = 'departments/eee/faculty';
+			url = 'departments/eee/faculty'
 		/>
 	);
 }

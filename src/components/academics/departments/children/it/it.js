@@ -2,12 +2,14 @@ import { useState } from 'react';
 import {
 	NavLink
 } from 'react-router-dom';
+import About from './children/about';
+import Faculty from './children/faculty'
 
-function IT(){
-	let [element,setElement] = useState(null);
+function IT(props){
+	let [element,setElement] = useState(props.page);
 
 	function handleAbout(){
-		setElement()
+		setElement(<About />)
 
 	}
 	function handleAchievements(){
@@ -27,7 +29,7 @@ function IT(){
 
 	}
 	function handleFaculty(){
-		setElement()
+		setElement(<Faculty />)
 
 	}
 	function handleNotice(){

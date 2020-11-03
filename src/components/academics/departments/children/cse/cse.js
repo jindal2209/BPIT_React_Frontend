@@ -3,9 +3,10 @@ import {
 	NavLink
 } from 'react-router-dom';
 import About from './children/about';
+import Faculty from './children/faculty';
 
-function Cse(){
-	let [element,setElement] = useState(<About />);
+function Cse(props){
+	let [element,setElement] = useState(props.page);
 
 	function handleAbout(){
 		setElement(<About />);
@@ -27,7 +28,7 @@ function Cse(){
 
 	}
 	function handleFaculty(){
-		setElement()
+		setElement(<Faculty />)
 
 	}
 	function handleNotice(){
