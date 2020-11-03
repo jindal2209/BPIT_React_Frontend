@@ -2,13 +2,13 @@ import { useState } from 'react';
 import {
 	NavLink
 } from 'react-router-dom';
+import About from './children/about';
 
 function Cse(){
-	let [element,setElement] = useState(null);
+	let [element,setElement] = useState(<About />);
 
 	function handleAbout(){
-		setElement()
-
+		setElement(<About />);
 	}
 	function handleAchievements(){
 		setElement()

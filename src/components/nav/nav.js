@@ -15,7 +15,7 @@ function Navbar() {
 									<Link to='/' className="nav-link font-weight-bold"> Home </Link>
 								</li>
 								<li className="nav-item dropdown"> 
-									<a className="nav-link dropdown-toggle font-weight-bold" href="#">
+									<a className="nav-link dropdown-toggle font-weight-bold">
 										About
 										<ul className="dropdown-menu">
 											<li><a href="/about/cprofile">College Profile</a></li>
@@ -29,23 +29,23 @@ function Navbar() {
 									</a> 
 								</li>
 								<li className="nav-item dropdown"> 
-									<a className="nav-link dropdown-toggle font-weight-bold" href="#">
+									<Link className="nav-link dropdown-toggle font-weight-bold">
 										Academics
-									</a> 
+									</Link> 
 									<ul className="dropdown-menu">
 										<li className="dropdown-submenu">
-											<a href="#" className="dropdown-toggle" data-toggle="dropdown">Programme</a>
+											<Link className="dropdown-toggle" data-toggle="dropdown">Programme</Link>
 											<ul className="dropdown-submenu dropdown-menu-right">
 												<li><a target="_blank" rel="noreferrer" href="http://www.ipu.ac.in/pubinfo/admission2018/adm2018main/ADMBRO2018A_190218.pdf">MBA</a></li>
-												<li><a target="_blank" rel="noreferrer" href="#">B.Tech</a></li>
-												<li><a target="_blank" rel="noreferrer"	href="#">BBA</a></li>
+												<li><Link target="_blank" rel="noreferrer">B.Tech</Link></li>
+												<li><a target="_blank" rel="noreferrer"	href="http://www.ipu.ac.in/pubinfo/admission2018/adm2018main/ADMBRO2018A_190218.pdf">BBA</a></li>
 											</ul>
 										</li>
 										<li className="dropdown-submenu">
-											<a href="#" className="dropdown-toggle" data-toggle="dropdown">Departments</a>
+											<Link className="dropdown-toggle" data-toggle="dropdown">Departments</Link>
 											<ul className="dropdown-submenu dropdown-menu-right">
 												<li className="dropdown-submenu">
-													<a className="dropdown-toggle" data-toggle="dropdown" href="#">Applied Science</a>
+													<Link className="dropdown-toggle" data-toggle="dropdown">Applied Science</Link>
 													<ul className="dropdown-submenu dropdown-menu-right">
 														<li><a href="/departments/ac">Applied Chemistry</a></li>
 														<li><a href="/departments/ap">Applied Physics</a></li>
@@ -59,7 +59,7 @@ function Navbar() {
 												<li><a href="/departments/it">Information Technology</a></li>
 												<li><a href="/departments/eee">Electronics and Electrical Engineering</a></li>
 												<li className="dropdown-submenu">
-													<a className="dropdown-toggle" data-toggle="dropdown" href="#">School of Business Administration</a>
+													<Link className="dropdown-toggle" data-toggle="dropdown">School of Business Administration</Link>
 													<ul className="dropdown-submenu dropdown-menu-right">
 														<li><a href="/departments/mba">MBA</a></li>
 														<li><a href="/departments/bba">BBA</a></li>
@@ -70,9 +70,9 @@ function Navbar() {
 									</ul>
 								</li>
 								<li className="nav-item dropdown"> 
-									<a className="nav-link dropdown-toggle font-weight-bold" href="#">
+									<Link className="nav-link dropdown-toggle font-weight-bold">
 										Facilities
-									</a> 
+									</Link> 
 									<ul className="dropdown-menu">
 										<li><a href="/facilities/library">Library</a></li>
 										<li><a href="/facilities/hostel">Hostel</a></li>
@@ -85,9 +85,9 @@ function Navbar() {
 									</ul>
 								</li>
 								<li className="nav-item dropdown"> 
-									<a className="nav-link dropdown-toggle font-weight-bold" href="#">
+									<Link className="nav-link dropdown-toggle font-weight-bold">
 										Placements
-									</a> 
+									</Link> 
 									<ul className="dropdown-menu">
 										<li><a href="/placement/team">Team</a></li>
 										<li><a href="/placement/training">Trainings</a></li>
@@ -98,12 +98,12 @@ function Navbar() {
 									</ul>
 								</li>
 								<li className="nav-item dropdown"> 
-									<a className="nav-link dropdown-toggle font-weight-bold" href="#">
+									<Link className="nav-link dropdown-toggle font-weight-bold">
 										Student Life
-									</a> 
+									</Link> 
 									<ul className="dropdown-menu">
 										<li className="dropdown-submenu">
-											<a href="#" className="dropdown-toggle" data-toggle="dropdown">Departments</a>
+											<Link className="dropdown-toggle" data-toggle="dropdown">Departments</Link>
 											<ul className="dropdown-submenu dropdown-menu-right">
 												<li><a target="_blank" rel="noreferrer" href="http://www.ipu.ac.in/exam_notices.php">Notices</a></li>
 												<li><a target="_blank" rel="noreferrer" href="http://www.ipu.ac.in/exam_datesheet.php">Datesheet</a>

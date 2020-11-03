@@ -7,7 +7,7 @@ function Holder(props){
 	return(
 		<React.Fragment>
 			Title : {props.title} <br></br>
-			<a href={props.link} target="_blank" >Click here</a> <br></br>
+			<a href={props.link} target="_blank" rel="noreferrer">Click here</a> <br></br>
 			Date : {props.date}
 		</React.Fragment>
 	);

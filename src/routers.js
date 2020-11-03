@@ -58,7 +58,12 @@ import Maths from './components/academics/departments/children/applied/am/am';
 import Physics from './components/academics/departments/children/applied/ap/ap';
 import Mechanics from './components/academics/departments/children/applied/em/em';
 import Humanities from './components/academics/departments/children/applied/hu/hu';
-import Departments from './components/academics/departments/departments';
+import Cse from './components/academics/departments/children/cse/cse';
+import Ece from './components/academics/departments/children/ece/ece';
+import Eee from './components/academics/departments/children/eee/eee';
+import IT from './components/academics/departments/children/it/it';
+import Mba from './components/academics/departments/children/sba/mba/mba';
+import Bba from './components/academics/departments/children/sba/bba/bba';
 
 
 
@@ -113,12 +118,17 @@ function Routers(){
 
 
 					{/* Academics */}
-					<Route exact path='/departments'><Departments page={null} /></Route>
-					<Route exact path='/departments/ac'><Departments page={<Chemistry/>} /></Route>
-					<Route exact path='/departments/ap'><Departments page={<Physics />} /></Route>
-					<Route exact path='/departments/am'><Departments page={<Maths/>} /></Route>
-					<Route exact path='/departments/em'><Departments page={<Mechanics/>} /></Route>
-					<Route exact path='/departments/hu'><Departments page={<Humanities/>} /></Route>
+					<Route exact path='/departments/ac'><Chemistry /></Route>
+					<Route exact path='/departments/ap'><Physics /></Route>
+					<Route exact path='/departments/am'><Maths /></Route>
+					<Route exact path='/departments/em'><Mechanics /></Route>
+					<Route exact path='/departments/hu'><Humanities /></Route>
+					<Route exact path='/departments/cse'><Cse /></Route>
+					<Route exact path='/departments/ece'><Ece /></Route>
+					<Route exact path='/departments/eee'><Eee /></Route>
+					<Route exact path='/departments/it'><IT /></Route>
+					<Route exact path='/departments/mba'><Mba /></Route>
+					<Route exact path='/departments/bba'><Bba /></Route>
 
 
 					<Route exact path='/'><Home /></Route>
