@@ -8,51 +8,8 @@ import Faculty from './children/faculty'
 function Ece(props){
 	let [element,setElement] = useState(props.page);
 
-	function handleAbout(){
-		setElement(<About />)
-
-	}
-	function handleAchievements(){
-		setElement()
-
-	}
-	function handleLab(){
-		setElement()
-
-	}
-	function handleCalender(){
-		setElement()
-
-	}
-	function handleDatesheet(){
-		setElement()
-
-	}
-	function handleFaculty(){
-		setElement(<Faculty />)
-
-	}
-	function handleNotice(){
-		setElement()
-
-	}
-	function handlePublications(){
-		setElement()
-	}
-	function handleResult(){
-		setElement()
-	}
-	function handleSyllabus(){
-		setElement()
-
-	}
-	function handleTimetable(){
-		setElement()
-
-	}
-	function handleLessonplan(){
-		setElement()
-
+	function handleComponent(component) {
+		setElement(component);
 	}
 
 	return (
@@ -61,19 +18,19 @@ function Ece(props){
 				<div className='col-lg-3 sidebar'>
 					<div className='bg-light p-2'>
 						<h4 className="font-weight-bold">Menu</h4>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/ece/about" onClick={handleAbout}> About</NavLink>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/ece/faculty" onClick={handleFaculty}> Faculty</NavLink>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/ece/labresources" onClick={handleLab}>Lab Resources</NavLink>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/ece/facultypublications" onClick={handlePublications}> Faculty Publications</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to="/departments/ece/about" onClick={() => handleComponent()}> About</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to="/departments/ece/faculty" onClick={() => handleComponent()}> Faculty</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to="/departments/ece/labresources" onClick={() => handleComponent()}>Lab Resources</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to="/departments/ece/facultypublications" onClick={() => handleComponent()}> Faculty Publications</NavLink>
 						<h4 className="font-weight-bold">Resources</h4>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/ece/notice" onClick={handleNotice}> Notice</NavLink>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/ece/achievements" onClick={handleAchievements}> Achievements</NavLink>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/ece/timetable" onClick={handleTimetable}> Time Table</NavLink>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/ece/lessonplan" onClick={handleLessonplan}> Lesson Plan</NavLink>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/ece/syllabus" onClick={handleSyllabus}> Syllabus</NavLink>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/ece/calender" onClick={handleCalender}> Academic Calender</NavLink>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/ece/datesheet" onClick={handleDatesheet}> Datesheet</NavLink>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/ece/result" onClick={handleResult}> Result</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to="/departments/ece/notice" onClick={() => handleComponent()}> Notice</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to="/departments/ece/achievements" onClick={() => handleComponent()}> Achievements</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to="/departments/ece/timetable" onClick={() => handleComponent()}> Time Table</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to="/departments/ece/lessonplan" onClick={() => handleComponent()}> Lesson Plan</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to="/departments/ece/syllabus" onClick={() => handleComponent()}> Syllabus</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to="/departments/ece/calender" onClick={() => handleComponent()}> Academic Calender</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to="/departments/ece/datesheet" onClick={() => handleComponent()}> Datesheet</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to="/departments/ece/result" onClick={() => handleComponent()}> Result</NavLink>
 					</div>
 				</div>
 				<div className="col-lg-9">

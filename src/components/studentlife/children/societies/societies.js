@@ -4,7 +4,7 @@ function Societies(){
 	return(
 		<Fragment>
 			<div id="add-animation">
-				<h1>Scocieties</h1>
+				<h3 className='page-subheader'>Societies</h3>
 					<div className="loader">
 					<div className="box"></div>
 					</div>

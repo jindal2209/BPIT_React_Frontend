@@ -17,59 +17,35 @@ import Sports from './children/sports/sports';
 function About(props) {
 	let [element,setElement] = useState(props.page);
 
-	function handleBookbank() {
-		setElement(<Bookbank />);
-	}
-
-	function handleCanteen() {
-		setElement(<Canteen />);
-	}
-
-	function handleEdusat() {
-		setElement(<Edusat />);
-	}
-
-	function handleHostel() {
-		setElement(<Hostel />);
-	}
-
-	function handleLibrary(){
-		setElement(<Library />);
-	}
-
-	function handleMedical(){
-		setElement(<Medical />);
-	}
-
-	function handleSeminar(){
-		setElement(<Seminar />);
-	}
-
-	function handleSports(){
-		setElement(<Sports />);
+	function handleComponent(component) {
+		setElement(component);
 	}
 
 	return (
-		<React.Fragment>
-			<div className='row mx-2 px-1'>
-				<div className='col-lg-3 sidebar'>
-					<div className='bg-light p-2'>
+		<div className="f-wrap container">
+			<h2 class="page-header my-4">
+				<i className="fa fa-building  mx-2" aria-hidden="true"></i>
+				Facilities
+			</h2>
+			<div className="f-dash row">
+				<div className="col-sm-3">
+					<div className=" sidebar rounded p-2 bg-light">
 						<h4 className="font-weight-bold">Menu</h4>
-						<NavLink className="menu-item" to='/facilities/library' activeClassName="active" onClick={handleLibrary}> Library</NavLink>
-						<NavLink className="menu-item" to='/facilities/hostel' activeClassName="active" onClick={handleHostel}> Hostel</NavLink>
-						<NavLink className="menu-item" to='/facilities/medical' activeClassName="active" onClick={handleMedical}> Medical</NavLink>
-						<NavLink className="menu-item" to='/facilities/bookbank' activeClassName="active" onClick={handleBookbank}>Book Bank</NavLink>
-						<NavLink className="menu-item" to='/facilities/seminar' activeClassName="active" onClick={handleSeminar}> Seminar</NavLink>
-						<NavLink className="menu-item" to='/facilities/edusat' activeClassName="active" onClick={handleEdusat}> EDUSAT</NavLink>
-						<NavLink className="menu-item" to='/facilities/sports' activeClassName="active" onClick={handleSports}> Sports</NavLink>
-						<NavLink className="menu-item" to='/facilities/canteen' activeClassName="active" onClick={handleCanteen}> Canteen</NavLink>
+						<NavLink className="menu-item" to='/facilities/library' activeClassName="active" onClick={() => handleComponent(<Library />)}> Library</NavLink>
+						<NavLink className="menu-item" to='/facilities/hostel' activeClassName="active" onClick={() => handleComponent(<Hostel />)}> Hostel</NavLink>
+						<NavLink className="menu-item" to='/facilities/medical' activeClassName="active" onClick={() => handleComponent(<Medical />)}> Medical</NavLink>
+						<NavLink className="menu-item" to='/facilities/bookbank' activeClassName="active" onClick={() => handleComponent(<Bookbank />)}>Book Bank</NavLink>
+						<NavLink className="menu-item" to='/facilities/seminar' activeClassName="active" onClick={() => handleComponent(<Seminar />)}> Seminar</NavLink>
+						<NavLink className="menu-item" to='/facilities/edusat' activeClassName="active" onClick={() => handleComponent(<Edusat />)}> EDUSAT</NavLink>
+						<NavLink className="menu-item" to='/facilities/sports' activeClassName="active" onClick={() => handleComponent(<Sports />)}> Sports</NavLink>
+						<NavLink className="menu-item" to='/facilities/canteen' activeClassName="active" onClick={() => handleComponent(<Canteen />)}> Canteen</NavLink>
 					</div>
 				</div>
-				<div className='col-lg-9'>
+				<div class="col-sm-9 content">
 					{element}
 				</div>
 			</div>
-		</React.Fragment>
+		</div>
 	);
 }
 

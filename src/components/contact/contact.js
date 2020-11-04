@@ -3,7 +3,7 @@ import React from 'react'
 function Contact(){
 	return(
 		<React.Fragment>
-			<div className="container m-5 p-5">
+			<div className="container-fluid m-5 p-5">
 				<h2 className='page-header'>
 					<i className="fa fa-phone-square" aria-hidden="true"></i> &nbsp;
 					Contact Us

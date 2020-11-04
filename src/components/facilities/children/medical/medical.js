@@ -2,6 +2,7 @@ function Medical(){
 	return (
 		<div>
 			<div id="add-animation">
+				<h3 className='page-subheader'>Medical</h3>
 				<header className="heading"><span className="heading__text">Medical Room</span></header>
 				<img src="/assets/images/medicalRoom.jpg" className="people-image center-h" alt="" />
 				<p id="text-content">

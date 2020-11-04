@@ -16,49 +16,33 @@ import Exptalksandseminars from './children/exp_talks_and_seminars/exp_talks_and
 function Placement(props) {
 	let [element,setElement] = useState(props.page);
 
-	function handleTeam() {
-		setElement(<Placementteam />);
+	function handleComponent(component) {
+		setElement(component);
 	}
-
-	function handleTraining() {
-		setElement(<Placementtraining />);
-	}
-
-	function handleRecruiters() {
-		setElement(<Recruiters />);
-	}
-
-	function handleList(){
-		setElement(<Listofstudentsplaced />);
-	}
-
-	function handleIndus(){
-		setElement(<Industrialtoursandworkshops />);
-	}
-
-	function handleExp(){
-		setElement(<Exptalksandseminars />);
-	}
-
+	
 	return (
-		<React.Fragment>
-			<div className='row mx-2 px-1'>
-				<div className='col-lg-3 sidebar'>
-					<div className='bg-light p-2'>
-						<h4 className="font-weight-bold">Menu</h4>
-						<NavLink className="menu-item" activeClassName="active" to='/placement/team' onClick={handleTeam}> Team</NavLink>
-						<NavLink className="menu-item" activeClassName="active" to='/placement/training' onClick={handleTraining}> Training</NavLink>
-						<NavLink className="menu-item" activeClassName="active" to='/placement/recruiters' onClick={handleRecruiters}>Our Recruiters</NavLink>
-						<NavLink className="menu-item" activeClassName="active" to='/placement/exp_talks_and_seminars' onClick={handleExp}> Expert Talks and seminar</NavLink>
-						<NavLink className="menu-item" activeClassName="active" to='/placement/industrial_tours_and_workshops' onClick={handleIndus}> Industrial tours and workshops</NavLink>
-						<NavLink className="menu-item" activeClassName="active" to='/placement/list_of_student_placed' onClick={handleList}> List of student placed</NavLink>
+		<div className="f-wrap container">
+			<h2 class="page-header my-4">
+				<i className="fa fa-briefcase  mx-2" aria-hidden="true"></i>
+				Placements
+			</h2>
+			<div className="f-dash row">
+				<div className="col-sm-3">
+					<div className=" sidebar rounded p-2 bg-light">
+						<h4 className="text-center">Menu</h4>
+						<NavLink className="menu-item" activeClassName="active" to='/placement/team' onClick={() => handleComponent(<Placementteam />)}> Team</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to='/placement/training' onClick={() => handleComponent(<Placementtraining />)}> Training</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to='/placement/recruiters' onClick={() => handleComponent(<Recruiters />)}>Our Recruiters</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to='/placement/exp_talks_and_seminars' onClick={() => handleComponent(<Exptalksandseminars />)}> Expert Talks and seminar</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to='/placement/industrial_tours_and_workshops' onClick={() => handleComponent(<Industrialtoursandworkshops />)}> Industrial tours and workshops</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to='/placement/list_of_student_placed' onClick={() => handleComponent(<Listofstudentsplaced />)}> List of student placed</NavLink>
 					</div>
 				</div>
-				<div className="col-lg-9">
+				<div class="col-sm-9 content">
 					{element}
 				</div>
 			</div>
-		</React.Fragment>
+		</div>
 	);
 }
 

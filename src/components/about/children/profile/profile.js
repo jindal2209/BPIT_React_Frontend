@@ -4,9 +4,9 @@ import './profile.css' ;
 function Cprofile(){
 	return (
 		<Fragment>
-			<div id="add-animation" className="about profile">
-				<header className="heading"><span className="heading__text">College Profile</span></header>
-				<img src="/assets/images/bpit1.jpg" alt="hello" className="people-image center-h" />
+			<div>
+				<h3 className='page-subheader'>College Profile</h3>
+				<img src="/assets/images/bpit1.jpg" alt="hello" />
 				<p id="text-content">In view of the national and international scenario of the growing demand of qualified technical
 					personnel in different streams of engineering technology and management, Bhartiya Brahmin Charitable Trust in 2005
 					laid the foundation of Bhagwan Parshuram Institute of Technology (BPIT). BPIT is approved by the Ministry of Human

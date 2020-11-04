@@ -4,7 +4,7 @@ function Pillars(){
 	return (
 		<Fragment>
 			<div id="add-animation">
-				<header className="heading"><span className="heading__text">Pillars of BPIT</span></header>
+				<h3 className='page-subheader'>Pillars of BPIT</h3>
 				<div className="card-wrap">
 					<div className="card">
 						<img src="/assets/images/payal1.JPG" className=" center-h pic" alt="" />

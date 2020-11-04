@@ -2,10 +2,10 @@ function Library(){
 	return (
 		<div>
 			<div id="add-animation">
-				<header className="heading"><span className="heading__text">Library</span></header>
+				<h3 className='page-subheader'>Library</h3>
 			</div>
 			<section id="blog-detail add-animation" className="blog-detail-section padding">
-				<div className="container">
+				<div className="container-fluid">
 					<div className="row section-content">
 						<div className="col-lg-8">
 							<div className="blog-detail-content pb20">

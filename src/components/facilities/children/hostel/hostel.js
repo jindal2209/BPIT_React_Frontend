@@ -2,7 +2,7 @@ function Hostel(){
 	return (
 		<div>
 			<div id="add-animation">
-				<header className="heading"><span className="heading__text">Girls Hostel</span></header>
+				<h3 className='page-subheader'>Girls Hostel</h3>
 				<img src="/assets/images/hostel1.jpg" className="people-image center-h" alt="" />
 				<p id="text-content">The hostel is 'A home away from home' for girls coming from all parts of the country. BPIT offers well furnished hostel facilities within the college campus.
 

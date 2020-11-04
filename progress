@@ -14,6 +14,17 @@ home
 	 
 
 navbar(on collapse change button css so that it is visible)(on hover dropdown must be visible)
-footer(link for development team to be added)
+footer(link for development team to be added,always at bottom)
 
+
+var docWidth = document.documentElement.offsetWidth;
+
+[].forEach.call(
+  document.querySelectorAll('*'),
+  function(el) {
+    if (el.offsetWidth > docWidth) {
+      console.log(el);
+    }
+  }
+);
 

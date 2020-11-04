@@ -2,7 +2,7 @@ function Canteen(){
 	return (
 		<div>
 			<div id="add-animation">
-				<header className="heading"><span className="heading__text">Canteen</span></header>
+				<h3 className='page-subheader'>Canteen</h3>
 				<img src="/assets/images/canteen.jpg" className="people-image center-h" alt="" />
 				<p id="text-content">BPIT has a spacious canteen which maintains strict hygienic and sanitary conditions and serves quality meals, snacks and beverages at concessional rates. The canteen is located at a central place in the campus from where all the facilities can be served to the faculty members within a reasonable time. The Institute has an intercom facility and the canteen is also well-connected with all the rooms through the same. There is a separate seating space for faculty and staff members having a capacity of 20 members whereas the seating capacity of the area reserved for students is around 100 students.</p>
 				<p id="text-content">

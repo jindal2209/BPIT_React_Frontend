@@ -4,7 +4,7 @@ function Cmessage(){
 	return (
 		<Fragment>
 			<div id="add-animation" className="about c-message">
-				<header className="heading"><span className="heading__text">From the desk of the Chairman</span></header> 
+				<h3 className='page-subheader'>From the desk of the Chairman</h3>
 				<img src="/assets/images/trust3.png" className="people-image center-h" alt="" />
 				<p id="text-content"> I am pleased to introduce you our institution and explore the ways we connect students to a world of possibilities. Bhagwan Parshuram Institute of Technology, founded by Bhartiya Brahmin Charitable trust in 2005, has made rapid strides in its very little time of existence because of clear focus, sustained efforts and commitment to deliver.
 					<br></br>

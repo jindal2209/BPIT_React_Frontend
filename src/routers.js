@@ -1,4 +1,3 @@
-import {Fragment} from 'react';
 import {
 	BrowserRouter as Router,
 	Switch,
@@ -80,54 +79,54 @@ import Bba from './components/academics/departments/children/sba/bba/bba';
 
 
 
-function Routers(){
+function Routers() {
 	return (
-		<Fragment>
+		// <div>
 			<Router>
-			<Navbar />
+				<Navbar />
 				<Switch>
 
 					{/* About */}
 					<Route exact path='/about'><About page={null} /></Route>
-					<Route exact path='/about/cprofile'><About page={<Cprofile/>} /></Route>
-					<Route exact path='/about/trust'><About page={<Trust/>} /></Route>
-					<Route exact path='/about/cmessage'><About page={<Cmessage/>} /></Route>
-					<Route exact path='/about/pmessage'><About page={<Pmessage/>} /></Route>
-					<Route exact path='/about/vision_mission'><About page={<Vision/>} /></Route>
-					<Route exact path='/about/pillars'><About page={<Pillars/>} /></Route>
-					<Route exact path='/about/Certifications'><About page={<Certifications/>} /></Route>
+					<Route exact path='/about/cprofile'><About page={<Cprofile />} /></Route>
+					<Route exact path='/about/trust'><About page={<Trust />} /></Route>
+					<Route exact path='/about/cmessage'><About page={<Cmessage />} /></Route>
+					<Route exact path='/about/pmessage'><About page={<Pmessage />} /></Route>
+					<Route exact path='/about/vision_mission'><About page={<Vision />} /></Route>
+					<Route exact path='/about/pillars'><About page={<Pillars />} /></Route>
+					<Route exact path='/about/Certifications'><About page={<Certifications />} /></Route>
 
 
 					{/* Facilities */}
 					<Route exact path='/facilities'><Facilities page={null} /></Route>
-					<Route exact path='/facilities/library'><Facilities page={<Library/>} /></Route>
-					<Route exact path='/facilities/hostel'><Facilities page={<Hostel/>} /></Route>
-					<Route exact path='/facilities/medical'><Facilities page={<Medical/>} /></Route>
-					<Route exact path='/facilities/bookbank'><Facilities page={<Bookbank/>} /></Route>
-					<Route exact path='/facilities/seminar'><Facilities page={<Seminar/>} /></Route>
-					<Route exact path='/facilities/edusat'><Facilities page={<Edusat/>} /></Route>
-					<Route exact path='/facilities/sports'><Facilities page={<Sports/>} /></Route>
-					<Route exact path='/facilities/canteen'><Facilities page={<Canteen/>} /></Route>
-					
-					
+					<Route exact path='/facilities/library'><Facilities page={<Library />} /></Route>
+					<Route exact path='/facilities/hostel'><Facilities page={<Hostel />} /></Route>
+					<Route exact path='/facilities/medical'><Facilities page={<Medical />} /></Route>
+					<Route exact path='/facilities/bookbank'><Facilities page={<Bookbank />} /></Route>
+					<Route exact path='/facilities/seminar'><Facilities page={<Seminar />} /></Route>
+					<Route exact path='/facilities/edusat'><Facilities page={<Edusat />} /></Route>
+					<Route exact path='/facilities/sports'><Facilities page={<Sports />} /></Route>
+					<Route exact path='/facilities/canteen'><Facilities page={<Canteen />} /></Route>
+
+
 					{/* Studentlife */}
 					<Route exact path='/studentlife'><Studentlife page={null} /></Route>
-					<Route exact path='/studentlife/achievements'><Studentlife page={<Achievements/>} /></Route>
-					<Route exact path='/studentlife/events'><Studentlife page={<Events/>} /></Route>
-					<Route exact path='/studentlife/examination'><Studentlife page={<Examination/>} /></Route>
-					<Route exact path='/studentlife/projects'><Studentlife page={<Projects/>} /></Route>
-					<Route exact path='/studentlife/publications'><Studentlife page={<Publications/>} /></Route>
-					<Route exact path='/studentlife/societies'><Studentlife page={<Societies/>} /></Route>
+					<Route exact path='/studentlife/achievements'><Studentlife page={<Achievements />} /></Route>
+					<Route exact path='/studentlife/events'><Studentlife page={<Events />} /></Route>
+					<Route exact path='/studentlife/examination'><Studentlife page={<Examination />} /></Route>
+					<Route exact path='/studentlife/projects'><Studentlife page={<Projects />} /></Route>
+					<Route exact path='/studentlife/publications'><Studentlife page={<Publications />} /></Route>
+					<Route exact path='/studentlife/societies'><Studentlife page={<Societies />} /></Route>
 
 
 					{/* placement */}
 					<Route exact path='/placement'><Placement page={null} /></Route>
 					<Route exact path='/placement/exp_talks_and_seminars'><Placement page={<Exptalksandseminars />} /></Route>
-					<Route exact path='/placement/industrial_tours_and_workshops'><Placement page={<Industrialtoursandworkshops/>} /></Route>
-					<Route exact path='/placement/list_of_student_placed'><Placement page={<Listofstudentsplaced/>} /></Route>
-					<Route exact path='/placement/recruiters'><Placement page={<Recruiters/>} /></Route>
-					<Route exact path='/placement/team'><Placement page={<Placementteam/>} /></Route>
-					<Route exact path='/placement/training'><Placement page={<Placementtraining/>} /></Route>
+					<Route exact path='/placement/industrial_tours_and_workshops'><Placement page={<Industrialtoursandworkshops />} /></Route>
+					<Route exact path='/placement/list_of_student_placed'><Placement page={<Listofstudentsplaced />} /></Route>
+					<Route exact path='/placement/recruiters'><Placement page={<Recruiters />} /></Route>
+					<Route exact path='/placement/team'><Placement page={<Placementteam />} /></Route>
+					<Route exact path='/placement/training'><Placement page={<Placementtraining />} /></Route>
 
 
 					{/* Academics */}
@@ -137,13 +136,13 @@ function Routers(){
 					<Route exact path='/departments/em'><Mechanics /></Route>
 					<Route exact path='/departments/hu'><Humanities /></Route>
 
-					<Route exact path='/departments/cse/about'><Cse page={<CSEAbout />}/></Route>
-					<Route exact path='/departments/cse/faculty'><Cse page={<CSEFaculty />}/></Route>
+					<Route exact path='/departments/cse/about'><Cse page={<CSEAbout />} /></Route>
+					<Route exact path='/departments/cse/faculty'><Cse page={<CSEFaculty />} /></Route>
 
 					<Route exact path='/departments/ece/about'><Ece page={<ECEAbout />} /></Route>
 					<Route exact path='/departments/ece/faculty'><Ece page={<ECEFaculty />} /></Route>
 
-					<Route exact path='/departments/eee/about'><Eee page={<EEEAbout />}/></Route>
+					<Route exact path='/departments/eee/about'><Eee page={<EEEAbout />} /></Route>
 					<Route exact path='/departments/eee/faculty'><Eee page={<EEEFaculty />} /></Route>
 
 					<Route exact path='/departments/it/about'><IT page={<ITAbout />} /></Route>
@@ -161,9 +160,9 @@ function Routers(){
 					<Route exact path='/devteam'><DevTeam /></Route>
 
 				</Switch>
-			<Footer />
+				{/* <Footer /> */}
 			</Router>
-		</Fragment>
+		// </div>
 	);
 }
 

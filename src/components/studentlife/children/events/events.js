@@ -4,11 +4,11 @@ function Events() {
 	return (
 		<Fragment>
 			<div id="add-animation">
-				<h1 heading__text>Events</h1>
+				<h2 className='page-subheader'>Events</h2>
 				<div className="loader">
 					<div className="box"></div>
 				</div> {/* dynamically events */} {/*
-				<div className="container">
+				<div className="container-fluid">
 					<div>
 						<div className="col-sm-3">
 							<div className="card">
@@ -19,11 +19,11 @@ function Events() {
 					</div>
 				</div> */}
 				<section id="blog-detail" className="blog-detail-section padding">
-					<div className="container">
+					<div className="container-fluid">
 						<div className="row section-content">
 							<div className="col-lg-8">
 								<div className="blog-detail-content pb20">
-									<h3 className="trust__heading">Technical Events CORONA’18  </h3>
+									<h2 className='page-subheader'>Technical Events CORONA’18</h2>
 									<p>On 5th-6th April 2018, a colourful and memorable Techno-Cultural Fest was organized in our college. In this mega event, many students from different colleges took part.</p>
 									<p>IEEE BPIT organized 8 events in association with Corona18.</p>
 									<p className="pt-2"><strong>Those events are:</strong></p>
@@ -36,7 +36,7 @@ function Events() {
 									<p>• Competitive Coding</p>
 									<p>• Pixelography</p>
 									<hr></hr>
-									<h3 className="trust__heading">ROBO RACE  </h3>
+									<h2 className='page-subheader'>ROBO RACE</h2>
 									<p> IEEE BPIT has organised Robo race in cultural and technical fest of BPIT CORONA’18. Participants has designed robot either wired or wireless within the specified dimensions that can operated manually and can travel through all turns of the track. The robot that had completed the specified task in least time was declared winner. </p>
 									<p><strong>PRIZES WORTH: Rs. 22000</strong></p>
 									<p><strong>Registration Fee: Rs. 100</strong></p>
@@ -57,7 +57,7 @@ function Events() {
 									<p className="mb-4"> Total 31 students have participated in the event. The first prize was won by the Darshan Baid from Galgotias University where as the second and third prize by Peeyush Saxena and Siddharth Bhasin of BPIT. </p>
 									<div className="blog-detail-pic pb30"> <img className="people-image center-h" src="/assets/images/student_life_event_img2.jpg" alt="" /> </div>
 									<hr></hr>
-									<h3 className="trust__heading">COMPETITIVE  CODING  </h3>
+									<h2 className='page-subheader'>COMPETITIVE CODING</h2>
 									<p> Technical Event of COMPETITIVE CODING was successfully organised in CORONA '18 the techno-cultural festival of BPIT in 102 LAB on the ONLINE PLATFORM CODEZEN OF CODING NINJAS which was the event sponsor. </p>
 									<p><strong>PRIZES WORTH: Rs. 5000</strong></p>
 									<p><strong>Registration Fee: Rs. 50</strong></p>
@@ -65,22 +65,22 @@ function Events() {
 									<p className="mb-4"> 18 teams from different colleges all over delhi participated in this event. Results are declared on the leader-board of CODEZEN and results are announced and prizes are given to winning Participants. The first prize was won by the team of Amity and second by BPIT. </p>
 									<div className="blog-detail-pic pb30"> <img className="people-image center-h" src="/assets/images/student_life_event_img3.jpg" alt="" /> </div>
 									<hr></hr>
-									<h3 className="trust__heading">PIXELO  GRAPHY  </h3>
+									<h2 className='page-subheader'>PIXELO GRAPHY</h2>
 									<p> <u>EVENT DESCRIPTION:</u> A theme was given toevery participant. Every participant had to capture their clicks within 2 hours and some of the participants edited their captures in the given time. A platform (Photoshop) was provided. </p>
 									<p className="mb-4"> EVENT DESCRIPTION: A theme was given toevery participant. Every participant had to capture their clicks within 2 hours and some of the participants edited their captures in the given time. A platform (Photoshop) was provided. </p>
 									<div className="blog-detail-pic pb30"> <img className="people-image center-h" src="/assets/images/student_life_event_img4.jpg" alt="" /> </div>
 									<hr></hr>
-									<h3 className="trust__heading">LINE FOLLOWING  ROBOT  </h3>
+									<h2 className='page-subheader'>LINE FOLLOWING  ROBOT</h2>
 									<p> IEEE BPIT has organised line follower robot (lfr) competition in cultural and technical fest of BPIT CORONA’18. Participants has designed robot either wired or wireless within the specified dimensions that can follow a particular path (black lines) on their own . The robot that had completed the specified task in least time was declared winner. </p>
 									<p className="mb-4"> Total 11 teams have participated in the event with their wired and wireless robot. Each team comprises of at most 4 members. The teams from NIEC delhi won both the first and second prizes. </p>
 									<div className="blog-detail-pic pb30"> <img className="people-image center-h" src="/assets/images/student_life_event_img5.jpg" alt="" /> </div>
 									<hr></hr>
-									<h3 className="trust__heading">WEB QUICKIE  </h3>
+									<h2 className='page-subheader'>WEB QUICKIE</h2>
 									<p> On 6th Web Quickie was held. Web Quickie is a web development Competition,which provides participants a platform to showtheir creative skills in the field of web development.The tagline for the event was "Design the frontend and code the Backend". The marking was done on different criteria like frontend(15),backend(35),UI&amp;UX(30) and creativity(20). </p>
 									<p className="mb-4"> Around 6:00 pm the result was declared and the First Position was awarded to the team headed by Avirup (BPIT) and the runner up was the team headed by Harsh (MAIT). </p>
 									<div className="blog-detail-pic pb30"> <img className="people-image center-h" src="/assets/images/student_life_event_img6.jpg" alt="" /> </div>
 									<hr></hr>
-									<h3 className="trust__heading">WORKSHOP FOR STUDENT  </h3>
+									<h2 className='page-subheader'>WORKSHOP FOR STUDENT</h2>
 									<p className="mb-4"> <strong>Workshop for Students on “Ethics, Technical Writing and Effective Presentation”</strong> Workshop for Students on “Ethics, Technical Writing and Effective Presentation” A One Day workshop was organized by Department of Information Technology of BPIT for the students on 7th March 2018. The speaker Prof. Abhishek Swaroop emphasized on the importance of ethics in technical world. Besides that he taught how to write effective technical documents and how to effectively present your work. In the workshop, 55 students from all the branches participated. </p>
 									<div className="blog-detail-pic pb30"> <img className="people-image center-h" src="/assets/images/student_life_event_img7.jpg" alt="" /> </div>
 									<hr></hr>
@@ -96,7 +96,7 @@ function Events() {
 									<p className="mb-4"> Department of CSE and Department of IT of BPIT Jointly organized a one day National Conference on Computing, Informatics and Networks. The conference was inaugurated by Prof. A.P. Mittal Member Secretary AICTE. The students of BPIT were actively involved in organizing the conference. The faculty members and students of BPIT as well as several other institutes presented their research paper. </p>
 									<div className="blog-detail-pic pb30"> <img className="people-image center-h" src="/assets/images/student_life_event_img10.jpg" alt="" /> </div>
 									<hr></hr>
-									<h3 className="trust__heading">Cultural Events  </h3> <strong className="mb-2 pull-left w-100">ORIENTATION DAY CUM FRESHERS PARTY</strong>
+									<h2 className='page-subheader'>Cultural Events</h2> <strong className="mb-2 pull-left w-100">ORIENTATION DAY CUM FRESHERS PARTY</strong>
 									<div className="w-100 pull-left">
 										<div className="row">
 											<div className="col-lg"> <img className="people-image center-h" src="/assets/images/student_life_event_img11.jpg" alt="" />

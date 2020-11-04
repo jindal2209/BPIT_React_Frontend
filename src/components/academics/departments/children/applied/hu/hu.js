@@ -6,21 +6,8 @@ import {
 function Humanities(props){
 	let [element,setElement] = useState(props.page);
 
-	function handleAbout(){
-		setElement()
-	}
-	function handleFaculty(){
-		setElement()
-	}
-	function handlePublications(){
-		setElement()
-	}
-
-	function handleSyllabus(){
-		setElement()
-	}
-	function handleLessonplan(){
-		setElement()
+	function handleComponent(component) {
+		setElement(component);
 	}
 
 	return (
@@ -29,12 +16,12 @@ function Humanities(props){
 				<div className='col-lg-3 sidebar'>
 					<div className='bg-light p-2'>
 						<h4 className="font-weight-bold">Menu</h4>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/hu/about" onClick={handleAbout}> About</NavLink>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/hu/faculty" onClick={handleFaculty}> Faculty</NavLink>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/hu/facultypublications" onClick={handlePublications}> Faculty Publications</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to="/departments/hu/about" onClick={() => handleComponent()}> About</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to="/departments/hu/faculty" onClick={() => handleComponent()}> Faculty</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to="/departments/hu/facultypublications" onClick={() => handleComponent()}> Faculty Publications</NavLink>
 						<h4 className="font-weight-bold">Resources</h4>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/hu/lessonplan" onClick={handleLessonplan}> Lesson Plan</NavLink>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/hu/syllabus" onClick={handleSyllabus}> Syllabus</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to="/departments/hu/lessonplan" onClick={() => handleComponent()}> Lesson Plan</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to="/departments/hu/syllabus" onClick={() => handleComponent()}> Syllabus</NavLink>
 					</div>
 				</div>
 				<div className="col-lg-9">

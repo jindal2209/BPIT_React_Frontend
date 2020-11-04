@@ -4,7 +4,7 @@ function Achievements(){
 	return(
 		<Fragment>
 			<div id="add-animation">
-				<h1>Achieved,hsdvjsvhdkments</h1>
+				<h3 className='page-subheader'>Achievements</h3>
 			</div>
 		</Fragment>
 	)

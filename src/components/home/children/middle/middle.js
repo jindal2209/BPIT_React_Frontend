@@ -117,18 +117,20 @@ function Events(){
 
 function Middle(){
 	return(
-		<div className="row justify-content-center text-center my-5">
-			<div className="col-lg-4 justify-content-center shadow my-2 p-2">
-				<h3 className="text-primary">News</h3>
-				<News />
-			</div>
-			<div className="col-lg-4 justify-content-center shadow my-2 p-3">
-				<h3 className="text-primary">Notices</h3>
-				<Notice />
-			</div>
-			<div className="col-lg-4 justify-content-center shadow my-2 p-2">
-				<h3 className="text-primary">Events</h3>
-				<Events />
+		<div className='container-fluid'>
+			<div className="row justify-content-center text-center my-5">
+				<div className="col-lg-4 justify-content-center shadow-lg rounded my-2">
+					<h3 className="text-primary">News</h3>
+					<News />
+				</div>
+				<div className="col-lg-4 justify-content-center shadow-lg rounded my-2">
+					<h3 className="text-primary">Notices</h3>
+					<Notice />
+				</div>
+				<div className="col-lg-4 justify-content-center shadow-lg rounded my-2">
+					<h3 className="text-primary">Events</h3>
+					<Events />
+				</div>
 			</div>
 		</div>
 

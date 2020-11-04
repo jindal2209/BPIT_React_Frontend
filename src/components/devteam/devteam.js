@@ -2,7 +2,7 @@ function DevTeam(){
 	return(
 		<div>
 		<h2>Development Team</h2>
-		<div className="container">
+		<div className="container-fluid">
 			<div className="row">
 				<div className="col-lg-4 col-md-4 col-sm-6">
 					<div className="teamText cardSize">
@@ -29,7 +29,7 @@ function DevTeam(){
 				</div>
 			</div>
 		</div>
-		<div className="container">
+		<div className="container-fluid">
 			<div className="row">
 				<div className="col-lg-4 col-md-4 col-sm-6">
 					<div className="teamText cardSize">

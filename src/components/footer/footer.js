@@ -22,17 +22,19 @@ function Footer() {
 						</ul>
 					</div>
 					<div className="col-md-3 mb-md-0 my-4">
-							<a className="fb-ic" href="https://m.facebook.com/bpit.india.3?ref=bookmarks" target="_blank" rel="noreferrer"> <i className="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i> </a>
-							<a className="tw-ic" href="https://twitter.com/BpitIndia" target="_blank" rel="noreferrer"> <i className="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i> </a>
-							<a className="gplus-ic" href="https://g.page/BPITINDIA?we" target="_blank" rel="noreferrer"> <i className="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i> </a>
-							<a className="ins-ic" href="https://www.instagram.com/bpitindia/" target="_blank" rel="noreferrer"> <i className="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i> </a>
-							<a className="pin-ic" href="https://in.pinterest.com/bhagwan_parshuram/boards/" target="_blank" rel="noreferrer"> <i className="fab fa-pinterest fa-lg white-text fa-2x"> </i> </a>
+						<a className="fb-ic" href="https://m.facebook.com/bpit.india.3?ref=bookmarks" target="_blank" rel="noreferrer"> <i className="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i> </a>
+						<a className="tw-ic" href="https://twitter.com/BpitIndia" target="_blank" rel="noreferrer"> <i className="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i> </a>
+						<a className="gplus-ic" href="https://g.page/BPITINDIA?we" target="_blank" rel="noreferrer"> <i className="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i> </a>
+						<a className="ins-ic" href="https://www.instagram.com/bpitindia/" target="_blank" rel="noreferrer"> <i className="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i> </a>
+						<a className="pin-ic" href="https://in.pinterest.com/bhagwan_parshuram/boards/" target="_blank" rel="noreferrer"> <i className="fab fa-pinterest fa-lg white-text fa-2x"> </i> </a>
 					</div>
 				</div>
 			</div>
-			<div className="footer-copyright text-center py-3">© 2020 Copyright: Bhagwan Parshuram Institute of Technology </div>
+			<div className="footer-copyright text-center py-3">
+				© 2020 Copyright: Bhagwan Parshuram Institute of Technology 
+			</div>
 		</footer>
-		
+
 	);
 }
 

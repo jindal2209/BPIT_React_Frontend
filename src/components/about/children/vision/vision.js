@@ -3,8 +3,8 @@ import {Fragment} from 'react';
 function Vision(){
 	return (
 		<Fragment>
-			<div id="add-animation">
-				<header className="heading"><span className="heading__text">Vision</span></header>
+			<div>
+				<h3 className='page-subheader'>Vision</h3>
 				<p id="text-content"> To establish a leading Global center of excellence in multidisciplinary education, training and research in the area of Engineering, Technology and Management.
 					<br></br>
 					<br></br> To produce technologically competent, morally & emotionally strong and ethically sound professionals who excel in their chosen field, practice commitment to their profession and dedicate themselves to the service of mankind. </p>
@@ -20,7 +20,7 @@ function Vision(){
 					</ul>
 				</div>
 				<br></br>
-				<header className="heading"><span className="heading__text">Quality Policy</span></header>
+				<h3 className='page-subheader'>Quality Policy</h3>
 				<div id="text-content">
 					<ul>
 						<li> To breed excellence in all endeavours. </li>
