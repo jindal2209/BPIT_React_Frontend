@@ -1,5 +1,4 @@
 import React, {useState,useEffect} from 'react'
-import Configuration from '../../configuration'
 import axios from "axios";
 
 function Ic(props){
@@ -12,7 +11,7 @@ function Ic(props){
 }
 
 function Disclosures(){
-	const url = Configuration() + "gallery/title/" 
+	const url = "gallery/title/" 
 	const [data,setData] = useState(null);
 	var res = 	<div className="d-flex justify-content-center">
 					<div className="spinner-border" role="status">

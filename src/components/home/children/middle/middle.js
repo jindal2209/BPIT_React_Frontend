@@ -1,6 +1,5 @@
 import React, {useState,useEffect} from 'react'
 import axios from "axios";
-import Configuration from '../../../../configuration'
 
 function Holder(props){
 
@@ -15,7 +14,7 @@ function Holder(props){
 }
 
 function Notice(){
-	const notice_url = Configuration() + "notice/home/" 
+	const notice_url = "notice/home/" 
 	const [notice,setNoticeData] = useState(null);
 
 	useEffect(() => {
@@ -48,7 +47,7 @@ function Notice(){
 }
 
 function News(){
-	const news_url = Configuration() + "news/home/" 
+	const news_url = "news/home/" 
 	const [news_data,setNewsData] = useState(null);
 
 	useEffect(() => {
@@ -82,7 +81,7 @@ function News(){
 }
 
 function Events(){
-	const events_url = Configuration() + "events/home/" 
+	const events_url = "events/home/" 
 	const [events,setEventsData] = useState(null);
 
 	useEffect(() => {

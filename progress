@@ -11,6 +11,8 @@ placement
 home
 	marquee
 	video
+
+https://github.com/Bpitorg/Bpit_Frontend_React.git clone repo
 	 
 
 navbar(on collapse change button css so that it is visible)(on hover dropdown must be visible)
@@ -28,3 +30,17 @@ var docWidth = document.documentElement.offsetWidth;
   }
 );
 
+
+
+
+token store at local storage (pure js)
+
+tokenn delete at logout(pure js)
+
+when sending request token id mmust be sent (Headers)
+
+new user hits 2 apis to submit
+
+onCLick((DELETE(this.id)))
+
+wmic path softwarelicensingservice get OA3xOriginalProductKey

@@ -16,15 +16,15 @@ function Studentlife(props) {
 	}
 
 	return (
-		<div className="f-wrap container">
-			<h2 class="page-header my-4">
+		<div className="container-fluid p-5">
+			<h2 class="page-header my-4 px-3">
 				<i className="fa fa-graduation-cap  mx-2" aria-hidden="true"></i>
 				Placements
 			</h2>
-			<div className="f-dash row">
-				<div className="col-sm-3">
-					<div className=" sidebar rounded p-2 bg-light">
-						<h4 className="text-center">Menu</h4>
+			<div className="row">
+				<div className="col-lg-3">
+					<div className=" sidebar rounded p-2">
+						<h4 className="text-center py-1">Menu</h4>
 						<NavLink className="menu-item" activeClassName="active" to='/studentlife/achievements' onClick={() => handleComponent(<Achievements />)}>Achievements</NavLink>
 						<NavLink className="menu-item" activeClassName="active" to='/studentlife/events' onClick={() => handleComponent(<Events />)}> Events</NavLink>
 						<NavLink className="menu-item" activeClassName="active" to='/studentlife/examination' onClick={() => handleComponent(<Examination />)}> Examinations</NavLink>

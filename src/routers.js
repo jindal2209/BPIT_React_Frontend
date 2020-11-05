@@ -78,12 +78,17 @@ import Mba from './components/academics/departments/children/sba/mba/mba';
 import Bba from './components/academics/departments/children/sba/bba/bba';
 
 
+// Login
+import UserLogin from "./components/login/login";
+import Dashboard from './components/login/children/dashboard/dashboard';
+
+
 
 function Routers() {
 	return (
 		// <div>
 			<Router>
-				<Navbar />
+				{/* <Navbar /> */}
 				<Switch>
 
 					{/* About */}
@@ -150,6 +155,20 @@ function Routers() {
 
 					<Route exact path='/departments/mba'><Mba /></Route>
 					<Route exact path='/departments/bba'><Bba /></Route>
+
+					
+					{/* Login */}
+					<Route exact path='/login'><UserLogin /></Route>
+					<Route exact path='/dashboard/home'><Dashboard page='home' /></Route>
+					<Route exact path='/dashboard/notice'><Dashboard page='notice' /></Route>
+					<Route exact path='/dashboard/events'><Dashboard page='events' /></Route>
+					<Route exact path='/dashboard/news'><Dashboard page='news' /></Route>
+					<Route exact path='/dashboard/student-publication'><Dashboard page='student-publication' /></Route>
+					<Route exact path='/dashboard/faculty-publication'><Dashboard page='faculty-publication' /></Route>
+					<Route exact path='/dashboard/time-table'><Dashboard page='time-table' /></Route>
+					<Route exact path='/dashboard/student-projects'><Dashboard page='student-projects' /></Route>
+					<Route exact path='/dashboard/lesson-plan'><Dashboard page='lesson-plan' /></Route>
+
 
 
 					<Route exact path='/'><Home /></Route>

@@ -1,5 +1,4 @@
 import React, {useState,useEffect} from 'react'
-import Configuration from '../../../../configuration'
 import axios from "axios";
 
 function ShowTeam(props){
@@ -15,7 +14,7 @@ function ShowTeam(props){
 }
 
 function Placementteam(){
-	const url = Configuration() + "placement/teams" 
+	const url = "placement/teams" 
 	const [data,setData] = useState(null);
 	var res = 	<div className="d-flex justify-content-center">
 					<div className="spinner-border" role="status">
@@ -51,7 +50,7 @@ function Placementteam(){
 
 	return(
 		<React.Fragment>
-			<h2>Placement Team</h2>
+			<h3 className='page-subheader'>Placement Team</h3>
 			{res}
 		</React.Fragment>
 	)

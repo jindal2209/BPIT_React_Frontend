@@ -22,15 +22,15 @@ function About(props) {
 	}
 
 	return (
-		<div className="f-wrap container">
-			<h2 class="page-header my-4">
+		<div className="container-fluid p-5">
+			<h2 class="page-header my-4 px-3">
 				<i className="fa fa-building  mx-2" aria-hidden="true"></i>
 				Facilities
 			</h2>
-			<div className="f-dash row">
-				<div className="col-sm-3">
-					<div className=" sidebar rounded p-2 bg-light">
-						<h4 className="font-weight-bold">Menu</h4>
+			<div className="row">
+				<div className="col-lg-3">
+					<div className=" sidebar rounded p-2">
+						<h4 className="text-center py-1">Menu</h4>
 						<NavLink className="menu-item" to='/facilities/library' activeClassName="active" onClick={() => handleComponent(<Library />)}> Library</NavLink>
 						<NavLink className="menu-item" to='/facilities/hostel' activeClassName="active" onClick={() => handleComponent(<Hostel />)}> Hostel</NavLink>
 						<NavLink className="menu-item" to='/facilities/medical' activeClassName="active" onClick={() => handleComponent(<Medical />)}> Medical</NavLink>

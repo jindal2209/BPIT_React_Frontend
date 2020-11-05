@@ -1,6 +1,5 @@
 import axios from "axios";
 import { Fragment,useState ,useEffect} from "react";
-import Configuration from '../../../configuration';
 
 
 function Profile(props){
@@ -23,7 +22,7 @@ function Profile(props){
 }
 
 function GetFaculty(props){
-	let url = Configuration() + props.url;
+	let url = props.url;
 	const [data,setData] = useState(null);
 	var res = 	<div className="d-flex justify-content-center">
 					<div className="spinner-border" role="status">

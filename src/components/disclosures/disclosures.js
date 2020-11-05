@@ -1,6 +1,5 @@
 import React, {useState,useEffect} from 'react'
 import axios from "axios";
-import Configuration from '../../configuration'
 
 function Tb(props){
 	const download_icon = 	<svg width="1em" height="1em" viewBox="0 0 16 16" className="bi bi-download" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -17,7 +16,7 @@ function Tb(props){
 }
 
 function Disclosures(){
-	const url = Configuration() + "disclosures/" 
+	const url = "disclosures/" 
 	const [data,setData] = useState(null);
 	var res = 	<div className="d-flex justify-content-center">
 					<div className="spinner-border" role="status">

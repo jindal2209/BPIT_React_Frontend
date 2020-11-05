@@ -4,14 +4,22 @@ function Trust() {
 	return (
 		<Fragment>
 			<div id="add-animation">
-				<h3 className='page-subheader'>Trust</h3>
-				<div className="trust"> 
-					<img src="/assets/images/trust1.jpg" alt="" className="people-image center-h trust__pic" />
-					<p id="text-content">Bhagwan Parshuram Institute of Technology (BPIT) has been promoted by the Bhartiya Bhrahman Charitable Trust, which was established in year 1974. The members of the trust are from various walks of life including many educationalist, industrialist, businessmen, architects, engineers, other professionals and also some philanthropists.</p>
-					<p id="text-content">The trust is constantly involved in number of charitable programmes including professional education, health and upliftment of poor. Industrialist Shri Atam Prakash Kaushik, who is actively involved with the trust since its inception. He is also the President of the trust and Chairman of BPIT.</p>
+				<div className="container">
+					<div className="my-4">
+						<h3 className='page-subheader text-center'>Trust</h3>
+						<div>
+							<img src="/assets/images/trust1.jpg" alt="" className="img-responsive" />
+							<div className="container-fluid">
+							<p id="text-content">Bhagwan Parshuram Institute of Technology (BPIT) has been promoted by the Bhartiya Bhrahman Charitable Trust, which was established in year 1974. The members of the trust are from various walks of life including many educationalist, industrialist, businessmen, architects, engineers, other professionals and also some philanthropists.</p>
+							<p id="text-content">The trust is constantly involved in number of charitable programmes including professional education, health and upliftment of poor. Industrialist Shri Atam Prakash Kaushik, who is actively involved with the trust since its inception. He is also the President of the trust and Chairman of BPIT.</p>
+							</div>
+						</div>
+					</div>
 				</div>
+
+
 				<div className="trust">
-					<h3 className='page-subheader'>The Chairman</h3>
+					<h3 className='page-subheader text-center'>The Chairman</h3>
 					<img src="/assets/images/trust3.png" className="people-image center-h trust__pic" alt="" />
 					<p id="text-content"> <b>Sh. Atam Prakash Kaushik</b> is the President of Bhartiya Brahmin Charitable Trust (BBCT) and also the founder Chairman of Bhagwan Parshuram Institute of Technology (founded by BBCT in 2005). He is one of the five members, who formed the Bhartiya Brahmin Charitable Trust (BBCT) about 38 years ago. He is an industrialist by profession and philanthropist by nature. BBCT is the only charitable trust of Brahmins in the country and has about 380 trustees from various professions. The trust is constantly involved in a number of charitable programmes including professional education, health and upliftment of the poor. He is also a trustee of the Maharaja Agarsen Hospital and an Associate Member of Sant Parmanand Hospital. He holds several important honorary offices like: the Chairman of Hindustan Mercantile Association Dispute Committee; Member of Managing Committee of internationally known Shri Gauri Shankar Temple, Chandni Chowk; Member of Managing Committee of Sanskrit Vidhalaya, Ram Dal, Dariba; etc. For many years he has also remained President of Janta College Bawal (Haryana). </p>
 				</div>
@@ -51,7 +59,7 @@ function Trust() {
 						<br></br> » Shri Hari Niwas Bhardwaj, Businessman
 						<br></br> » Shri Mahavir Mudgal, Industrialist
 						<br></br> » Shri Parmanand Bhardwaj, Senior Advocate
-						<br></br> 
+						<br></br>
 					</p>
 				</div>
 				<br></br>
@@ -92,4 +100,4 @@ function Trust() {
 	)
 }
 
-export default Trust ;
+export default Trust;

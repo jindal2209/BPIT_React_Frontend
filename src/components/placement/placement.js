@@ -21,15 +21,15 @@ function Placement(props) {
 	}
 	
 	return (
-		<div className="f-wrap container">
-			<h2 class="page-header my-4">
-				<i className="fa fa-briefcase  mx-2" aria-hidden="true"></i>
+		<div className="container-fluid p-5">
+			<h2 class="page-header my-4 px-3">
+				<i className="fa fa-briefcase mx-2" aria-hidden="true"></i>
 				Placements
 			</h2>
-			<div className="f-dash row">
-				<div className="col-sm-3">
-					<div className=" sidebar rounded p-2 bg-light">
-						<h4 className="text-center">Menu</h4>
+			<div className="row">
+				<div className="col-lg-3">
+					<div className=" sidebar rounded p-2">
+						<h4 className="text-center py-1">Menu</h4>
 						<NavLink className="menu-item" activeClassName="active" to='/placement/team' onClick={() => handleComponent(<Placementteam />)}> Team</NavLink>
 						<NavLink className="menu-item" activeClassName="active" to='/placement/training' onClick={() => handleComponent(<Placementtraining />)}> Training</NavLink>
 						<NavLink className="menu-item" activeClassName="active" to='/placement/recruiters' onClick={() => handleComponent(<Recruiters />)}>Our Recruiters</NavLink>

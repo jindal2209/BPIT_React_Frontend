@@ -2,7 +2,7 @@ function Industrialtoursandworkshops(){
 	return (
 		<div>
 			<div id="add-animation">
-				<header className="heading"><span className="heading__text">Industrialtoursandworkshops</span></header>
+				<h3 className='page-subheader'>Industrial Tours and Workshops</h3>
 				<p id="text-content">API HIT</p>
 			</div>
 		</div>
