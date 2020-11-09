@@ -9,9 +9,9 @@ function Items(props){
 			{props.data.map((s) => (
 				<div className='m-2 p-2 border border-light rounded items'>
 					{s.title}
-					<i className="fa fa-bell" aria-hidden="true"></i>
-					<i className="fa fa-paint-brush" aria-hidden="true"></i>
-					<i className="fa fa-trash" aria-hidden="true"></i>
+										<i className="fa fa-bell float-left" aria-hidden="true"></i>
+					<a><i className="fa fa-trash float-right mx-1" aria-hidden="true"></i></a> 
+					<a><i className="fa fa-paint-brush float-right mx-1" aria-hidden="true"></i></a>
 
 					{s.examination_notice && <h5>Examination</h5>}
 					{s.notices && <a href={s.notices}>View</a>}
@@ -45,7 +45,7 @@ function Items(props){
 }
 
 
-function Dashboard(props){
+function PlacementDashboard(props){
 	var res = <div></div>
 	var history = useHistory()
 	let [element,setElement] = useState();
@@ -82,15 +82,12 @@ function Dashboard(props){
 				<div className="col-lg-3 mb-5">
 					<div className=" sidebar rounded p-2">
 						<h4 className="text-center py-1">Menu</h4>
-						<NavLink className="menu-item" activeClassName="active" exact to="/dashboard/home">Home</NavLink>
-						<NavLink className="menu-item" activeClassName="active" exact to="/dashboard/notice" >Notice</NavLink>
-						<NavLink className="menu-item" activeClassName="active" exact to="/dashboard/events" >Events</NavLink>
-						<NavLink className="menu-item" activeClassName="active" exact to="/dashboard/news" >News</NavLink>
-						<NavLink className="menu-item" activeClassName="active" exact to="/dashboard/student-publication" >Student Publications</NavLink>
-						<NavLink className="menu-item" activeClassName="active" exact to="/dashboard/faculty-publication" >Faculty Publications</NavLink>
-						<NavLink className="menu-item" activeClassName="active" exact to="/dashboard/time-table" >Time Table</NavLink>
-						<NavLink className="menu-item" activeClassName="active" exact to="/dashboard/student-projects" >Student Projects</NavLink>
-						<NavLink className="menu-item" activeClassName="active" exact to="/dashboard/lesson-plan" >Lesson Plan</NavLink>
+						<NavLink className="menu-item" activeClassName="active" exact to="/placementdashboard/home">Home</NavLink>
+						<NavLink className="menu-item" activeClassName="active" exact to="/placementdashboard/exp_talks_and_seminars" >Expert Talks and Seminars</NavLink>
+						<NavLink className="menu-item" activeClassName="active" exact to="/placementdashboard/industrial_tours_and_workshops" >Industrial Tours and Workshops</NavLink>
+						<NavLink className="menu-item" activeClassName="active" exact to="/placementdashboard/students_placed" >Students Placed</NavLink>
+						<NavLink className="menu-item" activeClassName="active" exact to="/placementdashboard/recruiters" >Recruiters</NavLink>
+						<NavLink className="menu-item" activeClassName="active" exact to="/placementdashboard/training" >Training</NavLink>
 						<NavLink className="menu-item" activeClassName="active" exact to='/' onClick={() => localStorage.clear()} >Logout</NavLink>
 					</div>
 				</div>
@@ -102,4 +99,4 @@ function Dashboard(props){
 	);
 }
 
-export default Dashboard;
+export default PlacementDashboard;

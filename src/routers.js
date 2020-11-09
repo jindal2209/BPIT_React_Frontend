@@ -89,6 +89,8 @@ import DashboardStudentPublications from './components/login/children/dashboard/
 import DashboardFacultyPublication from './components/login/children/dashboard/children/FPublications';
 import DashboardTimetable from './components/login/children/dashboard/children/TimeTable';
 import DashboardLessonPlan from './components/login/children/dashboard/children/LessonPlan';
+import DashboardStudentProjects from './components/login/children/dashboard/children/StudentProjects';
+import PlacementDashboard from './components/login/children/pdashboard/pdashboard';
 
 
 
@@ -166,15 +168,27 @@ function Routers() {
 
 				{/* Login */}
 				<Route exact path='/login'><UserLogin /></Route>
-				<Route exact path='/dashboard/home'><Dashboard page='home' render={<DashboardHome />} /></Route>
-				<Route exact path='/dashboard/notice'><Dashboard page='notice' render={<DashboardNotice />} /></Route>
-				<Route exact path='/dashboard/events'><Dashboard page='events' render={<DashboardEvents />} /></Route>
-				<Route exact path='/dashboard/news'><Dashboard page='news' render={<DashboardNews />} /></Route>
-				<Route exact path='/dashboard/student-publication'><Dashboard page='student-publication' render={<DashboardStudentPublications />} /></Route>
-				<Route exact path='/dashboard/faculty-publication'><Dashboard page='faculty-publication' render={<DashboardFacultyPublication />} /></Route>
-				<Route exact path='/dashboard/time-table'><Dashboard page='time-table' render={<DashboardTimetable />} /></Route>
-				<Route exact path='/dashboard/student-projects'><Dashboard page='student-projects' /></Route>
-				<Route exact path='/dashboard/lesson-plan'><Dashboard page='lesson-plan' render={<DashboardLessonPlan />} /></Route>
+				<Route exact path='/dashboard/home'><Dashboard render={<DashboardHome page='home' />} /></Route>
+				<Route exact path='/dashboard/notice'><Dashboard render={<DashboardNotice page='notice' />} /></Route>
+				<Route exact path='/dashboard/events'><Dashboard render={<DashboardEvents page='events' />} /></Route>
+				<Route exact path='/dashboard/news'><Dashboard render={<DashboardNews page='news' />} /></Route>
+				<Route exact path='/dashboard/student-publication'><Dashboard render={<DashboardStudentPublications page='student-publication' />} /></Route>
+				<Route exact path='/dashboard/faculty-publication'><Dashboard render={<DashboardFacultyPublication page='faculty-publication' />} /></Route>
+				<Route exact path='/dashboard/time-table'><Dashboard render={<DashboardTimetable page='time-table' />} /></Route>
+				<Route exact path='/dashboard/student-projects'><Dashboard render={<DashboardStudentProjects page='student-projects' />} /></Route>
+				<Route exact path='/dashboard/lesson-plan'><Dashboard render={<DashboardLessonPlan page='lesson-plan' />} /></Route>
+
+				{/* Login */}
+				<Route exact path='/login'><UserLogin /></Route>
+				<Route exact path='/placementdashboard/home'><PlacementDashboard render={<DashbordHome page='home' />} /></Route>
+				<Route exact path='/placementdashboard/notice'><PlacementDashboard render={<DashboardNotice page='notice' />} /></Route>
+				<Route exact path='/placementdashboard/events'><PlacementDashboard render={<DashboardEvents page='events' />} /></Route>
+				<Route exact path='/placementdashboard/news'><PlacementDashboard render={<DashboardNews page='news' />} /></Route>
+				<Route exact path='/placementdashboard/student-publication'><PlacementDashboard render={<DashboardStudentPublications page='student-publication' />} /></Route>
+				<Route exact path='/placementdashboard/faculty-publication'><PlacementDashboard render={<DashboardFacultyPublication page='faculty-publication' />} /></Route>
+				<Route exact path='/placementdashboard/time-table'><PlacementDashboard render={<DashboardTimetable page='time-table' />} /></Route>
+				<Route exact path='/placementdashboard/student-projects'><PlacementDashboard render={<DashboardStudentProjects page='student-projects' />} /></Route>
+				<Route exact path='/placementdashboard/lesson-plan'><PlacementDashboard render={<DashboardLessonPlan page='lesson-plan' />} /></Route>
 
 
 

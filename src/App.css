@@ -82,8 +82,17 @@ footer {
 }
 
 .items:hover {
-	/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-	background-color: #3436a1;
-	color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	/* background-color: #3436a1;
+	color: white; */
 	transition: 0.5s;
 }
+
+.btn {
+	background-color: #3436a1;
+	border: none;
+	color: white;
+	padding: 12px 16px;
+	font-size: 16px;
+	cursor: pointer;
+  }

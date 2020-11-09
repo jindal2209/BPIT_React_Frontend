@@ -41,11 +41,12 @@ function UserLogin(){
 			axios.get("branch/"+ response.data.branch)
 			.then(response => {
 				localStorage.setItem('branch',response.data);
+				localStorage.setItem('token',response.data.token);
+				localStorage.setItem('firstname',response.data.firstname);
+				localStorage.setItem('branchId',response.data.branch);
+				localStorage.setItem('user_id',response.data.user_id);
+				history.push('/placementdashboard/home')
 			})
-			localStorage.setItem('token',response.data.token);
-			localStorage.setItem('firstname',response.data.firstname);
-			localStorage.setItem('branchId',response.data.branch);
-			history.push('/dashboard/home')
 		})
 		.catch(() => {
 			setUser("")
