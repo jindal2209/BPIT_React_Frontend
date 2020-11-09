@@ -5,8 +5,9 @@ import { Redirect, useHistory } from "react-router-dom";
 function UserLogin(){
 	var [user,setUser] = useState();
 	var [password,setPassword] = useState();
-	var [url,setURL] = useState('auth-token/');
+	var [url,setUrl] = useState('auth-token/');
 	var history = useHistory();
+	var [login,setLogin] = useState("Faculty Login");
 
 	function handleUser(event){
 		setUser(event.target.value)
@@ -14,6 +15,17 @@ function UserLogin(){
 
 	function handlePassword(event){	
 		setPassword(event.target.value)
+	}
+
+	function handleChange(event){
+		if(event.target.checked){
+			setLogin('Placement Login');
+			setUrl('auth-token/placement/')
+		}
+		else{
+			setUrl('auth-token/')
+			setLogin('Faculty Login');
+		}
 	}
 
 
@@ -32,6 +44,7 @@ function UserLogin(){
 			})
 			localStorage.setItem('token',response.data.token);
 			localStorage.setItem('firstname',response.data.firstname);
+			localStorage.setItem('branchId',response.data.branch);
 			history.push('/dashboard/home')
 		})
 		.catch(() => {
@@ -42,12 +55,23 @@ function UserLogin(){
 	}
 
 	return(
-		<div>
+		<div className="p-5 mx-2">
 			{localStorage.getItem('token') && <Redirect exact to='/dashboard/home' />}
 			<form onSubmit={handleLogin}>
-				Username: <input type='text' placeholder="username" value={user} onChange={handleUser}></input>
-				Password: <input type="password" placeholder="password" value={password} onChange={handlePassword}></input>
-				<button type="submit">Login</button>
+				<div className="form-group">
+					<label for="exampleInputEmail1">Email address</label>
+					<input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value={user} onChange={handleUser} />
+				</div>
+				<div className="form-group">
+					<label for="exampleInputPassword1">Password</label>
+					<input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" value={password} onChange={handlePassword} />
+				</div>
+				<div className="form-group form-check">
+					<input type="checkbox" className="form-check-input" id="exampleCheck1" onChange={handleChange} />
+					<label className="form-check-label" for="exampleCheck1">Placement Login</label>
+				</div>
+				<br />
+				<button type="submit" className="btn btn-primary">{login}</button>
 			</form>
 		</div>
 	);

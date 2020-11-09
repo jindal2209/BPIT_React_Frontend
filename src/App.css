@@ -1,35 +1,49 @@
-.footer {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	left: 0;
-  }
+
 
 @media only screen and (max-width: 600px) {
-	
-	#root{
-		padding-bottom: 35rem;
-	}
-	
 	.sidebar {
 		position: relative;
- 	}
-
+	}
+	.navbar-toggler-icon {
+		border: 2px solid white;
+		margin: 0%;
+		overflow: hidden;
+	}
 }
 
-.sidebar{
+html,
+body {
+	height: 100%;
+	position: relative;
+}
+
+.main-container {
+	min-height: 100vh;
+	/* will cover the 100% of viewport */
+	overflow: hidden;
+	display: block;
+	position: relative;
+}
+
+footer {
+	position: relative;
+	bottom: 0;
+	width: 100%;
+}
+
+.sidebar {
 	position: sticky;
 	top: 0;
 	background-color: #eee;
 }
 
-.row{
+.row {
 	/* padding: 0%; */
 	margin: 0;
 	width: 100%;
 }
 
-.menu-item{
+.menu-item {
 	font-weight: 500;
 	display: block;
 	font-size: 15px;
@@ -46,7 +60,8 @@
 	color: White;
 }
 
-.menu-item:active,.active{
+.menu-item:active,
+.active {
 	background: #fff;
 	padding-left: 18px;
 	border-left: 3px solid #3436a1;
@@ -55,20 +70,20 @@
 	font-weight: 500;
 	font-size: 18px;
 }
-  
-.page-header{
+
+.page-header {
 	color: #3436a1;
 	font-weight: bold;
 }
 
-.page-subheader{
+.page-subheader {
 	color: #3436a1;
 	font-weight: 600;
 }
 
-.items:hover{
+.items:hover {
 	/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-	background-color: #3436a1 ;
+	background-color: #3436a1;
 	color: white;
 	transition: 0.5s;
 }

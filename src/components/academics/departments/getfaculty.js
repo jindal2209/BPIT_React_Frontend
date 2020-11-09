@@ -15,7 +15,7 @@ function Profile(props){
 				<p>Specialization : {props.speacialization}</p>
 				{props.nation_Publications && <p><p>National Publications : {props.nation_Publications}</p></p>}
 				{props.international_publication && <p><p>International Publication : {props.international_publication}</p></p>}
-				{props.publication_url && <p><a target='_blank' href={props.publication_url}>Publication url</a></p>}
+				{props.publication_url && <p><a target='_blank' href={props.publication_url} rel="noreferrer">Publication url</a></p>}
 			</div>
 		</div>
 	)

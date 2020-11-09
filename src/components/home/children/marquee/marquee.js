@@ -1,7 +1,7 @@
 function Marquee() {
 	return (
 		<div className="container-fluid">
-			<div class="row">
+			<div class="row p-1">
 				<div className="col-md-1"></div>
 				<div className="col-md-10">
 					<marquee class="text-danger font-weight-bold">

@@ -1,6 +1,7 @@
 import { NavLink, useHistory } from "react-router-dom";
 import { useState,useEffect } from 'react';
 import  axios from 'axios';
+import DashboardHome from './children/AddUser'
 
 
 function Items(props){
@@ -45,8 +46,8 @@ function Items(props){
 }
 
 
+
 function Dashboard(props){
-	var res = <div></div>
 	var history = useHistory()
 	let [element,setElement] = useState();
 
@@ -54,30 +55,31 @@ function Dashboard(props){
 	const url = `departments/${branch}/${props.page}`;
 
 	useEffect(() => {
-		axios.get(url)
-		.then(response => {
-				setElement(<Items
-					data = {response.data}
-			/>)
-		})
-		.catch(error => {
-			console.log(error)
-		})
-	},[url])
+		if(props.page==='home'){
+			setElement(<DashboardHome />)
+		}
+		else{
+			axios.get(url)
+			.then(response => {
+					setElement(<Items
+						data = {response.data}
+				/>)
+			})
+			.catch(error => {
+				console.log(error)
+			})
+		}
+	},[props.page,url])
 
 
 
-	if(localStorage.getItem('token')){
-		res = <div>hi {localStorage.getItem('firstname')}</div>
-	}
-	else{
+	if(!localStorage.getItem('token')){
 		history.push('/')
 		alert('Please login first')
 	}
 
 	return(
-		<div>
-			{res}
+		<div className='container-fluid pt-5'>
 			<div className="row">
 				<div className="col-lg-3 mb-5">
 					<div className=" sidebar rounded p-2">
