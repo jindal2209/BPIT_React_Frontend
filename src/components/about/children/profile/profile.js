@@ -33,7 +33,7 @@ function Cprofile(){
 				<p id="text-content">BPIT is spread in an area of about 5.7 acres and has four storey building of academic and office
 					complex with lifts. A girl student's Hostel having 64 double occupancy rooms, with all modern amenities has been
 					constructed and furnished and functioning from the session 2011-12.</p>
-				<p id="text-content">There are well equipped spacious classrooms, drawing halls, laboratories, workshops and
+				<p id="text-content">There are well equipped spacious classNamerooms, drawing halls, laboratories, workshops and
 					conference/seminar halls. A well stacked large library having state of art facilities has been developed.
 					Laboratories and workshops have the best quality of equipments commensurate with the requirements of the curriculum
 					of IP University and beyond. There are eight computer laboratories, each equipped with the required number of

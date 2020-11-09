@@ -22,13 +22,13 @@ function About(props) {
 	}
 
 	return (
-		<div className="container-fluid p-5">
-			<h2 class="page-header my-4 px-3">
-				<i className="fa fa-building  mx-2" aria-hidden="true"></i>
-				Facilities
-			</h2>
+		<div className="container-fluid mt-5">
 			<div className="row">
 				<div className="col-lg-3">
+					<h2 className="page-header mt-1 mb-3 text-center">
+						<i className="fa fa-building  mx-2" aria-hidden="true"></i>
+						Facilities
+					</h2>
 					<div className=" sidebar rounded p-2">
 						<h4 className="text-center py-1">Menu</h4>
 						<NavLink className="menu-item" to='/facilities/library' activeClassName="active" onClick={() => handleComponent(<Library />)}> Library</NavLink>
@@ -41,7 +41,7 @@ function About(props) {
 						<NavLink className="menu-item" to='/facilities/canteen' activeClassName="active" onClick={() => handleComponent(<Canteen />)}> Canteen</NavLink>
 					</div>
 				</div>
-				<div class="col-sm-9 content">
+				<div className="col-sm-9 mt-4">
 					{element}
 				</div>
 			</div>

@@ -22,40 +22,44 @@ function Navbar() {
 				<div>
 					<i className="fa fa-phone fa-rotate-90 mx-1" aria-hidden="true"></i>
 					<span className='font-weight-bold'>011 - 27572900 , 27571080, 27574635, 27574637 &nbsp;&nbsp;&nbsp;</span>
-					<i class="fa fa-envelope mx-1" aria-hidden="true"></i>
+					<i className="fa fa-envelope mx-1" aria-hidden="true"></i>
 					<span className='font-weight-bold'>bpitindia@yahoo.com &nbsp;&nbsp;&nbsp;</span>
 				</div>
 			</div>
-			<div className="middle p-1">
+			
+			<div className="middle">
 				<div className="container-fluid">
 					<div className='row px-2'>
 						<div className='col-lg-12 text-right'>
 							{greet}
 						</div>
 					</div>
-					<div className='row p-2'>
+					<div className='row align-middle'>
 						<div className="col-sm-1"></div>
-						<div className="col-sm-2">
-							<div><a href="/"> <img className="w-100 h-100" src="/assets/images/logo.png" alt="" /></a></div>
+						<div className="col-sm-2 text-center py-1">
+							<div><a href="/"> <img className="bpit-logo" src="/assets/images/logo.png" alt="" /></a></div>
 						</div>
-						<div className="col-sm-6 bpit-heading-div">
-							<p className="bpit-heading">BHAGWAN PARSHURAM INSTITUTE OF TECHNOLOGY</p>
-							<div className="mini-heading">
-								Affiliated To GGSIPU, Delhi, A unit of
+						<div className="col-sm-6">
+							<h4 className="page-subheader">BHAGWAN PARSHURAM INSTITUTE OF TECHNOLOGY</h4>
+								<p>Affiliated To GGSIPU, Delhi, A unit of
 								Bhartiya Brahmin Charitable Trust,
-								<b>ISO 9001:2008 Certified</b>
+								<b>ISO 9001:2008 Certified</b></p>
 								<br />
-							</div>
 						</div>
-						<div className="col-sm-3">
-							<div>
-								{/* <img className="w-1 h-1" src="/assets/images/bpit-logo.png" alt="" /> */}
-								<div>Bhartiya Brahmin Charitable Trust</div>
+						<div className="col-sm-3 text-center">
+							<div className='row'>
+								<div className='col-lg-3'>
+									<img className="bpit-logo" src="/assets/images/bpit-logo.png" alt="" />
+								</div>
+								<div className='col-lg-6'>
+									<div className='page-subheader  align-middle'>Bhartiya Brahmin Charitable Trust</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			
 			<nav className="navbar navbar-expand-sm">
 				<div className="container-fluid">
 					<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -81,6 +85,7 @@ function Navbar() {
 									<li><a href="/about/Certifications">Certifications and Accredations</a></li>
 								</ul>
 							</li>
+				
 							<li className="nav-item dropdown">
 								<Link className="nav-link dropdown-toggle font-weight-bold">
 									Academics
@@ -88,7 +93,7 @@ function Navbar() {
 								<ul className="dropdown-menu">
 									<li className="dropdown-submenu">
 										<Link className="dropdown-toggle" data-toggle="dropdown">Programme</Link>
-										<ul className="dropdown-submenu dropdown-menu-right">
+										<ul className="dropdown-menu">
 											<li><a target="_blank" rel="noreferrer" href="http://www.ipu.ac.in/pubinfo/admission2018/adm2018main/ADMBRO2018A_190218.pdf">MBA</a></li>
 											<li><Link target="_blank" rel="noreferrer">B.Tech</Link></li>
 											<li><a target="_blank" rel="noreferrer" href="http://www.ipu.ac.in/pubinfo/admission2018/adm2018main/ADMBRO2018A_190218.pdf">BBA</a></li>
@@ -96,10 +101,10 @@ function Navbar() {
 									</li>
 									<li className="dropdown-submenu">
 										<Link className="dropdown-toggle" data-toggle="dropdown">Departments</Link>
-										<ul className="dropdown-submenu dropdown-menu-right">
+										<ul className="dropdown-menu extra-width">
 											<li className="dropdown-submenu">
 												<Link className="dropdown-toggle" data-toggle="dropdown">Applied Science</Link>
-												<ul className="dropdown-submenu dropdown-menu-right">
+												<ul className="dropdown-menu">
 													<li><a href="/departments/ac/about">Applied Chemistry</a></li>
 													<li><a href="/departments/ap/about">Applied Physics</a></li>
 													<li><a href="/departments/am/about">Applied Maths</a></li>
@@ -113,7 +118,7 @@ function Navbar() {
 											<li><a href="/departments/eee/about">Electronics and Electrical Engineering</a></li>
 											<li className="dropdown-submenu">
 												<Link className="dropdown-toggle" data-toggle="dropdown">School of Business Administration</Link>
-												<ul className="dropdown-submenu dropdown-menu-right">
+												<ul className="dropdown-menu">
 													<li><a href="/departments/mba/about">MBA</a></li>
 													<li><a href="/departments/bba/about">BBA</a></li>
 												</ul>
@@ -137,6 +142,7 @@ function Navbar() {
 									<li><a href="/facilities/canteen">Canteen</a></li>
 								</ul>
 							</li>
+						
 							<li className="nav-item dropdown">
 								<Link className="nav-link dropdown-toggle font-weight-bold">
 									Placements
@@ -150,6 +156,7 @@ function Navbar() {
 									<li><a href="/placement/list_of_student_placed">List of students placed</a></li>
 								</ul>
 							</li>
+						
 							<li className="nav-item dropdown">
 								<Link className="nav-link dropdown-toggle font-weight-bold">
 									Student Life
@@ -157,7 +164,7 @@ function Navbar() {
 								<ul className="dropdown-menu">
 									<li className="dropdown-submenu">
 										<Link className="dropdown-toggle" data-toggle="dropdown">Departments</Link>
-										<ul className="dropdown-submenu dropdown-menu-right">
+										<ul className="dropdown-menu">
 											<li><a target="_blank" rel="noreferrer" href="http://www.ipu.ac.in/exam_notices.php">Notices</a></li>
 											<li><a target="_blank" rel="noreferrer" href="http://www.ipu.ac.in/exam_datesheet.php">Datesheet</a>
 											</li>
@@ -172,15 +179,19 @@ function Navbar() {
 									<li><a href="/studentlife/societies">Societies</a></li>
 								</ul>
 							</li>
+						
 							<li className="nav-item">
 								<Link to='gallery' className="nav-link font-weight-bold"> Gallery </Link>
 							</li>
+						
 							<li className="nav-item">
 								<Link to='/disclosures' className="nav-link font-weight-bold"> Disclosures </Link>
 							</li>
+						
 							<li className="nav-item">
 								<Link to='/nirf' className="nav-link font-weight-bold"> NIRF </Link>
 							</li>
+						
 							<li className="nav-item">
 								<Link to='/contactus' className="nav-link font-weight-bold"> Contact </Link>
 							</li>
@@ -188,6 +199,7 @@ function Navbar() {
 					</div>
 				</div>
 			</nav>
+	
 		</div>
 	)
 }

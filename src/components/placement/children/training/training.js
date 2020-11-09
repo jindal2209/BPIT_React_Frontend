@@ -3,7 +3,7 @@ function Placementtraining(){
 		<div>
 			<div id="add-animation">
 				<h3 className='page-subheader'>Trainings</h3>
-				<header class="heading"><span class="heading__text"></span></header>
+				<header className="heading"><span className="heading__text"></span></header>
 				<p id="text-content">
 					The Training & Placement Cell at BPIT is one of the strongest pillar of the institute. The T&P team constitutes
 					dedicated professionals working continuously under the leadership of Prof. Abhishek Swaroop & Mr. Sanjay Dureja.

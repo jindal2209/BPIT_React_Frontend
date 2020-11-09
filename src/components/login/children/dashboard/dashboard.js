@@ -35,7 +35,7 @@ function Dashboard(props){
 						<NavLink className="menu-item" activeClassName="active" exact to='/' onClick={() => localStorage.clear()} >Logout</NavLink>
 					</div>
 				</div>
-				<div class="col-sm-9 content my-2">
+				<div className="col-sm-9 content my-2">
 					{element}
 				</div>
 			</div>

@@ -63,19 +63,19 @@ function Bottom() {
 					</h2>
 					<div className='row mt-3'>
 						<div className='col-lg-3 font-weight-bold py-1'>
-							<i class="far fa-address-book color-1"></i>
+							<i className="far fa-address-book color-1"></i>
 							93 Teachers
 						</div>
 						<div className='col-lg-3 font-weight-bold py-1'>
-							<i class="far fa-address-book color-1"></i>
+							<i className="far fa-address-book color-1"></i>
 							915 Publications
 						</div>
 						<div className='col-lg-3 font-weight-bold py-1'>
-							<i class="far fa-address-book color-1"></i>
+							<i className="far fa-address-book color-1"></i>
 							1805 Students
 						</div>
 						<div className='col-lg-3 font-weight-bold py-1'>
-							<i class="far fa-address-book color-1"></i>
+							<i className="far fa-address-book color-1"></i>
 							25 Awards Won
 						</div>
 					</div>

@@ -21,13 +21,13 @@ function Placement(props) {
 	}
 	
 	return (
-		<div className="container-fluid p-5">
-			<h2 class="page-header my-4 px-3">
-				<i className="fa fa-briefcase mx-2" aria-hidden="true"></i>
-				Placements
-			</h2>
+		<div className="container-fluid mt-5">
 			<div className="row">
 				<div className="col-lg-3">
+					<h2 className="page-header mt-1 mb-3 text-center">
+						<i className="fa fa-briefcase mx-2" aria-hidden="true"></i>
+						Placements
+					</h2>
 					<div className=" sidebar rounded p-2">
 						<h4 className="text-center py-1">Menu</h4>
 						<NavLink className="menu-item" activeClassName="active" to='/placement/team' onClick={() => handleComponent(<Placementteam />)}> Team</NavLink>
@@ -38,7 +38,7 @@ function Placement(props) {
 						<NavLink className="menu-item" activeClassName="active" to='/placement/list_of_student_placed' onClick={() => handleComponent(<Listofstudentsplaced />)}> List of student placed</NavLink>
 					</div>
 				</div>
-				<div class="col-sm-9 content">
+				<div className="col-sm-9 mt-4">
 					{element}
 				</div>
 			</div>

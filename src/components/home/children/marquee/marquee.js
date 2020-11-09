@@ -1,10 +1,10 @@
 function Marquee() {
 	return (
 		<div className="container-fluid">
-			<div class="row p-1">
+			<div className="row p-1">
 				<div className="col-md-1"></div>
 				<div className="col-md-10">
-					<marquee class="text-danger font-weight-bold">
+					<marquee className="text-danger font-weight-bold">
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						BPIT is the only self financing institute affiliated to GGSIP University having NBA accreditation for all its UG 
 						engineering programs (B.Tech. CSE, B.Tech. ECE, B.Tech. IT and B.Tech. EEE).

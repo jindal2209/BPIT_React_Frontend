@@ -32,18 +32,32 @@
 	z-index: 1;
 }
 
-.dropdown:hover .dropdown-menu {
+.extra-width{
+	min-width: 300px;
+}
+
+.dropdown:hover > .dropdown-menu {
 	display: block;
 }
 
-.dropdown-menu li:hover {
-	background-color: rgb(216, 206, 206);
-}
 
-.dropdown-menu-right {
-	display: none;
-}
+.dropdown-menu > li > a:hover:after {
+    text-decoration: underline;
+    transform: rotate(-90deg);
+} 
 
-.dropdown-submenu:hover .dropdown-menu-right {
+.dropdown-submenu:hover > .dropdown-menu-right {
 	display: block;
+	position: relative;
+}
+
+.bpit-logo{
+	width: min-content;
+	height: min-content;
+}
+
+@media only screen and (max-width: 600px) {
+	.middle{
+		padding-bottom: 5px;
+	}
 }

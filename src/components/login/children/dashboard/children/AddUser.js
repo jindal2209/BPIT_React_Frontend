@@ -71,40 +71,40 @@ function UserForm(){
 			{(formProps) => (
 
 				<Form>
-					<div class="modal-body">
-						<div class="form-group row">
-							<label class="col-sm-3 col-form-label col-form-label-sm">Email</label>     
+					<div className="modal-body">
+						<div className="form-group row">
+							<label className="col-sm-3 col-form-label col-form-label-sm">Email</label>     
 							{/* Send username and email same      */}
-							<div class="col-sm-9">
+							<div className="col-sm-9">
 								<Field type='email' name="email" placeholder="Email" className="form-control form-control-sm"/>
 								{/* <ErrorMessage name='name' /> */}
 							</div>
 						</div>
 						<br />
-						<div class="form-group row">
-							<label class="col-sm-3 col-form-label col-form-label-sm">First Name</label>
-							<div class="col-sm-9">
+						<div className="form-group row">
+							<label className="col-sm-3 col-form-label col-form-label-sm">First Name</label>
+							<div className="col-sm-9">
 								<Field type='text' name="first_name" placeholder="First name" className="form-control form-control-sm"/>
 							</div>
 						</div>
 						<br />
-						<div class="form-group row">
-							<label class="col-sm-3 col-form-label col-form-label-sm">Last Name</label>
-							<div class="col-sm-9">
+						<div className="form-group row">
+							<label className="col-sm-3 col-form-label col-form-label-sm">Last Name</label>
+							<div className="col-sm-9">
 								<Field type='text' name="last_name" placeholder="Last name" className="form-control form-control-sm"/>
 							</div>
 						</div>
 						<br />
-						<div class="form-group row">
-							<label class="col-sm-3 col-form-label col-form-label-sm">Passsword</label>
-							<div class="col-sm-9">
+						<div className="form-group row">
+							<label className="col-sm-3 col-form-label col-form-label-sm">Passsword</label>
+							<div className="col-sm-9">
 								<Field type='password' name="password" placeholder="Password" className="form-control form-control-sm"/>
 							</div>
 						</div>
 						<br />
-						<div class="form-group row">
-							<label class="col-sm-3 col-form-label col-form-label-sm">Profile Pic</label>
-							<div class="col-sm-9">
+						<div className="form-group row">
+							<label className="col-sm-3 col-form-label col-form-label-sm">Profile Pic</label>
+							<div className="col-sm-9">
 								<input type='file' name="profile_pic" className="form-control-file"
 									onChange = {(e) => formProps.setFieldValue('profile_pic',e.target.files[0])
 									}
@@ -112,72 +112,72 @@ function UserForm(){
 							</div>
 						</div>
 						<br />
-						<div class="form-group row">
-							<label class="col-sm-3 col-form-label col-form-label-sm">Designation</label>
-							<div class="col-sm-9">
+						<div className="form-group row">
+							<label className="col-sm-3 col-form-label col-form-label-sm">Designation</label>
+							<div className="col-sm-9">
 								<Field type='text' name="designation" className="form-control form-control-sm"/>
 							</div>
 						</div>
 						<br />
-						<div class="form-group row">
-							<label class="col-sm-3 col-form-label col-form-label-sm">Qualification</label>
-							<div class="col-sm-9">
+						<div className="form-group row">
+							<label className="col-sm-3 col-form-label col-form-label-sm">Qualification</label>
+							<div className="col-sm-9">
 								<Field type='text' name="Qualification" className="form-control form-control-sm"/>
 							</div>
 						</div>
 						<br />
-						<div class="form-group row">
-							<label class="col-sm-3 col-form-label col-form-label-sm">Experience (in years)</label>
-							<div class="col-sm-9">
+						<div className="form-group row">
+							<label className="col-sm-3 col-form-label col-form-label-sm">Experience (in years)</label>
+							<div className="col-sm-9">
 								<Field type='text' name="Experience" className="form-control form-control-sm"/>
 							</div>
 						</div>
 						<br />
-						<div class="form-group row">
-							<label class="col-sm-3 col-form-label col-form-label-sm">Specialization</label>
-							<div class="col-sm-9">
+						<div className="form-group row">
+							<label className="col-sm-3 col-form-label col-form-label-sm">Specialization</label>
+							<div className="col-sm-9">
 								<Field type='text' name="speacialization" className="form-control form-control-sm"/>
 							</div>
 						</div>
 						<br />
-						<div class="form-group row">
-							<label class="col-sm-3 col-form-label col-form-label-sm">International Publication</label>
-							<div class="col-sm-9">
+						<div className="form-group row">
+							<label className="col-sm-3 col-form-label col-form-label-sm">International Publication</label>
+							<div className="col-sm-9">
 								<Field type='text' name="international_publication" className="form-control form-control-sm"/>
 							</div>
 						</div>
 						<br />
-						<div class="form-group row">
-							<label class="col-sm-3 col-form-label col-form-label-sm">National Publications</label>
-							<div class="col-sm-9">
+						<div className="form-group row">
+							<label className="col-sm-3 col-form-label col-form-label-sm">National Publications</label>
+							<div className="col-sm-9">
 								<Field type='text' name="nation_Publications" className="form-control form-control-sm"/>
 							</div>
 						</div>
 						<br />
-						<div class="form-group row">
-							<label class="col-sm-3 col-form-label col-form-label-sm">Date of joining</label>
-							<div class="col-sm-9">
+						<div className="form-group row">
+							<label className="col-sm-3 col-form-label col-form-label-sm">Date of joining</label>
+							<div className="col-sm-9">
 								<Field type='date' name="date_of_joining" className="form-control form-control-sm"/>
 							</div>
 						</div>
 						<br />
-						<div class="form-group row">
-							<label class="col-sm-3 col-form-label col-form-label-sm">Google Scholar URL</label>
-							<div class="col-sm-9">
+						<div className="form-group row">
+							<label className="col-sm-3 col-form-label col-form-label-sm">Google Scholar URL</label>
+							<div className="col-sm-9">
 								<Field type='text' name="faculty_publication_url" className="form-control form-control-sm"/>
 							</div>
 						</div>
 						<br />
-						<div class="form-group row">
-							<label class="col-sm-3 col-form-label col-form-label-sm">Faculty Admin</label>
-							<div class="col-sm-9">
+						<div className="form-group row">
+							<label className="col-sm-3 col-form-label col-form-label-sm">Faculty Admin</label>
+							<div className="col-sm-9">
 								<Field type='checkbox' name="is_faculty_admin" className="form-check-input"/>
 							</div>
 						</div>
 						
 					</div>
-					<div class="modal-footer">
-						<button type="submit" class="btn btn-primary">Submit</button>
+					<div className="modal-footer">
+						<button type="submit" className="btn btn-primary">Submit</button>
 					</div>
 				</Form>
 
@@ -190,15 +190,15 @@ function DashboardHome(){
 	return(
 		<div>
 			<h2>Welcome {localStorage.getItem('firstname')}....</h2>
-			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+			<button type="button" className="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
 				Add New User
 			</button>
-			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog modal-lg" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h5 class="modal-title" id="exampleModalLabel">Add User</h5>
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<div className="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div className="modal-dialog modal-lg" role="document">
+					<div className="modal-content">
+						<div className="modal-header">
+							<h5 className="modal-title" id="exampleModalLabel">Add User</h5>
+							<button type="button" className="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 							</button>
 						</div>

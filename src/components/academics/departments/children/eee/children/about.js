@@ -10,7 +10,7 @@ function About(){
 					Electrical energy is one of the most important inventions of the last century. As the electrical energy is one of the 
 					most important requirements of one and all in whole of the world, its growing demand warrants new innovations for 
 					enhanced production, efficient transmission and management. These require quality engineers, therefore, the department of 
-					Electrical & Electronics Engineering is grooming the youth through class-room teaching, laboratory practices and field 
+					Electrical & Electronics Engineering is grooming the youth through className-room teaching, laboratory practices and field 
 					visits to take new challenges in the area of Electrical & Electronics Engineering.
 				</p>
 			</div>

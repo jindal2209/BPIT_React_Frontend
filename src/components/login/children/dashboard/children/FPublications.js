@@ -48,52 +48,52 @@ function FacultyPublicationForm(){
 			{(formProps) => (
 
 				<Form>
-					<div class="modal-body">
-						<div class="form-group row">
-							<label class="col-sm-3 col-form-label col-form-label-sm">Paper Title</label>
-							<div class="col-sm-9">
+					<div className="modal-body">
+						<div className="form-group row">
+							<label className="col-sm-3 col-form-label col-form-label-sm">Paper Title</label>
+							<div className="col-sm-9">
 								<Field type='text' name="paper_title" placeholder="Paper Title" className="form-control form-control-sm"/>
 							</div>
 						</div>
 						<br />
-						<div class="form-group row">
-							<label class="col-sm-3 col-form-label col-form-label-sm">Indexing</label>
-							<div class="col-sm-9">
+						<div className="form-group row">
+							<label className="col-sm-3 col-form-label col-form-label-sm">Indexing</label>
+							<div className="col-sm-9">
 								<Field type='text' name="indexing" placeholder="Indexing" className="form-control form-control-sm"/>
 							</div>
 						</div>
 						<br />
-						<div class="form-group row">
-							<label class="col-sm-3 col-form-label col-form-label-sm">Year</label>
-							<div class="col-sm-9">
+						<div className="form-group row">
+							<label className="col-sm-3 col-form-label col-form-label-sm">Year</label>
+							<div className="col-sm-9">
 								<Field type='text' name="year" placeholder="Year" className="form-control form-control-sm"/>
 							</div>
 						</div>
 						<br />
-						<div class="form-group row">
-							<label class="col-sm-3 col-form-label col-form-label-sm">ISBN no.</label>
-							<div class="col-sm-9">
+						<div className="form-group row">
+							<label className="col-sm-3 col-form-label col-form-label-sm">ISBN no.</label>
+							<div className="col-sm-9">
 								<Field type='text' name="isbn_no" placeholder="ISBN no." className="form-control form-control-sm"/>
 							</div>
 						</div>
 						<br />
-						<div class="form-group row">
-							<label class="col-sm-3 col-form-label col-form-label-sm">Volume</label>
-							<div class="col-sm-9">
+						<div className="form-group row">
+							<label className="col-sm-3 col-form-label col-form-label-sm">Volume</label>
+							<div className="col-sm-9">
 								<Field type='text' name="volume" placeholder="Volume" className="form-control form-control-sm"/>
 							</div>
 						</div>
 						<br />
-						<div class="form-group row">
-							<label class="col-sm-3 col-form-label col-form-label-sm">Journal</label>
-							<div class="col-sm-9">
+						<div className="form-group row">
+							<label className="col-sm-3 col-form-label col-form-label-sm">Journal</label>
+							<div className="col-sm-9">
 								<Field type='text' name="journal" placeholder="Journal" className="form-control form-control-sm"/>
 							</div>
 						</div>
 						<br />
 					</div>
-					<div class="modal-footer">
-						<button type="submit" class="btn btn-primary">Submit</button>
+					<div className="modal-footer">
+						<button type="submit" className="btn btn-primary">Submit</button>
 					</div>
 				</Form>
 			)}
@@ -148,12 +148,12 @@ function DashboardFacultyPublication(props){
 				{/* Add new faculty publications */}
 				<i className="fa fa-plus" aria-hidden='true'></i>
 			</button>
-			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog modal-lg" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h5 class="modal-title" id="exampleModalLabel">Add Publication</h5>
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<div className="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div className="modal-dialog modal-lg" role="document">
+					<div className="modal-content">
+						<div className="modal-header">
+							<h5 className="modal-title" id="exampleModalLabel">Add Publication</h5>
+							<button type="button" className="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 							</button>
 						</div>
