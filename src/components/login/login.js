@@ -45,7 +45,12 @@ function UserLogin(){
 				localStorage.setItem('firstname',response.data.firstname);
 				localStorage.setItem('branchId',response.data.branch);
 				localStorage.setItem('user_id',response.data.user_id);
-				history.push('/placementdashboard/home')
+				if(login==='Faculty Login'){
+					history.push('/dashboard/home')
+				}
+				if(login==='Placement Login'){
+					history.push('/placementdashboard/home')
+				}
 			})
 		})
 		.catch(() => {

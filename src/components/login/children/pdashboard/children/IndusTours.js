@@ -8,24 +8,24 @@ import { useState,useEffect } from 'react';
 // 	email: Yup.string().email("invalid format").required("required")
 // })
 
-function StudentProjectsForm(){
+function InudsToursForm(){
 	const initialValues = {
 		branch: "",
-		Project_title: true,
-		project_pic: "",
-		description: "",
+		title: "",
+		date: "",
+		events: '',
 	}
 	
 	const onsubmit = values =>{ 
 		
 		let fdata = new FormData();
-		fdata.append('description',values.description);
-		fdata.append('Project_title',values.Project_title);
-		fdata.append('project_pic',values.project_pic);
+		fdata.append('title',values.title);
+		fdata.append('date',values.date);
+		fdata.append('events',values.events);
 		fdata.append('branch',localStorage.getItem('branchId'));
 
 	
-		axios.post('student-projects/post',fdata,{headers:{'Content-Type' : 'multipart/form-data'}})
+		axios.post('events/post',fdata,{headers:{'Content-Type' : 'multipart/form-data'}})
 			.then(response =>{
 				console.log("success")
 			})
@@ -42,16 +42,9 @@ function StudentProjectsForm(){
 				<Form>
 					<div class="modal-body">
 						<div class="form-group row">
-							<label class="col-sm-3 col-form-label col-form-label-sm">Description</label>
+							<label class="col-sm-3 col-form-label col-form-label-sm">Title</label>
 							<div class="col-sm-9">
-								<Field as='textarea' name="description" placeholder="Description" className="form-control form-control-sm"/>
-							</div>
-						</div>
-						<br />
-						<div class="form-group row">
-							<label class="col-sm-3 col-form-label col-form-label-sm">Project Title</label>
-							<div class="col-sm-9">
-								<Field type='text' name="Project_title" placeholder="Project Title" className="form-control form-control-sm"/>
+								<Field type='text' name="title" placeholder="Title" className="form-control form-control-sm"/>
 							</div>
 						</div>
 						<br />
@@ -66,12 +59,9 @@ function StudentProjectsForm(){
 						</div>
 						<br />
 						<div class="form-group row">
-							<label class="col-sm-3 col-form-label col-form-label-sm">Time Table</label>
+							<label class="col-sm-3 col-form-label col-form-label-sm">Date</label>
 							<div class="col-sm-9">
-								<input type='file' name="time_table" className="form-control-file"
-									onChange = {(e) => formProps.setFieldValue('time_table',e.target.files[0])
-									}
-								/>
+								<Field type='date' name="date" className="form-control form-control-sm"/>
 							</div>
 						</div>
 						<br />
@@ -93,10 +83,7 @@ function Items(props){
 					<i className="fa fa-bell float-left" aria-hidden="true"> {s.title}</i>
 					<a><i className="fa fa-trash float-right mx-1" aria-hidden="true"></i></a> 
 					<a><i className="fa fa-paint-brush float-right mx-1" aria-hidden="true"></i></a>
-					
-					{s.Project_title && <p>Project_title {s.Project_title}</p>}
-					{s.description && <p>description : {s.description}</p>}
-					{s.project_pic && <img src={s.project_pic} alt="" />}
+					{s.events && <a href={s.events}>View</a>}
 					<br></br>
 				</div>
 			))}
@@ -104,11 +91,11 @@ function Items(props){
 	);
 }
 
-function DashboardStudentProjects(props){
+function DashboardIndusTours(props){
 	let [res,setRes] = useState();
 
 	const branch = localStorage.getItem('branch');
-	const url = `departments/${branch}/${props.page}`;
+	const url = `placement/${branch}/${props.page}`;
 
 	useEffect(() => {
 		axios.get(url)
@@ -122,22 +109,24 @@ function DashboardStudentProjects(props){
 		})
 		
 	},[props.page,url])
+
+
 	return(
 		<div>
 			<button type="button" data-toggle="modal" className='btn' data-target="#exampleModal">
-				{/* Add new student projects */}
+				{/* Add new indus tours */}
 				<i className="fa fa-plus" aria-hidden='true'></i>
 			</button>
 			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				<div class="modal-dialog modal-lg" role="document">
 					<div class="modal-content">
 						<div class="modal-header">
-							<h5 class="modal-title" id="exampleModalLabel">Add TimeTable</h5>
+							<h5 class="modal-title" id="exampleModalLabel">Add Event</h5>
 							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 							</button>
 						</div>
-						<StudentProjectsForm />
+						<InudsToursForm />
 
 					</div>
 				</div>
@@ -149,4 +138,4 @@ function DashboardStudentProjects(props){
 	);
 }
 
-export default DashboardStudentProjects;
+export default DashboardIndusTours;

@@ -91,6 +91,8 @@ import DashboardTimetable from './components/login/children/dashboard/children/T
 import DashboardLessonPlan from './components/login/children/dashboard/children/LessonPlan';
 import DashboardStudentProjects from './components/login/children/dashboard/children/StudentProjects';
 import PlacementDashboard from './components/login/children/pdashboard/pdashboard';
+import PlacementDashboardHome from './components/login/children/pdashboard/children/AddUser';
+import DashboardExpertTours from './components/login/children/pdashboard/children/ExpertTours';
 
 
 
@@ -178,18 +180,14 @@ function Routers() {
 				<Route exact path='/dashboard/student-projects'><Dashboard render={<DashboardStudentProjects page='student-projects' />} /></Route>
 				<Route exact path='/dashboard/lesson-plan'><Dashboard render={<DashboardLessonPlan page='lesson-plan' />} /></Route>
 
-				{/* Login */}
+				{/* Placement Login */}
 				<Route exact path='/login'><UserLogin /></Route>
-				<Route exact path='/placementdashboard/home'><PlacementDashboard render={<DashbordHome page='home' />} /></Route>
-				<Route exact path='/placementdashboard/notice'><PlacementDashboard render={<DashboardNotice page='notice' />} /></Route>
-				<Route exact path='/placementdashboard/events'><PlacementDashboard render={<DashboardEvents page='events' />} /></Route>
-				<Route exact path='/placementdashboard/news'><PlacementDashboard render={<DashboardNews page='news' />} /></Route>
-				<Route exact path='/placementdashboard/student-publication'><PlacementDashboard render={<DashboardStudentPublications page='student-publication' />} /></Route>
-				<Route exact path='/placementdashboard/faculty-publication'><PlacementDashboard render={<DashboardFacultyPublication page='faculty-publication' />} /></Route>
-				<Route exact path='/placementdashboard/time-table'><PlacementDashboard render={<DashboardTimetable page='time-table' />} /></Route>
-				<Route exact path='/placementdashboard/student-projects'><PlacementDashboard render={<DashboardStudentProjects page='student-projects' />} /></Route>
-				<Route exact path='/placementdashboard/lesson-plan'><PlacementDashboard render={<DashboardLessonPlan page='lesson-plan' />} /></Route>
-
+				<Route exact path='/placementdashboard/home'><PlacementDashboard render={<PlacementDashboardHome page='home' />} /></Route>
+				<Route exact path='/placementdashboard/exp_talks_and_seminars'><PlacementDashboard render={<DashboardExpertTours page='expert-talk-seminar' />} /></Route>
+				<Route exact path='/placementdashboard/industrial_tours_and_workshops'><PlacementDashboard render={<DashboardEvents page='industrial-tour-and-workshop' />} /></Route>
+				<Route exact path='/placementdashboard/students_placed'><PlacementDashboard render={<DashboardNews page='student-placed' />} /></Route>
+				<Route exact path='/placementdashboard/recruiters'><PlacementDashboard render={<DashboardStudentPublications page='recruiters' />} /></Route>
+				<Route exact path='/placementdashboard/training'><PlacementDashboard render={<DashboardFacultyPublication page='trainings' />} /></Route>
 
 
 				<Route exact path='/'><Home /></Route>

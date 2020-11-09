@@ -15,16 +15,12 @@ function UserForm(){
 		first_name: "",
 		last_name: "",
 		password: '',
+
 		profile_pic: "",
 		designation: '',
-		Qualification: '',
-		Experience: '',
-		speacialization: '',
-		international_publication: '',
-		nation_Publications: '',
+		Phone_Number: '',
+		is_placement_team_admin: false,
 		date_of_joining: '',
-		faculty_publication_url: '',
-		is_faculty_admin: false,
 	}
 	
 	const onsubmit = values =>{ 
@@ -39,14 +35,9 @@ function UserForm(){
 		let fdata = new FormData();
 		fdata.append('profile_pic',values.profile_pic);
 		fdata.append('designation',values.designation);
-		fdata.append('Qualification',values.Qualification);
-		fdata.append('Experience',values.Experience);
-		fdata.append('speacialization',values.speacialization);
-		fdata.append('nation_Publications',values.nation_Publications);
-		fdata.append('international_publication',values.international_publication);
+		fdata.append('Phone_Number',values.Phone_Number);
+		fdata.append('is_placement_team_admin',values.is_placement_team_admin);
 		fdata.append('date_of_joining',values.date_of_joining);
-		fdata.append('faculty_publication_url',values.faculty_publication_url);
-		fdata.append('is_faculty_admin',values.is_faculty_admin);
 		fdata.append('branch',localStorage.getItem('branchId'));
 
 	
@@ -120,37 +111,9 @@ function UserForm(){
 						</div>
 						<br />
 						<div class="form-group row">
-							<label class="col-sm-3 col-form-label col-form-label-sm">Qualification</label>
+							<label class="col-sm-3 col-form-label col-form-label-sm">Phone_Number</label>
 							<div class="col-sm-9">
-								<Field type='text' name="Qualification" className="form-control form-control-sm"/>
-							</div>
-						</div>
-						<br />
-						<div class="form-group row">
-							<label class="col-sm-3 col-form-label col-form-label-sm">Experience (in years)</label>
-							<div class="col-sm-9">
-								<Field type='text' name="Experience" className="form-control form-control-sm"/>
-							</div>
-						</div>
-						<br />
-						<div class="form-group row">
-							<label class="col-sm-3 col-form-label col-form-label-sm">Specialization</label>
-							<div class="col-sm-9">
-								<Field type='text' name="speacialization" className="form-control form-control-sm"/>
-							</div>
-						</div>
-						<br />
-						<div class="form-group row">
-							<label class="col-sm-3 col-form-label col-form-label-sm">International Publication</label>
-							<div class="col-sm-9">
-								<Field type='text' name="international_publication" className="form-control form-control-sm"/>
-							</div>
-						</div>
-						<br />
-						<div class="form-group row">
-							<label class="col-sm-3 col-form-label col-form-label-sm">National Publications</label>
-							<div class="col-sm-9">
-								<Field type='text' name="nation_Publications" className="form-control form-control-sm"/>
+								<Field type='text' name="Phone_Number" className="form-control form-control-sm"/>
 							</div>
 						</div>
 						<br />
@@ -162,16 +125,9 @@ function UserForm(){
 						</div>
 						<br />
 						<div class="form-group row">
-							<label class="col-sm-3 col-form-label col-form-label-sm">Google Scholar URL</label>
-							<div class="col-sm-9">
-								<Field type='text' name="faculty_publication_url" className="form-control form-control-sm"/>
-							</div>
-						</div>
-						<br />
-						<div class="form-group row">
 							<label class="col-sm-3 col-form-label col-form-label-sm">Faculty Admin</label>
 							<div class="col-sm-9">
-								<Field type='checkbox' name="is_faculty_admin" className="form-check-input"/>
+								<Field type='checkbox' name="is_placement_team_admin" className="form-check-input"/>
 							</div>
 						</div>
 						
@@ -186,7 +142,7 @@ function UserForm(){
 	);
 }
 
-function DashboardHome(){
+function PlacementDashboardHome(){
 	return(
 		<div>
 			<h2>Welcome {localStorage.getItem('firstname')}....</h2>
@@ -211,4 +167,4 @@ function DashboardHome(){
 	);
 }
 
-export default DashboardHome;
+export default PlacementDashboardHome;

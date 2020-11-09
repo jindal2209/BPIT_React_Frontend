@@ -8,24 +8,21 @@ import { useState,useEffect } from 'react';
 // 	email: Yup.string().email("invalid format").required("required")
 // })
 
-function EventForm(){
+function ExpertToursForm(){
 	const initialValues = {
-		branch: "",
-		title: "",
-		date: "",
-		events: '',
+		date_of_upload: "",
+		description: "",
+		data: '',
 	}
 	
 	const onsubmit = values =>{ 
 		
 		let fdata = new FormData();
-		fdata.append('title',values.title);
-		fdata.append('date',values.date);
-		fdata.append('events',values.events);
-		fdata.append('branch',localStorage.getItem('branchId'));
-
+		fdata.append('date_of_upload',values.date_of_upload);
+		fdata.append('description',values.description);
+		fdata.append('data',values.data);
 	
-		axios.post('events/post',fdata,{headers:{'Content-Type' : 'multipart/form-data'}})
+		axios.post('placement/expert-talk-seminar',fdata,{headers:{'Content-Type' : 'multipart/form-data'}})
 			.then(response =>{
 				console.log("success")
 			})
@@ -91,11 +88,11 @@ function Items(props){
 	);
 }
 
-function DashboardEvents(props){
+function DashboardExpertTours(props){
 	let [res,setRes] = useState();
 
 	const branch = localStorage.getItem('branch');
-	const url = `departments/${branch}/${props.page}`;
+	const url = `placement/${branch}/${props.page}`;
 
 	useEffect(() => {
 		axios.get(url)
@@ -114,7 +111,7 @@ function DashboardEvents(props){
 	return(
 		<div>
 			<button type="button" data-toggle="modal" className='btn' data-target="#exampleModal">
-				{/* Add new events */}
+				{/* Add new expert tours */}
 				<i className="fa fa-plus" aria-hidden='true'></i>
 			</button>
 			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -126,7 +123,7 @@ function DashboardEvents(props){
 							<span aria-hidden="true">&times;</span>
 							</button>
 						</div>
-						<EventForm />
+						<ExpertToursForm />
 
 					</div>
 				</div>
@@ -138,4 +135,4 @@ function DashboardEvents(props){
 	);
 }
 
-export default DashboardEvents;
+export default DashboardExpertTours;
