@@ -78,8 +78,8 @@ function Items(props){
 			{props.data.map((s) => (
 				<div className='m-2 p-2 border border-light rounded items'>
 					<i className="fa fa-bell float-left" aria-hidden="true"> {s.title}</i>
-					<a><i className="fa fa-trash float-right mx-1" aria-hidden="true"></i></a> 
-					<a><i className="fa fa-paint-brush float-right mx-1" aria-hidden="true"></i></a>
+					<i className="fa fa-trash float-right mx-1" aria-hidden="true"></i>
+					<i className="fa fa-paint-brush float-right mx-1" aria-hidden="true"></i>
 					{s.events && <a href={s.events}>View</a>}
 					<br></br>
 				</div>

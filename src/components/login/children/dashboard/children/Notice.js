@@ -120,7 +120,7 @@ function Items(props){
 					<i className="fa fa-trash float-right mx-1" aria-hidden="true" onClick={() => handleDelete(s.id)}></i>
 					{/* <i className="fa fa-paint-brush float-right mx-1" aria-hidden="true" data-toggle="modal" data-target="#exampleModal" onClick={() => handleEdit(s.id)}></i> */}
 					{s.examination_notice && <h5>Examination</h5>}
-					{s.notices && <a href={s.notices} target='_blank'>View</a>}
+					{s.notices && <a href={s.notices} target='_blank' rel="noreferrer">View</a>}
 					<br></br>
 				</div>
 			))}

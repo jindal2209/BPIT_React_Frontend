@@ -86,8 +86,8 @@ function Items(props){
 			{props.data.map((s) => (
 				<div className='m-2 p-2 border border-light rounded items'>
 					<i className="fa fa-bell float-left" aria-hidden="true"> {s.title}</i>
-					<a><i className="fa fa-trash float-right mx-1" aria-hidden="true" onClick={() => handleDelete(s.id)}></i></a> 
-					{/* <a><i className="fa fa-paint-brush float-right mx-1" aria-hidden="true"></i></a> */}
+					<i className="fa fa-trash float-right mx-1" aria-hidden="true" onClick={() => handleDelete(s.id)}></i>
+					{/* <i className="fa fa-paint-brush float-right mx-1" aria-hidden="true"></i> */}
 					
 					{s.LecturePlan && <a href={s.LecturePlan}>View</a>}
 					{s.subject && <p>Subject {s.subject}</p>}

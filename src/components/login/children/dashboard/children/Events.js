@@ -97,7 +97,7 @@ function Items(props){
 					<i className="fa fa-trash float-right mx-1" aria-hidden="true" onClick={() => handleDelete(s.id)}></i> 
 					{/* <i className="fa fa-paint-brush float-right mx-1" aria-hidden="true"></i> */}
 					<br />
-					{s.events && <a target="_blank" rel='nonreferer' href={s.events}>View</a>}
+					{s.events && <a target="_blank" rel='nonreferrer' href={s.events}>View</a>}
 					<br></br>
 				</div>
 			))}
