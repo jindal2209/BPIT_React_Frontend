@@ -3,33 +3,14 @@ import {Fragment} from 'react';
 function Pillars(){
 	return (
 		<Fragment>
-			<div id="add-animation">
-				<h3 className='page-subheader'>Pillars of BPIT</h3>
-				<div className="card-wrap">
-					<div className="card">
-						<img src="/assets/images/payal1.JPG" className=" center-h pic" alt="" />
-						<div className="card__text">Prof. Payal Pahwa</div>
-					</div>
-					<div className="card">
-						<img src="/assets/images/gaur.jpg" className=" center-h pic" alt="" />
-						<div className="card__text">Prof. YD Gaur</div>
-					</div>
-					<div className="card">
-						<img src="/assets/images/abhijeet.JPG" className="center-h pic" alt="" />
-						<div className="card__text"> Prof. Abhijit Nayak</div>
-					</div>
-					<div className="card">
-						<img src="/assets/images/aktondon.png" className=" center-h pic" alt="" />
-						<div className="card__text">Prof. AK Tandon</div>
-					</div>
-					<div className="card">
-						<img src="/assets/images/crjagga.png" className=" center-h pic" alt="" />
-						<div className="card__text">Prof. CR Jagga</div>
-					</div>
-					<div className="card">
-						<img src="/assets/images/ece16.png" className=" center-h pic" alt="" />
-						<div className="card__text">Prof. Anuradha Bhasin</div>
-					</div>
+			<div className='container'>
+				<div className="card-columns">
+					<div className='card text-center' ><img src="/assets/images/payal1.JPG" className="card-img" alt="" /> Prof. Payal Pahwa</div>				
+					<div className='card text-center' ><img src="/assets/images/gaur.jpg" className="card-img" alt="" />Prof. YD Gaur</div>				
+					<div className='card text-center' ><img src="/assets/images/abhijeet.JPG" className="card-img" alt="" />Prof. Abhijit Nayak</div>				
+					<div className='card text-center' ><img src="/assets/images/aktondon.png" className="card-img" alt="" />Prof. AK Tandon</div>				
+					<div className='card text-center' ><img src="/assets/images/crjagga.png" className="card-img" alt="" />Prof. CR Jagga</div>				
+					<div className='card text-center' ><img src="/assets/images/ece16.png" className="card-img" alt="" />Prof. Anuradha Bhasin</div>				
 				</div>
 			</div>
 		</Fragment>

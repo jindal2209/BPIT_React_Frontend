@@ -5,7 +5,7 @@ function Contact(){
 		<React.Fragment>
 			<div className="container-fluid m-5 p-5">
 				<h2 className='page-header'>
-					<i className="fa fa-phone-square" aria-hidden="true"></i> &nbsp;
+					<i className="fa fa-phone-square fa-rotate-90" aria-hidden="true"></i> &nbsp;
 					Contact Us
 				</h2>
 				<hr></hr>
