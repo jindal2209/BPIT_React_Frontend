@@ -1,4 +1,4 @@
-function About(){
+function CSEAbout(){
 	return(
 		<div>
 			<div>
@@ -48,4 +48,4 @@ function About(){
 	);
 }
 
-export default About;
+export default CSEAbout;

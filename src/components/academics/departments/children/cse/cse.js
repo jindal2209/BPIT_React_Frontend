@@ -2,8 +2,8 @@ import { useState } from 'react';
 import {
 	NavLink
 } from 'react-router-dom';
-import About from './children/about';
-import Faculty from './children/faculty';
+import CSEAbout from './children/about';
+import CSEFaculty from './children/faculty';
 
 function Cse(props){
 	let [element,setElement] = useState(props.page);
@@ -18,8 +18,8 @@ function Cse(props){
 				<div className='col-lg-3'>
 					<div className='bg-light p-2 sidebar'>
 						<h4 className="text-center py-1">Menu</h4>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/cse/about" onClick={() => handleComponent()}> About</NavLink>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/cse/faculty" onClick={() => handleComponent()}> Faculty</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to="/departments/cse/about" onClick={() => handleComponent(<CSEAbout />)}> About</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to="/departments/cse/faculty" onClick={() => handleComponent(<CSEFaculty />)}> Faculty</NavLink>
 						<NavLink className="menu-item" activeClassName="active" to="/departments/cse/labresources" onClick={() => handleComponent()}>Lab Resources</NavLink>
 						<NavLink className="menu-item" activeClassName="active" to="/departments/cse/facultypublications" onClick={() => handleComponent()}> Faculty Publications</NavLink>
 						<hr />

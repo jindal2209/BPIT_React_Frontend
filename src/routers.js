@@ -152,6 +152,7 @@ function Routers() {
 				<Route exact path='/departments/em'><Mechanics /></Route>
 				<Route exact path='/departments/hu'><Humanities /></Route>
 
+				{/* CSE */}
 				<Route exact path='/departments/cse/about'><Cse page={<CSEAbout />} /></Route>
 				<Route exact path='/departments/cse/faculty'><Cse page={<CSEFaculty />} /></Route>
 

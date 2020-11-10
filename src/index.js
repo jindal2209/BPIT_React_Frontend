@@ -11,7 +11,7 @@ const token = localStorage.getItem('token');
 
 
 if (token){
-	axios.defaults.headers.common['Authorization'] = 'Token ' + localStorage.getItem('token');
+	axios.defaults.headers.common['Authorization'] = 'Token ' + token;
 }
 
 ReactDOM.render(

@@ -13,8 +13,8 @@ function Profile(props){
 				<p>Designation : {props.designation}</p>
 				<p>Experience : {props.Experience}</p>
 				<p>Specialization : {props.speacialization}</p>
-				{props.nation_Publications && <p><p>National Publications : {props.nation_Publications}</p></p>}
 				{props.international_publication && <p><p>International Publication : {props.international_publication}</p></p>}
+				{props.nation_Publications && <p><p>National Publications : {props.nation_Publications}</p></p>}
 				{props.publication_url && <p><a target='_blank' href={props.publication_url} rel="noreferrer">Publication url</a></p>}
 			</div>
 		</div>
@@ -23,7 +23,7 @@ function Profile(props){
 
 function GetFaculty(props){
 	let url = props.url;
-	const [data,setData] = useState(null);
+	let [data,setData] = useState(null);
 	var res = 	<div className="d-flex justify-content-center">
 					<div className="spinner-border" role="status">
 					<span className="sr-only">Loading...</span>

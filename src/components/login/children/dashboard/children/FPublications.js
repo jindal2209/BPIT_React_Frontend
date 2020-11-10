@@ -93,7 +93,7 @@ function FacultyPublicationForm(){
 						<br />
 					</div>
 					<div className="modal-footer">
-						<button type="submit" className="btn btn-primary">Submit</button>
+						<button type="submit" className="btn btn-primary" >Submit</button>
 					</div>
 				</Form>
 			)}
@@ -102,13 +102,24 @@ function FacultyPublicationForm(){
 }
 
 function Items(props){
+
+	function handleDelete(id){
+		axios.delete(`faculty-publications/${id}`)
+		.then(response => {
+			console.log("Success");
+			window.location.reload(false)
+		})
+		.catch(error => {
+			console.log(error)
+		})
+	}
 	return(
 		<div>
 			{props.data.map((s) => (
 				<div className='m-2 p-2 border border-light rounded items'>
 					<i className="fa fa-bell float-left" aria-hidden="true"></i>
-					<a><i className="fa fa-trash float-right mx-1" aria-hidden="true"></i></a> 
-					<a><i className="fa fa-paint-brush float-right mx-1" aria-hidden="true"></i></a>
+					<i className="fa fa-trash float-right mx-1" aria-hidden="true" onClick={() => handleDelete(s.id)}></i> 
+					{/* <i className="fa fa-paint-brush float-right mx-1" aria-hidden="true"></i> */}
 					
 					{s.paper_title && <p>paper_title : {s.paper_title}</p>}
 					{s.indexing && <p>indexing : {s.indexing}</p>}

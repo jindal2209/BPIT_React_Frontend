@@ -67,7 +67,7 @@ function NewsForm(){
 						<br />
 					</div>
 					<div className="modal-footer">
-						<button type="submit" className="btn btn-primary">Submit</button>
+						<button type="submit" className="btn btn-primary" >Submit</button>
 					</div>
 				</Form>
 			)}
@@ -76,13 +76,26 @@ function NewsForm(){
 }
 
 function Items(props){
+
+	function handleDelete(id){
+		console.log(id);
+		axios.delete(`news/${id}`)
+		.then(response => {
+			console.log("Success");
+			window.location.reload(false)
+		})
+		.catch(error => {
+			console.log(error)
+		})
+	}
+
 	return(
 		<div>
 			{props.data.map((s) => (
 				<div className='m-2 p-2 border border-light rounded items'>
 					<i className="fa fa-bell float-left" aria-hidden="true"> {s.title}</i>
-					<a><i className="fa fa-trash float-right mx-1" aria-hidden="true"></i></a> 
-					<a><i className="fa fa-paint-brush float-right mx-1" aria-hidden="true"></i></a>
+					<i className="fa fa-trash float-right mx-1" aria-hidden="true" onClick={() => handleDelete(s.id)}></i>
+					{/* <i className="fa fa-paint-brush float-right mx-1" aria-hidden="true"></i> */}
 					{s.news && <a href={s.news}>View</a>}
 					<br></br>
 				</div>

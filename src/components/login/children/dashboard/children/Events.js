@@ -67,7 +67,7 @@ function EventForm(){
 						<br />
 					</div>
 					<div className="modal-footer">
-						<button type="submit" className="btn btn-primary">Submit</button>
+						<button type="submit" className="btn btn-primary" >Submit</button>
 					</div>
 				</Form>
 			)}
@@ -78,16 +78,15 @@ function EventForm(){
 function Items(props){
 
 	function handleDelete(id){
-		console.log('d');
-		// axios.get(url)
-		// .then(response => {
-		// 		setRes(<Items
-		// 			data = {response.data}
-		// 	/>)
-		// })
-		// .catch(error => {
-		// 	console.log(error)
-		// })
+		console.log(id);
+		axios.delete(`events/${id}`)
+		.then(response => {
+			console.log("Success");
+			window.location.reload(false)
+		})
+		.catch(error => {
+			console.log(error)
+		})
 	}
 
 	return(
@@ -95,8 +94,8 @@ function Items(props){
 			{props.data.map((s) => (
 				<div className='m-2 p-2 border border-light rounded items'>
 					<i className="fa fa-bell float-left" aria-hidden="true"> {s.title}</i>
-					<a ><i className="fa fa-trash float-right mx-1" aria-hidden="true"></i></a> 
-					<a><i className="fa fa-paint-brush float-right mx-1" aria-hidden="true"></i></a>
+					<i className="fa fa-trash float-right mx-1" aria-hidden="true" onClick={() => handleDelete(s.id)}></i> 
+					{/* <i className="fa fa-paint-brush float-right mx-1" aria-hidden="true"></i> */}
 					<br />
 					{s.events && <a target="_blank" rel='nonreferer' href={s.events}>View</a>}
 					<br></br>
