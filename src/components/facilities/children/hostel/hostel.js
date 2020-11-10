@@ -2,7 +2,7 @@ function Hostel(){
 	return (
 		<div>
 			<h3 className='page-subheader'>Girls Hostel</h3>
-			<img src="/assets/images/hostel1.jpg" className="img-fluid py-4 rounded" alt="" />
+			<img src={process.env.PUBLIC_URL+"/assets/images/hostel1.jpg"} className="img-fluid py-4 rounded" alt="" />
 			<p>The hostel is 'A home away from home' for girls coming from all parts of the country. BPIT offers well furnished hostel facilities within the college campus.
 
 			The hostel was founded in the year 2011 and was inaugurated by Shri P.K. Tripathi , Chief Secretary, Delhi Government. The hostel provides all the resident students a safe and comfortable environment and is a Zero ragging zone.

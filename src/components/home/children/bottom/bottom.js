@@ -20,7 +20,7 @@ function Bottom() {
 					<div className="col-sm-4 rounded my-2">
 						<div className=" wrimagecard wrimagecard-topimage shadow-lg rounded">
 							<div className="wrimagecard-topimage_header">
-								<img src="/assets/home/4.jpg" width="100%" height="300px" alt="" />
+								<img src={process.env.PUBLIC_URL+"/assets/home/4.jpg"} width="100%" height="300px" alt="" />
 							</div>
 							<div className="wrimagecard-topimage_title py-5">
 								BPIT received outstanding Contributor Award from ICT Academy & Salesforce India
@@ -31,7 +31,7 @@ function Bottom() {
 					<div className="col-sm-4 rounded my-2">
 						<div className="wrimagecard wrimagecard-topimage shadow-lg rounded">
 							<div className="wrimagecard-topimage_header">
-								<img src="/assets/home/7.jpg" width="100%" height="300px" alt="" />
+								<img src={process.env.PUBLIC_URL+"/assets/home/7.jpg"} width="100%" height="300px" alt="" />
 							</div>
 							<div className="wrimagecard-topimage_title py-5">
 								Best Paper award to research paper of BPIT Student & Faculty in SIGMA 	2018
@@ -42,7 +42,7 @@ function Bottom() {
 					<div className="col-sm-4 rounded my-2">
 						<div className="wrimagecard wrimagecard-topimage shadow-lg rounded">
 							<div className="wrimagecard-topimage_header">
-								<img src="/assets/home/6.jpg" width="100%" height="300px" alt="" />
+								<img src={process.env.PUBLIC_URL+"/assets/home/6.jpg"} width="100%" height="300px" alt="" />
 							</div>
 							<div className="wrimagecard-topimage_title py-4">
 								The final year B.Tech IT students filed a patent for theirprocess &

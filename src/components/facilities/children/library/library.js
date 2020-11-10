@@ -4,7 +4,7 @@ function Library(){
 			<h3 className='page-subheader'>Library</h3>
 			<h4>A library is the delivery room for the birth of ideas, a place where history comes to life &nbsp;<i>-Norman Cousins</i></h4>
 			<h4>A library is not a luxury but one of the necessities of life &nbsp;<i> -H.W. Beecher </i></h4>
-			<img src="/assets/images/lib.jpg" className="img-fluid py-4 rounded" alt="" />
+			<img src={process.env.PUBLIC_URL+"/assets/images/lib.jpg"} className="img-fluid py-4 rounded" alt="" />
 			<p>BPIT library is centrally air conditioned and spacious. The salient features of the library are:</p>
 			<ul>
 				<li>1. 42279 books and 6095 titles, including good quality books on Applied Mathematics, Applied Physics, Applied Chemistry, Communication skills, Engineering Mechanics and a wide range standard quality books on Computer Science Engineering, Electronics and Communication Engineering, Information Technology, and Electrical Engineering and graduate and post graduate level books on Management Studies.</li>

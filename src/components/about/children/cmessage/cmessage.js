@@ -4,7 +4,7 @@ function Cmessage(){
 	return (
 		<Fragment>
 			<h3 className='page-subheader'>From the desk of the Chairman</h3>
-			<img src="/assets/images/trust3.png" className="img-fluid py-4 rounded" alt="" />
+			<img src={process.env.PUBLIC_URL + "/assets/images/trust3.png"} className="img-fluid py-4 rounded" alt="" />
 			<p id="text-content"> I am pleased to introduce you our institution and explore the ways we connect students to a world of possibilities. Bhagwan Parshuram Institute of Technology, founded by Bhartiya Brahmin Charitable trust in 2005, has made rapid strides in its very little time of existence because of clear focus, sustained efforts and commitment to deliver.
 				<br></br>
 				<br></br> We at BPIT are currently engaged in strengthening our knowledge infrastructure to transform it into a world className institute. Our talented faculty place teaching as their highest priority and teach students to move from the realm of ideas to real-world application.
