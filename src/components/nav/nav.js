@@ -37,7 +37,7 @@ function Navbar() {
 					<div className='row align-middle'>
 						<div className="col-sm-1"></div>
 						<div className="col-sm-2 text-center py-1">
-							<div><a href="/"> <img className="bpit-logo" src="/assets/images/logo.png" alt="" /></a></div>
+							<div><a href="/"> <img className="bpit-logo" src={process.env.PUBLIC_URL+"/assets/images/logo.png"} alt="" /></a></div>
 						</div>
 						<div className="col-sm-6">
 							<h4 className="page-subheader">BHAGWAN PARSHURAM INSTITUTE OF TECHNOLOGY</h4>

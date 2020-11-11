@@ -2,7 +2,7 @@
 	"name": "bpit-website",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "https://jindal2209.github.io/BPIT_React_Frontend",
+	"homepage": "https://jindal2209.github.io",
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.11.5",
 		"@testing-library/react": "^11.1.1",
