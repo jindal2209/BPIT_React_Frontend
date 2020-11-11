@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/jindal2209/BPIT_React_Frontend.git/static/css/main.fcb60cf6.chunk.css",
-    "main.js": "/jindal2209/BPIT_React_Frontend.git/static/js/main.7dd8bb12.chunk.js",
-    "main.js.map": "/jindal2209/BPIT_React_Frontend.git/static/js/main.7dd8bb12.chunk.js.map",
-    "runtime-main.js": "/jindal2209/BPIT_React_Frontend.git/static/js/runtime-main.4b8719ef.js",
-    "runtime-main.js.map": "/jindal2209/BPIT_React_Frontend.git/static/js/runtime-main.4b8719ef.js.map",
-    "static/js/2.d504372e.chunk.js": "/jindal2209/BPIT_React_Frontend.git/static/js/2.d504372e.chunk.js",
-    "static/js/2.d504372e.chunk.js.map": "/jindal2209/BPIT_React_Frontend.git/static/js/2.d504372e.chunk.js.map",
-    "static/js/3.6afad577.chunk.js": "/jindal2209/BPIT_React_Frontend.git/static/js/3.6afad577.chunk.js",
-    "static/js/3.6afad577.chunk.js.map": "/jindal2209/BPIT_React_Frontend.git/static/js/3.6afad577.chunk.js.map",
-    "index.html": "/jindal2209/BPIT_React_Frontend.git/index.html",
-    "static/css/main.fcb60cf6.chunk.css.map": "/jindal2209/BPIT_React_Frontend.git/static/css/main.fcb60cf6.chunk.css.map",
-    "static/js/2.d504372e.chunk.js.LICENSE.txt": "/jindal2209/BPIT_React_Frontend.git/static/js/2.d504372e.chunk.js.LICENSE.txt",
-    "static/media/bottom.css": "/jindal2209/BPIT_React_Frontend.git/static/media/breadcrumb.8ab425c3.jpg"
+    "main.css": "/jindal2209/BPIT_React_Frontend/static/css/main.50d0f525.chunk.css",
+    "main.js": "/jindal2209/BPIT_React_Frontend/static/js/main.4e3ad765.chunk.js",
+    "main.js.map": "/jindal2209/BPIT_React_Frontend/static/js/main.4e3ad765.chunk.js.map",
+    "runtime-main.js": "/jindal2209/BPIT_React_Frontend/static/js/runtime-main.227e355d.js",
+    "runtime-main.js.map": "/jindal2209/BPIT_React_Frontend/static/js/runtime-main.227e355d.js.map",
+    "static/js/2.d504372e.chunk.js": "/jindal2209/BPIT_React_Frontend/static/js/2.d504372e.chunk.js",
+    "static/js/2.d504372e.chunk.js.map": "/jindal2209/BPIT_React_Frontend/static/js/2.d504372e.chunk.js.map",
+    "static/js/3.6afad577.chunk.js": "/jindal2209/BPIT_React_Frontend/static/js/3.6afad577.chunk.js",
+    "static/js/3.6afad577.chunk.js.map": "/jindal2209/BPIT_React_Frontend/static/js/3.6afad577.chunk.js.map",
+    "index.html": "/jindal2209/BPIT_React_Frontend/index.html",
+    "static/css/main.50d0f525.chunk.css.map": "/jindal2209/BPIT_React_Frontend/static/css/main.50d0f525.chunk.css.map",
+    "static/js/2.d504372e.chunk.js.LICENSE.txt": "/jindal2209/BPIT_React_Frontend/static/js/2.d504372e.chunk.js.LICENSE.txt",
+    "static/media/bottom.css": "/jindal2209/BPIT_React_Frontend/static/media/breadcrumb.8ab425c3.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.4b8719ef.js",
+    "static/js/runtime-main.227e355d.js",
     "static/js/2.d504372e.chunk.js",
-    "static/css/main.fcb60cf6.chunk.css",
-    "static/js/main.7dd8bb12.chunk.js"
+    "static/css/main.50d0f525.chunk.css",
+    "static/js/main.4e3ad765.chunk.js"
   ]
 }
