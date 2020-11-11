@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/BPIT_React_Frontend/static/css/main.0048c394.chunk.css",
-    "main.js": "/BPIT_React_Frontend/static/js/main.21025652.chunk.js",
-    "main.js.map": "/BPIT_React_Frontend/static/js/main.21025652.chunk.js.map",
+    "main.js": "/BPIT_React_Frontend/static/js/main.90bcdeff.chunk.js",
+    "main.js.map": "/BPIT_React_Frontend/static/js/main.90bcdeff.chunk.js.map",
     "runtime-main.js": "/BPIT_React_Frontend/static/js/runtime-main.e09526a4.js",
     "runtime-main.js.map": "/BPIT_React_Frontend/static/js/runtime-main.e09526a4.js.map",
     "static/js/2.42fb2803.chunk.js": "/BPIT_React_Frontend/static/js/2.42fb2803.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.e09526a4.js",
     "static/js/2.42fb2803.chunk.js",
     "static/css/main.0048c394.chunk.css",
-    "static/js/main.21025652.chunk.js"
+    "static/js/main.90bcdeff.chunk.js"
   ]
 }
