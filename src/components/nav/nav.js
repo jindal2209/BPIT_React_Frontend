@@ -49,7 +49,7 @@ function Navbar() {
 						<div className="col-sm-3 text-center">
 							<div className='row'>
 								<div className='col-lg-3'>
-									<img className="bpit-logo" src="/assets/images/bpit-logo.png" alt="" />
+									<img className="bpit-logo" src={process.env.PUBLIC_URL+"/assets/images/bpit-logo.png"} alt="" />
 								</div>
 								<div className='col-lg-6'>
 									<div className='page-subheader  align-middle'>Bhartiya Brahmin Charitable Trust</div>
