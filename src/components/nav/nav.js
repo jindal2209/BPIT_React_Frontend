@@ -5,15 +5,15 @@ import { useState, useEffect } from 'react';
 
 function Navbar() {
 
-	let [greet,setGreet] = useState(<a href='/login'>Login</a>)
+	let [greet,setGreet] = useState(<Link to='/login'>Login</Link>)
 	var tk = localStorage.getItem("token");
 
 	useEffect(() => {
 		if(tk){
-			setGreet(<a href='/dashboard/home'>Hi {localStorage.getItem('firstname')}</a>)
+			setGreet(<Link to='/dashboard/home'>Hi {localStorage.getItem('firstname')}</Link>)
 		}
 		else{
-			setGreet(<a href='/login'>Login</a>);
+			setGreet(<Link to='/login'>Login</Link>);
 		}
 	},[tk])
 	return (
@@ -37,7 +37,7 @@ function Navbar() {
 					<div className='row align-middle'>
 						<div className="col-sm-1"></div>
 						<div className="col-sm-2 text-center py-1">
-							<div><a href="/"> <img className="bpit-logo" src={process.env.PUBLIC_URL+"/assets/images/logo.png"} alt="" /></a></div>
+							<div><Link to="/"> <img className="bpit-logo" src={process.env.PUBLIC_URL+"/assets/images/logo.png"} alt="" /></Link></div>
 						</div>
 						<div className="col-sm-6">
 							<h4 className="page-subheader">BHAGWAN PARSHURAM INSTITUTE OF TECHNOLOGY</h4>
@@ -76,13 +76,13 @@ function Navbar() {
 									About
 								</Link>
 								<ul className="dropdown-menu">
-									<li><a href="/about/cprofile">College Profile</a></li>
-									<li><a href="/about/trust">Trust</a></li>
-									<li><a href="/about/cmessage">Chairman's Message</a></li>
-									<li><a href="/about/pmessage">Principal's Message</a></li>
-									<li><a href="/about/vision_mission">Vision/Mission</a></li>
-									<li><a href="/about/pillars">Pillars of Bpit</a></li>
-									<li><a href="/about/Certifications">Certifications and Accredations</a></li>
+									<li><Link to="/about/cprofile">College Profile</Link></li>
+									<li><Link to="/about/trust">Trust</Link></li>
+									<li><Link to="/about/cmessage">Chairman's Message</Link></li>
+									<li><Link to="/about/pmessage">Principal's Message</Link></li>
+									<li><Link to="/about/vision_mission">Vision/Mission</Link></li>
+									<li><Link to="/about/pillars">Pillars of Bpit</Link></li>
+									<li><Link to="/about/Certifications">Certifications and Accredations</Link></li>
 								</ul>
 							</li>
 				
@@ -105,22 +105,22 @@ function Navbar() {
 											<li className="dropdown-submenu">
 												<Link className="dropdown-toggle" data-toggle="dropdown">Applied Science</Link>
 												<ul className="dropdown-menu">
-													<li><a href="/departments/ac/about">Applied Chemistry</a></li>
-													<li><a href="/departments/ap/about">Applied Physics</a></li>
-													<li><a href="/departments/am/about">Applied Maths</a></li>
-													<li><a href="/departments/em/about">Engineering Mechanics</a></li>
-													<li><a href="/departments/hu/about">Humanities</a></li>
+													<li><Link to="/departments/ac/about">Applied Chemistry</Link></li>
+													<li><Link to="/departments/ap/about">Applied Physics</Link></li>
+													<li><Link to="/departments/am/about">Applied Maths</Link></li>
+													<li><Link to="/departments/em/about">Engineering Mechanics</Link></li>
+													<li><Link to="/departments/hu/about">Humanities</Link></li>
 												</ul>
 											</li>
-											<li><a href="/departments/cse/about">Computer Science and Engineering</a></li>
-											<li><a href="/departments/ece/about">Electronics and Communication Engineering</a></li>
-											<li><a href="/departments/it/about">Information Technology</a></li>
-											<li><a href="/departments/eee/about">Electronics and Electrical Engineering</a></li>
+											<li><Link to="/departments/cse/about">Computer Science and Engineering</Link></li>
+											<li><Link to="/departments/ece/about">Electronics and Communication Engineering</Link></li>
+											<li><Link to="/departments/it/about">Information Technology</Link></li>
+											<li><Link to="/departments/eee/about">Electronics and Electrical Engineering</Link></li>
 											<li className="dropdown-submenu">
 												<Link className="dropdown-toggle" data-toggle="dropdown">School of Business Administration</Link>
 												<ul className="dropdown-menu">
-													<li><a href="/departments/mba/about">MBA</a></li>
-													<li><a href="/departments/bba/about">BBA</a></li>
+													<li><Link to="/departments/mba/about">MBA</Link></li>
+													<li><Link to="/departments/bba/about">BBA</Link></li>
 												</ul>
 											</li>
 										</ul>
@@ -132,14 +132,14 @@ function Navbar() {
 									Facilities
 								</Link>
 								<ul className="dropdown-menu">
-									<li><a href="/facilities/library">Library</a></li>
-									<li><a href="/facilities/hostel">Hostel</a></li>
-									<li><a href="/facilities/medical">Medical room</a></li>
-									<li><a href="/facilities/bookbank">Book Bank</a></li>
-									<li><a href="/facilities/seminar">Seminar hall</a></li>
-									<li><a href="/facilities/edusat">EDUSAT</a></li>
-									<li><a href="/facilities/sports">Sports room</a></li>
-									<li><a href="/facilities/canteen">Canteen</a></li>
+									<li><Link to="/facilities/library">Library</Link></li>
+									<li><Link to="/facilities/hostel">Hostel</Link></li>
+									<li><Link to="/facilities/medical">Medical room</Link></li>
+									<li><Link to="/facilities/bookbank">Book Bank</Link></li>
+									<li><Link to="/facilities/seminar">Seminar hall</Link></li>
+									<li><Link to="/facilities/edusat">EDUSAT</Link></li>
+									<li><Link to="/facilities/sports">Sports room</Link></li>
+									<li><Link to="/facilities/canteen">Canteen</Link></li>
 								</ul>
 							</li>
 						
@@ -148,12 +148,12 @@ function Navbar() {
 									Placements
 								</Link>
 								<ul className="dropdown-menu">
-									<li><a href="/placement/team">Team</a></li>
-									<li><a href="/placement/training">Trainings</a></li>
-									<li><a href="/placement/recruiters">Our Recruiters</a></li>
-									<li><a href="/placement/exp_talks_and_seminars">Expert Talks and Seminars</a></li>
-									<li><a href="/placement/industrial_tours_and_workshops">Industrial tours and workshops</a></li>
-									<li><a href="/placement/list_of_student_placed">List of students placed</a></li>
+									<li><Link to="/placement/team">Team</Link></li>
+									<li><Link to="/placement/training">Trainings</Link></li>
+									<li><Link to="/placement/recruiters">Our Recruiters</Link></li>
+									<li><Link to="/placement/exp_talks_and_seminars">Expert Talks and Seminars</Link></li>
+									<li><Link to="/placement/industrial_tours_and_workshops">Industrial tours and workshops</Link></li>
+									<li><Link to="/placement/list_of_student_placed">List of students placed</Link></li>
 								</ul>
 							</li>
 						
@@ -172,11 +172,11 @@ function Navbar() {
 												href="http://ggsipu.ac.in/ExamResults/ExamResultsmain.htm">Results</a></li>
 										</ul>
 									</li>
-									<li><a href="/studentlife/events">Events</a></li>
-									<li><a href="/studentlife/publications">Publications</a></li>
-									<li><a href="/studentlife/projects">Projects</a></li>
-									<li><a href="/studentlife/achievements">Achievements</a></li>
-									<li><a href="/studentlife/societies">Societies</a></li>
+									<li><Link to="/studentlife/events">Events</Link></li>
+									<li><Link to="/studentlife/publications">Publications</Link></li>
+									<li><Link to="/studentlife/projects">Projects</Link></li>
+									<li><Link to="/studentlife/achievements">Achievements</Link></li>
+									<li><Link to="/studentlife/societies">Societies</Link></li>
 								</ul>
 							</li>
 						
