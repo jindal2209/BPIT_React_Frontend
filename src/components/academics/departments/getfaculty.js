@@ -4,18 +4,27 @@ import { Fragment,useState ,useEffect} from "react";
 
 function Profile(props){
 	return(
-		<div className="card-h m-5">
-			<img src={props.profile_pic} className='card-h__pic' alt="" />
-			<div className="card-h__content">
-				<h4> {props.name}</h4>
-				<p> {props.email}</p>
-				<p> {props.Qualification}</p>
-				<p>Designation : {props.designation}</p>
-				<p>Experience : {props.Experience}</p>
-				<p>Specialization : {props.speacialization}</p>
-				{props.international_publication && <p><p>International Publication : {props.international_publication}</p></p>}
-				{props.nation_Publications && <p><p>National Publications : {props.nation_Publications}</p></p>}
-				{props.publication_url && <p><a target='_blank' href={props.publication_url} rel="noreferrer">Publication url</a></p>}
+		<div className='row my-3 border border-light p-2 w-100'>
+			<div className='col-md-3'>
+				<div class="card" style={{width: "17rem"}}>
+					<img class="card-img-top" src={props.profile_pic} alt="Cardcap" />
+					<div class="card-body text-center">
+						<h5 class="card-title">{props.name}</h5>
+						<p class="card-text">{props.designation}</p>
+					</div>
+				</div>
+			</div>
+			<div className='col-md-1'></div>
+			<div className="col-md-7">
+				<div class="card-body">
+					<p class="card-text">{props.email}</p>
+					<p class="card-text">{props.Qualification}</p>
+					<p class="card-text"><strong>Experience:</strong> {props.Experience}</p>
+					<p class="card-text"><strong>Specialization:</strong> {props.speacialization}</p>
+					{props.international_publication ? <p class="card-text"><strong>International Publication :</strong> {props.international_publication}</p> : null}
+					{props.nation_Publications ? <p class="card-text"><strong>National Publications :</strong> {props.nation_Publications}</p> : null}
+					{props.publication_url ? <p class="card-text"><a target='_blank' href={props.publication_url} rel="noreferrer">Publication url</a></p> : null}
+				</div>
 			</div>
 		</div>
 	)
@@ -41,7 +50,7 @@ function GetFaculty(props){
 	},[url])
 
 	if(data){
-		res = 	<div>
+		res = 	<div className='container'>
 					{data.map((s)=>(
 						<Profile
 							id = {s.id}

@@ -2,7 +2,9 @@ import { useState } from 'react';
 import {
 	NavLink
 } from 'react-router-dom';
+import EEEAbout from './children/about';
 import About from './children/about';
+import EEEFaculty from './children/faculty';
 import Faculty from './children/faculty'
 
 function Eee(props){
@@ -18,8 +20,8 @@ function Eee(props){
 				<div className='col-lg-3'>
 					<div className='sidebar bg-light p-2'>
 						<h4 className="text-center py-1">Menu</h4>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/eee/about" onClick={() => handleComponent()}> About</NavLink>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/eee/faculty" onClick={() => handleComponent()}> Faculty</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to="/departments/eee/about" onClick={() => handleComponent(<EEEAbout />)}> About</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to="/departments/eee/faculty" onClick={() => handleComponent(<EEEFaculty />)}> Faculty</NavLink>
 						<NavLink className="menu-item" activeClassName="active" to="/departments/eee/labresources" onClick={() => handleComponent()}>Lab Resources</NavLink>
 						<NavLink className="menu-item" activeClassName="active" to="/departments/eee/facultypublications" onClick={() => handleComponent()}> Faculty Publications</NavLink>
 						<hr />

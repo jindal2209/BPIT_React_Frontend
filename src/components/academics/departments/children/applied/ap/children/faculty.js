@@ -1,6 +1,6 @@
 import GetFaculty from '../../../../getfaculty';
 
-function Faculty(){
+function APFaculty(){
 	return(
 		<GetFaculty 
 			url = 'departments/ap/faculty'
@@ -8,4 +8,4 @@ function Faculty(){
 	);
 }
 
-export default Faculty;
+export default APFaculty;

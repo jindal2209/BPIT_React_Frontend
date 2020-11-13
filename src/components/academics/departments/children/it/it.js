@@ -2,8 +2,8 @@ import { useState } from 'react';
 import {
 	NavLink
 } from 'react-router-dom';
-import About from './children/about';
-import Faculty from './children/faculty'
+import ITAbout from './children/about';
+import ITFaculty from './children/faculty';
 
 function IT(props){
 	let [element,setElement] = useState(props.page);
@@ -18,8 +18,8 @@ function IT(props){
 				<div className='col-lg-3'>
 					<div className='bg-light p-2 sidebar'>
 						<h4 className="text-center py-1">Menu</h4>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/it/about" onClick={() => handleComponent()}> About</NavLink>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/it/faculty" onClick={() => handleComponent()}> Faculty</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to="/departments/it/about" onClick={() => handleComponent(<ITAbout />)}> About</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to="/departments/it/faculty" onClick={() => handleComponent(<ITFaculty />)}> Faculty</NavLink>
 						<NavLink className="menu-item" activeClassName="active" to="/departments/it/labresources" onClick={() => handleComponent()}>Lab Resources</NavLink>
 						<NavLink className="menu-item" activeClassName="active" to="/departments/it/facultypublications" onClick={() => handleComponent()}> Faculty Publications</NavLink>
 						<hr />

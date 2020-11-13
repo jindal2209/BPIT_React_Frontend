@@ -2,25 +2,27 @@ import { useState } from 'react';
 import {
 	NavLink
 } from 'react-router-dom';
+import ACAbout from './children/about';
+import ACFaculty from './children/faculty';
 
-function Chemistry(){
-	let [element,setElement] = useState(null);
+function Chemistry(props){
+	let [element,setElement] = useState(props.page);
 
 	function handleComponent(component) {
 		setElement(component);
 	}
 
 	return (
-		<div>
-			<div className='row mx-2 px-1'>
-				<div className='col-lg-3 sidebar'>
-					<div className='bg-light p-2'>
-						<h4 className="font-weight-bold">Menu</h4>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/ac/about" onClick={() => handleComponent()}> About</NavLink>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/ac/faculty" onClick={() => handleComponent()}> Faculty</NavLink>
+		<div className="container-fluid mt-5">
+			<div className='row'>
+				<div className='col-lg-3'>
+					<div className='bg-light p-2 sidebar'>
+						<h4 className="text-center py-1">Menu</h4>
+						<NavLink className="menu-item" activeClassName="active" to="/departments/ac/about" onClick={() => handleComponent(<ACAbout />)}> About</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to="/departments/ac/faculty" onClick={() => handleComponent(<ACFaculty />)}> Faculty</NavLink>
 						<NavLink className="menu-item" activeClassName="active" to="/departments/ac/labresources" onClick={() => handleComponent()}>Lab Resources</NavLink>
 						<NavLink className="menu-item" activeClassName="active" to="/departments/ac/facultypublications" onClick={() => handleComponent()}> Faculty Publications</NavLink>
-						<h4 className="font-weight-bold">Resources</h4>
+						<h4 className="text-center py-1">Resources</h4>
 						<NavLink className="menu-item" activeClassName="active" to="/departments/ac/notice" onClick={() => handleComponent()}> Notice</NavLink>
 						<NavLink className="menu-item" activeClassName="active" to="/departments/ac/achievements" onClick={() => handleComponent()}> Achievements</NavLink>
 						<NavLink className="menu-item" activeClassName="active" to="/departments/ac/timetable" onClick={() => handleComponent()}> Time Table</NavLink>
@@ -31,7 +33,7 @@ function Chemistry(){
 						<NavLink className="menu-item" activeClassName="active" to="/departments/ac/result" onClick={() => handleComponent()}> Result</NavLink>
 					</div>
 				</div>
-				<div className="col-lg-9">
+				<div className="col-lg-9 mt-4">
 					{element}
 				</div>
 			</div>

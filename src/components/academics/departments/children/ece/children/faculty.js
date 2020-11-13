@@ -1,6 +1,6 @@
 import GetFaculty from '../../../getfaculty';
 
-function Faculty(){
+function ECEFaculty(){
 	return(
 		<GetFaculty 
 			url = 'departments/ece/faculty'
@@ -8,4 +8,4 @@ function Faculty(){
 	);
 }
 
-export default Faculty;
+export default ECEFaculty;

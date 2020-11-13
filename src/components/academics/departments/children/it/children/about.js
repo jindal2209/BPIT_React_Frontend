@@ -1,4 +1,4 @@
-function About(){
+function ITAbout(){
 	return(
 		<div>
 			<div>
@@ -37,4 +37,4 @@ function About(){
 	);
 }
 
-export default About;
+export default ITAbout;

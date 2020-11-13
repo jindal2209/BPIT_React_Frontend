@@ -30,7 +30,7 @@ function Studentlife(props) {
 						<NavLink className="menu-item" activeClassName="active" to='/studentlife/examination' onClick={() => handleComponent(<Examination />)}> Examinations</NavLink>
 						<NavLink className="menu-item" activeClassName="active" to='/studentlife/projects' onClick={() => handleComponent(<Projects />)}> Projects</NavLink>
 						<NavLink className="menu-item" activeClassName="active" to='/studentlife/publications' onClick={() => handleComponent(<Publications />)}> Student_publications</NavLink>
-						<NavLink className="menu-item" activeClassName="active" to='/studentlife/societies' onClick={() => handleComponent(<Societies />)}> societies</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to='/studentlife/societies' onClick={() => handleComponent(<Societies />)}> Societies</NavLink>
 					</div>
 				</div>
 				<div className="col-sm-9 mt-4">

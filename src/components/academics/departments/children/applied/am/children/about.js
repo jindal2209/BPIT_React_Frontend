@@ -1,4 +1,4 @@
-function About(){
+function AMAbout(){
 	return(
 		<div>
 			<h2 className="text-center page-header">About the Department</h2>
@@ -9,4 +9,4 @@ function About(){
 	);
 }
 
-export default About;
+export default AMAbout;

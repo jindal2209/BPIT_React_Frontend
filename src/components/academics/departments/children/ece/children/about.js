@@ -1,4 +1,4 @@
-function About(){
+function ECEAbout(){
 	return(
 		<div>
 			<div>
@@ -37,4 +37,4 @@ function About(){
 	);
 }
 
-export default About;
+export default ECEAbout;

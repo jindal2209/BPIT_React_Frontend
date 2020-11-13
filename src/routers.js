@@ -93,6 +93,16 @@ import DashboardStudentProjects from './components/login/children/dashboard/chil
 import PlacementDashboard from './components/login/children/pdashboard/pdashboard';
 import PlacementDashboardHome from './components/login/children/pdashboard/children/AddUser';
 import DashboardExpertTours from './components/login/children/pdashboard/children/ExpertTours';
+import ACAbout from './components/academics/departments/children/applied/ac/children/about';
+import ACFaculty from './components/academics/departments/children/applied/ac/children/faculty';
+import AMAbout from './components/academics/departments/children/applied/am/children/about';
+import AMFaculty from './components/academics/departments/children/applied/am/children/faculty';
+import APAbout from './components/academics/departments/children/applied/ap/children/about';
+import APFaculty from './components/academics/departments/children/applied/ap/children/faculty';
+import EMAbout from './components/academics/departments/children/applied/em/children/about';
+import EMFaculty from './components/academics/departments/children/applied/em/children/faculty';
+import HUAbout from './components/academics/departments/children/applied/hu/children/about';
+import HUFaculty from './components/academics/departments/children/applied/hu/children/faculty';
 
 
 
@@ -156,14 +166,37 @@ function Routers() {
 				<Route exact path='/departments/cse/about'><Cse page={<CSEAbout />} /></Route>
 				<Route exact path='/departments/cse/faculty'><Cse page={<CSEFaculty />} /></Route>
 
+				{/* ECE */}
 				<Route exact path='/departments/ece/about'><Ece page={<ECEAbout />} /></Route>
 				<Route exact path='/departments/ece/faculty'><Ece page={<ECEFaculty />} /></Route>
 
+				{/* EEE */}
 				<Route exact path='/departments/eee/about'><Eee page={<EEEAbout />} /></Route>
 				<Route exact path='/departments/eee/faculty'><Eee page={<EEEFaculty />} /></Route>
 
+				{/* IT */}
 				<Route exact path='/departments/it/about'><IT page={<ITAbout />} /></Route>
 				<Route exact path='/departments/it/faculty'><IT page={<ITFaculty />} /></Route>
+
+				{/* AC */}
+				<Route exact path='/departments/ac/about'><Chemistry page={<ACAbout />} /></Route>
+				<Route exact path='/departments/ac/faculty'><Chemistry page={<ACFaculty />} /></Route>
+
+				{/* AM */}
+				<Route exact path='/departments/am/about'><Maths page={<AMAbout />} /></Route>
+				<Route exact path='/departments/am/faculty'><Maths page={<AMFaculty />} /></Route>
+
+				{/* AP */}
+				<Route exact path='/departments/ap/about'><Physics page={<APAbout />} /></Route>
+				<Route exact path='/departments/ap/faculty'><Physics page={<APFaculty />} /></Route>
+
+				{/* EM */}
+				<Route exact path='/departments/em/about'><Mechanics page={<EMAbout />} /></Route>
+				<Route exact path='/departments/em/faculty'><Mechanics page={<EMFaculty />} /></Route>
+
+				{/* HU */}
+				<Route exact path='/departments/hu/about'><Humanities page={<HUAbout />} /></Route>
+				<Route exact path='/departments/hu/faculty'><Humanities page={<HUFaculty />} /></Route>
 
 				<Route exact path='/departments/mba'><Mba /></Route>
 				<Route exact path='/departments/bba'><Bba /></Route>

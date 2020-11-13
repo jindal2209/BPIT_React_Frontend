@@ -32,6 +32,7 @@
 	z-index: 1;
 }
 
+
 .extra-width{
 	min-width: 300px;
 }
@@ -40,6 +41,9 @@
 	display: block;
 }
 
+.dropdown-menu > li:hover{
+	background-color: #e6e4f1;
+}
 
 .dropdown-menu > li > a:hover:after {
     text-decoration: underline;

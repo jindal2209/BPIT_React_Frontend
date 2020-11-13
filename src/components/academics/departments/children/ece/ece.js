@@ -2,8 +2,8 @@ import { useState } from 'react';
 import {
 	NavLink
 } from 'react-router-dom';
-import About from './children/about';
-import Faculty from './children/faculty'
+import ECEAbout from './children/about';
+import ECEFaculty from './children/faculty'
 
 function Ece(props){
 	let [element,setElement] = useState(props.page);
@@ -18,8 +18,8 @@ function Ece(props){
 				<div className='col-lg-3'>
 					<div className='bg-light p-2 sidebar'>
 						<h4 className="text-center py-1">Menu</h4>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/ece/about" onClick={() => handleComponent()}> About</NavLink>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/ece/faculty" onClick={() => handleComponent()}> Faculty</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to="/departments/ece/about" onClick={() => handleComponent(<ECEAbout />)}> About</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to="/departments/ece/faculty" onClick={() => handleComponent(<ECEFaculty />)}> Faculty</NavLink>
 						<NavLink className="menu-item" activeClassName="active" to="/departments/ece/labresources" onClick={() => handleComponent()}>Lab Resources</NavLink>
 						<NavLink className="menu-item" activeClassName="active" to="/departments/ece/facultypublications" onClick={() => handleComponent()}> Faculty Publications</NavLink>
 						<hr />

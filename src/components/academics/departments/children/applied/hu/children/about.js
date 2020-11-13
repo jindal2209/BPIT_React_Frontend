@@ -1,4 +1,4 @@
-function About(){
+function HUAbout(){
 	return(
 		<div>
 			<h2 className="text-center page-header">About the Department</h2>
@@ -10,4 +10,4 @@ function About(){
 	);
 }
 
-export default About;
+export default HUAbout;
