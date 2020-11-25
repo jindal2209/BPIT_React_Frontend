@@ -85,6 +85,8 @@ function Bottom() {
 			<div className="row justify-content-center mt-5">
 				<div className="col-lg-12">
 					<h2>Our Collaborators</h2>
+					{/* <img src={process.env.PUBLIC_URL+"/assets/home/partner-6.jpg"} width="100%" height="300px" alt="" /> */}
+
 				</div>
 			</div>
 		</div>

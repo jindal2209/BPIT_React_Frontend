@@ -103,6 +103,13 @@ import EMAbout from './components/academics/departments/children/applied/em/chil
 import EMFaculty from './components/academics/departments/children/applied/em/children/faculty';
 import HUAbout from './components/academics/departments/children/applied/hu/children/about';
 import HUFaculty from './components/academics/departments/children/applied/hu/children/faculty';
+import CSELabResources from './components/academics/departments/children/cse/children/lab';
+import CSEFacultyPub from './components/academics/departments/children/cse/children/facultypub';
+import ECEFacultyPub from './components/academics/departments/children/ece/children/facultypub';
+import ITFacultyPub from './components/academics/departments/children/it/children/facultypub';
+import ITLabResources from './components/academics/departments/children/it/children/lab';
+import EEELabResources from './components/academics/departments/children/eee/children/lab';
+import ECELabResources from './components/academics/departments/children/ece/children/lab';
 
 
 
@@ -165,18 +172,26 @@ function Routers() {
 				{/* CSE */}
 				<Route exact path='/departments/cse/about'><Cse page={<CSEAbout />} /></Route>
 				<Route exact path='/departments/cse/faculty'><Cse page={<CSEFaculty />} /></Route>
+				<Route exact path='/departments/cse/labresources'><Cse page={<CSELabResources />} /></Route>
+				<Route exact path='/departments/cse/facultypublications'><Cse page={<CSEFacultyPub />} /></Route>
 
 				{/* ECE */}
 				<Route exact path='/departments/ece/about'><Ece page={<ECEAbout />} /></Route>
 				<Route exact path='/departments/ece/faculty'><Ece page={<ECEFaculty />} /></Route>
+				<Route exact path='/departments/ece/labresources'><Ece page={<ECELabResources />} /></Route>
+				<Route exact path='/departments/ece/facultypublications'><Ece page={<ECEFacultyPub />} /></Route>
 
 				{/* EEE */}
 				<Route exact path='/departments/eee/about'><Eee page={<EEEAbout />} /></Route>
 				<Route exact path='/departments/eee/faculty'><Eee page={<EEEFaculty />} /></Route>
+				<Route exact path='/departments/eee/labresources'><Eee page={<EEELabResources />} /></Route>
+				<Route exact path='/departments/eee/facultypublications'><Eee page={<ECEFacultyPub />} /></Route>
 
 				{/* IT */}
 				<Route exact path='/departments/it/about'><IT page={<ITAbout />} /></Route>
 				<Route exact path='/departments/it/faculty'><IT page={<ITFaculty />} /></Route>
+				<Route exact path='/departments/it/labresources'><IT page={<ITLabResources />} /></Route>
+				<Route exact path='/departments/it/facultypublications'><IT page={<ITFacultyPub />} /></Route>
 
 				{/* AC */}
 				<Route exact path='/departments/ac/about'><Chemistry page={<ACAbout />} /></Route>

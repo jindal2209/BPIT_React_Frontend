@@ -4,6 +4,8 @@ import {
 } from 'react-router-dom';
 import ECEAbout from './children/about';
 import ECEFaculty from './children/faculty'
+import ECEFacultyPub from './children/facultypub';
+import ECELabResources from './children/lab';
 
 function Ece(props){
 	let [element,setElement] = useState(props.page);
@@ -20,8 +22,8 @@ function Ece(props){
 						<h4 className="text-center py-1">Menu</h4>
 						<NavLink className="menu-item" activeClassName="active" to="/departments/ece/about" onClick={() => handleComponent(<ECEAbout />)}> About</NavLink>
 						<NavLink className="menu-item" activeClassName="active" to="/departments/ece/faculty" onClick={() => handleComponent(<ECEFaculty />)}> Faculty</NavLink>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/ece/labresources" onClick={() => handleComponent()}>Lab Resources</NavLink>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/ece/facultypublications" onClick={() => handleComponent()}> Faculty Publications</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to="/departments/ece/labresources" onClick={() => handleComponent(<ECELabResources />)}>Lab Resources</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to="/departments/ece/facultypublications" onClick={() => handleComponent(<ECEFacultyPub />)}> Faculty Publications</NavLink>
 						<hr />
 						<h4 className="text-center py-1">Resources</h4>
 						<NavLink className="menu-item" activeClassName="active" to="/departments/ece/notice" onClick={() => handleComponent()}> Notice</NavLink>

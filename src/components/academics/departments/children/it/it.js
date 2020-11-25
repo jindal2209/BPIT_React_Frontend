@@ -4,6 +4,8 @@ import {
 } from 'react-router-dom';
 import ITAbout from './children/about';
 import ITFaculty from './children/faculty';
+import ITFacultyPub from './children/facultypub';
+import ITLabResources from './children/lab';
 
 function IT(props){
 	let [element,setElement] = useState(props.page);
@@ -20,8 +22,8 @@ function IT(props){
 						<h4 className="text-center py-1">Menu</h4>
 						<NavLink className="menu-item" activeClassName="active" to="/departments/it/about" onClick={() => handleComponent(<ITAbout />)}> About</NavLink>
 						<NavLink className="menu-item" activeClassName="active" to="/departments/it/faculty" onClick={() => handleComponent(<ITFaculty />)}> Faculty</NavLink>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/it/labresources" onClick={() => handleComponent()}>Lab Resources</NavLink>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/it/facultypublications" onClick={() => handleComponent()}> Faculty Publications</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to="/departments/it/labresources" onClick={() => handleComponent(<ITLabResources />)}>Lab Resources</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to="/departments/it/facultypublications" onClick={() => handleComponent(<ITFacultyPub />)}> Faculty Publications</NavLink>
 						<hr />
 						<h4 className="text-center py-1">Resources</h4>
 						<NavLink className="menu-item" activeClassName="active" to="/departments/it/notice" onClick={() => handleComponent()}> Notice</NavLink>

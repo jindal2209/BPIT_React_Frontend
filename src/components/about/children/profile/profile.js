@@ -6,7 +6,7 @@ function Cprofile(){
 		<Fragment>
 			<div>
 				<h3 className='page-subheader'>College Profile</h3>
-				<img className='img-fluid py-4 rounded' src="/assets/images/bpit1.jpg" alt="hello" />
+				<img className='img-fluid py-4 rounded' src={process.env.PUBLIC_URL+"/assets/images/bpit1.jpg"} alt="hello" />
 				<p id="text-content">In view of the national and international scenario of the growing demand of qualified technical
 					personnel in different streams of engineering technology and management, Bhartiya Brahmin Charitable Trust in 2005
 					laid the foundation of Bhagwan Parshuram Institute of Technology (BPIT). BPIT is approved by the Ministry of Human

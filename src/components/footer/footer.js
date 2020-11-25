@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Footer() {
 	return (
 		<footer className="page-footer font-small indigo pt-4 footer mt-5">
@@ -18,7 +20,7 @@ function Footer() {
 							<li> <a target="_blank" rel="noreferrer" href="http://www.ipu.ac.in">GGSIPU Website</a> </li>
 							<li> <a target="_blank" rel="noreferrer" href="http://spoken-tutorial.org">Spoken Tutorial IIT Bombay</a> </li>
 							<li> <a target="_blank" rel="noreferrer" href="http://www.nmeict.iitb.ac.in/nmeict/wsmng/allrc.php">Remote centre IIT	Bombay/Kharagpur</a> </li>
-							<li> <a target="_blank" rel="noreferrer" href="/devteam">Development Team</a> </li>
+							<li> <Link target="_blank" rel="noreferrer" to="/devteam">Development Team</Link> </li>
 						</ul>
 					</div>
 					<div className="col-md-3 mb-md-0 my-4">

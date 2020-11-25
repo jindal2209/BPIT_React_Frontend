@@ -4,6 +4,8 @@ import {
 } from 'react-router-dom';
 import CSEAbout from './children/about';
 import CSEFaculty from './children/faculty';
+import CSEFacultyPub from './children/facultypub';
+import CSELabResources from './children/lab';
 
 function Cse(props){
 	let [element,setElement] = useState(props.page);
@@ -20,8 +22,8 @@ function Cse(props){
 						<h4 className="text-center py-1">Menu</h4>
 						<NavLink className="menu-item" activeClassName="active" to="/departments/cse/about" onClick={() => handleComponent(<CSEAbout />)}> About</NavLink>
 						<NavLink className="menu-item" activeClassName="active" to="/departments/cse/faculty" onClick={() => handleComponent(<CSEFaculty />)}> Faculty</NavLink>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/cse/labresources" onClick={() => handleComponent()}>Lab Resources</NavLink>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/cse/facultypublications" onClick={() => handleComponent()}> Faculty Publications</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to="/departments/cse/labresources" onClick={() => handleComponent(<CSELabResources />)}>Lab Resources</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to="/departments/cse/facultypublications" onClick={() => handleComponent(<CSEFacultyPub />)}> Faculty Publications</NavLink>
 						<hr />
 						<h4 className="text-center py-1">Resources</h4>
 						<NavLink className="menu-item" activeClassName="active" to="/departments/cse/notice" onClick={() => handleComponent()}> Notice</NavLink>

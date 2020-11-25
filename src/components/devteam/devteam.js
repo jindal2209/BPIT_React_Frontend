@@ -1,63 +1,77 @@
 function DevTeam(){
 	return(
-		<div>
-		<h2>Development Team</h2>
-		<div className="container-fluid">
-			<div className="row">
-				<div className="col-lg-4 col-md-4 col-sm-6">
-					<div className="teamText cardSize">
-						<img src={process.env.PUBLIC_URL+"/assets/images/AchalSir.png"} className="card__pic" alt="" />
-						<div className="card__text">Dr. Achal Kaushik</div>
-						<div className="card__text">Co-ordinator</div>
+		<div className="m-5">
+			<h2 className="page-header">Development Team</h2>
+
+			<div className='container'>
+
+				<div className="card-columns p-2">
+					
+					<div className='card text-center p-1' ><img src={process.env.PUBLIC_URL+"/assets/images/AchalSir.png"} className="card-img" alt="" /> 
+						<div className="card-body">
+							Dr. Achal Kaushik
+							<br/>
+							Coordinator
+							<br/>
+							<br/>
+						</div>
 					</div>
-				</div>
-				<div className="col-lg-4 col-md-4 col-sm-6">
-					<div className="teamText cardSize">
-						<img src={process.env.PUBLIC_URL+"/assets/images/Nishutosh Sharma.png"} className="card__pic" alt="" />
-						<div className="card__text">Nishutosh Sharma</div>
-						<div className="card__text">Branch: CSE - A </div>
-						<div className="card__text">Batch: 2015 - 2019 </div>
+
+					<div className='card text-center p-1' ><img src={process.env.PUBLIC_URL+"/assets/images/Shubham Jindal.png"} className="card-img" alt="" /> 
+						<div className="card-body">
+							Shubham Jindal
+							<br/>
+							Branch: CSE-A 
+							<br/>
+							Batch: 2019-2023
+						</div>
+					</div>				
+				
+					<div className='card text-center p-1' ><img src={process.env.PUBLIC_URL+"/assets/images/Ritika Chauhan.png"} className="card-img" alt="" /> 
+						<div className="card-body">
+							Ritika Chauhan
+							<br/>
+							Branch: IT 
+							<br/>
+							Batch: 2018-2022
+						</div>
 					</div>
-				</div>
-				<div className="col-lg-4 col-md-4 col-sm-6">
-					<div className="teamText cardSize">
-						<img src={process.env.PUBLIC_URL+"/assets/images/Mayank Jha.png"} className="card__pic" alt="" />
-						<div className="card__text">Mayank Jha</div>
-						<div className="card__text">Branch: CSE - A </div>
-						<div className="card__text">Batch: 2016 - 2020 </div>
+
+					<div className='card text-center p-1' ><img src={process.env.PUBLIC_URL+"/assets/images/Mayank Jha.png"} className="card-img" alt="" /> 
+						<div className="card-body">
+							Mayank Jha
+							<br/>
+							Branch: CSE-A
+							<br/>
+							Batch: 2016-2020
+						</div>
 					</div>
+
+					<div className='card text-center p-1' ><img src={process.env.PUBLIC_URL+"/assets/images/Mayank Sharma.png"} className="card-img" alt="" /> 
+						<div className="card-body">
+							Mayank Sharma
+							<br/>
+							Branch: CSE-A
+							<br/>
+							Batch: 2016-2020
+						</div>
+					</div>
+					
+					<div className='card text-center p-1' ><img src={process.env.PUBLIC_URL+"/assets/images/Nishutosh Sharma.png"} className="card-img" alt="" /> 
+						<div className="card-body">
+							Nishutosh Sharma
+							<br/>
+							Branch: CSE-A
+							<br/>
+							Batch: 2015-2019
+						</div>
+					</div>
+
 				</div>
 			</div>
+		
 		</div>
-		<div className="container-fluid">
-			<div className="row">
-				<div className="col-lg-4 col-md-4 col-sm-6">
-					<div className="teamText cardSize">
-						<img src={process.env.PUBLIC_URL+"/assets/images/Mayank Sharma.png"} className="card__pic" alt="" />
-						<div className="card__text">Mayank Sharma</div>
-						<div className="card__text">Branch: CSE - A </div>
-						<div className="card__text">Batch: 2016 - 2020 </div>
-					</div>
-				</div>
-				<div className="col-lg-4 col-md-4 col-sm-6">
-					<div className="teamText cardSize">
-						<img src={process.env.PUBLIC_URL+"/assets/images/Ritika Chauhan.png"} className="card__pic" alt="" />
-						<div className="card__text">Ritika Chauhan</div>
-						<div className="card__text">Branch: IT </div>
-						<div className="card__text">Batch: 2018 - 2022 </div>
-					</div>
-				</div>
-				<div className="col-lg-4 col-md-4 col-sm-6">
-					<div className="teamText cardSize">
-						<img src={process.env.PUBLIC_URL+"/assets/images/Shubham Jindal.png"} className="card__pic" alt="" />
-						<div className="card__text">Shubham Jindal</div>
-						<div className="card__text">Branch: CSE - A </div>
-						<div className="card__text">Batch: 2019 - 2023 </div>
-					</div>
-				</div>
-			</div>
-		</div>
-		</div>
+		
 	);
 }
 

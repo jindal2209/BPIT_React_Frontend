@@ -128,14 +128,14 @@ function DashboardNews(props){
 	return(
 		<div>
 			<button type="button" data-toggle="modal" className='btn' data-target="#exampleModal">
-				{/* Add new news */}
+				{/* Add new News */}
 				<i className="fa fa-plus" aria-hidden='true'></i>
 			</button>
 			<div className="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				<div className="modal-dialog modal-lg" role="document">
 					<div className="modal-content">
 						<div className="modal-header">
-							<h5 className="modal-title" id="exampleModalLabel">Add News</h5>
+							<h5 className="modal-title" id="exampleModalLabel">Add Notice</h5>
 							<button type="button" className="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 							</button>

@@ -6,6 +6,8 @@ import EEEAbout from './children/about';
 import About from './children/about';
 import EEEFaculty from './children/faculty';
 import Faculty from './children/faculty'
+import EEEFacultyPub from './children/facultypub';
+import EEELabResources from './children/lab';
 
 function Eee(props){
 	let [element,setElement] = useState(props.page);
@@ -22,8 +24,8 @@ function Eee(props){
 						<h4 className="text-center py-1">Menu</h4>
 						<NavLink className="menu-item" activeClassName="active" to="/departments/eee/about" onClick={() => handleComponent(<EEEAbout />)}> About</NavLink>
 						<NavLink className="menu-item" activeClassName="active" to="/departments/eee/faculty" onClick={() => handleComponent(<EEEFaculty />)}> Faculty</NavLink>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/eee/labresources" onClick={() => handleComponent()}>Lab Resources</NavLink>
-						<NavLink className="menu-item" activeClassName="active" to="/departments/eee/facultypublications" onClick={() => handleComponent()}> Faculty Publications</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to="/departments/eee/labresources" onClick={() => handleComponent(<EEELabResources />)}>Lab Resources</NavLink>
+						<NavLink className="menu-item" activeClassName="active" to="/departments/eee/facultypublications" onClick={() => handleComponent(<EEEFacultyPub />)}> Faculty Publications</NavLink>
 						<hr />
 						<h4 className="text-center py-1">Resources</h4>
 						<NavLink className="menu-item" activeClassName="active" to="/departments/eee/notice" onClick={() => handleComponent()}> Notice</NavLink>

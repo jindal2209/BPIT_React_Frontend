@@ -4,15 +4,19 @@ https://medium.com/better-programming/how-to-host-your-react-app-on-github-pages
 use images in publuce 
 with <img src={process.env.PUBLIC_URL + 'path'}
 
-CONTENT ADDING
+DONE
+	about
+	facilities
+	
 
-about
-contact
-nirf
-disclosures
-dev team
-facilities
-placement
+
+CONTENT ADDING
+	contact
+	nirf
+	disclosures
+	dev team
+	facilities
+	placement
 
 home
 	marquee
